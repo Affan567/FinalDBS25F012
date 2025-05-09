@@ -1,0 +1,441 @@
+{
+  "Version": 1,
+  "WorkspaceRootPath": "E:\\ManhoosProject\\DBS25G012\\dll\\",
+  "Documents": [
+    {
+      "AbsoluteMoniker": "D:0:0:{4CA3A5F5-6188-452F-BA92-9A5E14FA178C}|dll\\dll.csproj|E:\\ManhoosProject\\DBS25G012\\dll\\dll\\dl\\hostelbuildings.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{4CA3A5F5-6188-452F-BA92-9A5E14FA178C}|dll\\dll.csproj|solutionrelative:dll\\dl\\hostelbuildings.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{4CA3A5F5-6188-452F-BA92-9A5E14FA178C}|dll\\dll.csproj|E:\\ManhoosProject\\DBS25G012\\dll\\dll\\bl\\hostelbuildings.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{4CA3A5F5-6188-452F-BA92-9A5E14FA178C}|dll\\dll.csproj|solutionrelative:dll\\bl\\hostelbuildings.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{4CA3A5F5-6188-452F-BA92-9A5E14FA178C}|dll\\dll.csproj|e:\\manhoosproject\\dbs25g012\\dll\\dll\\dl\\user.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{4CA3A5F5-6188-452F-BA92-9A5E14FA178C}|dll\\dll.csproj|solutionrelative:dll\\dl\\user.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{4CA3A5F5-6188-452F-BA92-9A5E14FA178C}|dll\\dll.csproj|E:\\ManhoosProject\\DBS25G012\\dll\\dll\\bl\\user.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{4CA3A5F5-6188-452F-BA92-9A5E14FA178C}|dll\\dll.csproj|solutionrelative:dll\\bl\\user.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{4CA3A5F5-6188-452F-BA92-9A5E14FA178C}|dll\\dll.csproj|E:\\ManhoosProject\\DBS25G012\\dll\\dll\\bl\\rooms.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{4CA3A5F5-6188-452F-BA92-9A5E14FA178C}|dll\\dll.csproj|solutionrelative:dll\\bl\\rooms.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{4CA3A5F5-6188-452F-BA92-9A5E14FA178C}|dll\\dll.csproj|E:\\ManhoosProject\\DBS25G012\\dll\\dll\\dl\\rooms.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{4CA3A5F5-6188-452F-BA92-9A5E14FA178C}|dll\\dll.csproj|solutionrelative:dll\\dl\\rooms.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{4CA3A5F5-6188-452F-BA92-9A5E14FA178C}|dll\\dll.csproj|E:\\ManhoosProject\\DBS25G012\\dll\\dll\\bl\\student.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{4CA3A5F5-6188-452F-BA92-9A5E14FA178C}|dll\\dll.csproj|solutionrelative:dll\\bl\\student.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{4CA3A5F5-6188-452F-BA92-9A5E14FA178C}|dll\\dll.csproj|E:\\ManhoosProject\\DBS25G012\\dll\\dll\\dl\\student.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{4CA3A5F5-6188-452F-BA92-9A5E14FA178C}|dll\\dll.csproj|solutionrelative:dll\\dl\\student.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{4CA3A5F5-6188-452F-BA92-9A5E14FA178C}|dll\\dll.csproj|E:\\ManhoosProject\\DBS25G012\\dll\\dll\\dl\\complaints.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{4CA3A5F5-6188-452F-BA92-9A5E14FA178C}|dll\\dll.csproj|solutionrelative:dll\\dl\\complaints.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{4CA3A5F5-6188-452F-BA92-9A5E14FA178C}|dll\\dll.csproj|E:\\ManhoosProject\\DBS25G012\\dll\\dll\\bl\\complaints.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{4CA3A5F5-6188-452F-BA92-9A5E14FA178C}|dll\\dll.csproj|solutionrelative:dll\\bl\\complaints.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{4CA3A5F5-6188-452F-BA92-9A5E14FA178C}|dll\\dll.csproj|e:\\manhoosproject\\dbs25g012\\dll\\dll\\dl\\warden.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{4CA3A5F5-6188-452F-BA92-9A5E14FA178C}|dll\\dll.csproj|solutionrelative:dll\\dl\\warden.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{4CA3A5F5-6188-452F-BA92-9A5E14FA178C}|dll\\dll.csproj|E:\\ManhoosProject\\DBS25G012\\dll\\dll\\bl\\warden.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{4CA3A5F5-6188-452F-BA92-9A5E14FA178C}|dll\\dll.csproj|solutionrelative:dll\\bl\\warden.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{4CA3A5F5-6188-452F-BA92-9A5E14FA178C}|dll\\dll.csproj|E:\\ManhoosProject\\DBS25G012\\dll\\dll\\dl\\fees.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{4CA3A5F5-6188-452F-BA92-9A5E14FA178C}|dll\\dll.csproj|solutionrelative:dll\\dl\\fees.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{4CA3A5F5-6188-452F-BA92-9A5E14FA178C}|dll\\dll.csproj|E:\\ManhoosProject\\DBS25G012\\dll\\dll\\bl\\fees.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{4CA3A5F5-6188-452F-BA92-9A5E14FA178C}|dll\\dll.csproj|solutionrelative:dll\\bl\\fees.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{4CA3A5F5-6188-452F-BA92-9A5E14FA178C}|dll\\dll.csproj|E:\\ManhoosProject\\DBS25G012\\dll\\dll\\databasehelper.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{4CA3A5F5-6188-452F-BA92-9A5E14FA178C}|dll\\dll.csproj|solutionrelative:dll\\databasehelper.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{4CA3A5F5-6188-452F-BA92-9A5E14FA178C}|dll\\dll.csproj|E:\\ManhoosProject\\DBS25G012\\dll\\dll\\bl\\damagerecords.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{4CA3A5F5-6188-452F-BA92-9A5E14FA178C}|dll\\dll.csproj|solutionrelative:dll\\bl\\damagerecords.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{4CA3A5F5-6188-452F-BA92-9A5E14FA178C}|dll\\dll.csproj|E:\\ManhoosProject\\DBS25G012\\dll\\dll\\bl\\login.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{4CA3A5F5-6188-452F-BA92-9A5E14FA178C}|dll\\dll.csproj|solutionrelative:dll\\bl\\login.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{4CA3A5F5-6188-452F-BA92-9A5E14FA178C}|dll\\dll.csproj|E:\\ManhoosProject\\DBS25G012\\dll\\dll\\dl\\request.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{4CA3A5F5-6188-452F-BA92-9A5E14FA178C}|dll\\dll.csproj|solutionrelative:dll\\dl\\request.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{4CA3A5F5-6188-452F-BA92-9A5E14FA178C}|dll\\dll.csproj|E:\\ManhoosProject\\DBS25G012\\dll\\dll\\dl\\damagerecords.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{4CA3A5F5-6188-452F-BA92-9A5E14FA178C}|dll\\dll.csproj|solutionrelative:dll\\dl\\damagerecords.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{4CA3A5F5-6188-452F-BA92-9A5E14FA178C}|dll\\dll.csproj|E:\\ManhoosProject\\DBS25G012\\dll\\dll\\bl\\request.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{4CA3A5F5-6188-452F-BA92-9A5E14FA178C}|dll\\dll.csproj|solutionrelative:dll\\bl\\request.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{4CA3A5F5-6188-452F-BA92-9A5E14FA178C}|dll\\dll.csproj|E:\\ManhoosProject\\DBS25G012\\dll\\dll\\bl\\visitors.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{4CA3A5F5-6188-452F-BA92-9A5E14FA178C}|dll\\dll.csproj|solutionrelative:dll\\bl\\visitors.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{4CA3A5F5-6188-452F-BA92-9A5E14FA178C}|dll\\dll.csproj|E:\\ManhoosProject\\DBS25G012\\dll\\dll\\dl\\visitors.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{4CA3A5F5-6188-452F-BA92-9A5E14FA178C}|dll\\dll.csproj|solutionrelative:dll\\dl\\visitors.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{4CA3A5F5-6188-452F-BA92-9A5E14FA178C}|dll\\dll.csproj|E:\\ManhoosProject\\DBS25G012\\dll\\dll\\dl\\login.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{4CA3A5F5-6188-452F-BA92-9A5E14FA178C}|dll\\dll.csproj|solutionrelative:dll\\dl\\login.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{4CA3A5F5-6188-452F-BA92-9A5E14FA178C}|dll\\dll.csproj|E:\\ManhoosProject\\DBS25G012\\dll\\dll\\dl\\roomservant.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{4CA3A5F5-6188-452F-BA92-9A5E14FA178C}|dll\\dll.csproj|solutionrelative:dll\\dl\\roomservant.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{4CA3A5F5-6188-452F-BA92-9A5E14FA178C}|dll\\dll.csproj|E:\\ManhoosProject\\DBS25G012\\dll\\dll\\class1.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{4CA3A5F5-6188-452F-BA92-9A5E14FA178C}|dll\\dll.csproj|solutionrelative:dll\\class1.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    }
+  ],
+  "DocumentGroupContainers": [
+    {
+      "Orientation": 0,
+      "VerticalTabListWidth": 256,
+      "DocumentGroups": [
+        {
+          "DockedWidth": 200,
+          "SelectedChildIndex": 6,
+          "Children": [
+            {
+              "$type": "Document",
+              "DocumentIndex": 6,
+              "Title": "Student.cs",
+              "DocumentMoniker": "E:\\ManhoosProject\\DBS25G012\\dll\\dll\\BL\\Student.cs",
+              "RelativeDocumentMoniker": "dll\\BL\\Student.cs",
+              "ToolTip": "E:\\ManhoosProject\\DBS25G012\\dll\\dll\\BL\\Student.cs",
+              "RelativeToolTip": "dll\\BL\\Student.cs",
+              "ViewState": "AgIAAH8AAAAAAAAAAAAzwI4AAAAkAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-05-05T19:58:04.983Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 5,
+              "Title": "Rooms.cs",
+              "DocumentMoniker": "E:\\ManhoosProject\\DBS25G012\\dll\\dll\\DL\\Rooms.cs",
+              "RelativeDocumentMoniker": "dll\\DL\\Rooms.cs",
+              "ToolTip": "E:\\ManhoosProject\\DBS25G012\\dll\\dll\\DL\\Rooms.cs",
+              "RelativeToolTip": "dll\\DL\\Rooms.cs",
+              "ViewState": "AgIAABYAAAAAAAAAAIAywCgAAAAnAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-05-06T18:22:46.348Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 4,
+              "Title": "Rooms.cs",
+              "DocumentMoniker": "E:\\ManhoosProject\\DBS25G012\\dll\\dll\\BL\\Rooms.cs",
+              "RelativeDocumentMoniker": "dll\\BL\\Rooms.cs",
+              "ToolTip": "E:\\ManhoosProject\\DBS25G012\\dll\\dll\\BL\\Rooms.cs",
+              "RelativeToolTip": "dll\\BL\\Rooms.cs",
+              "ViewState": "AgIAAA8AAAAAAAAAAAAYwCQAAAAIAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-05-06T18:22:35.265Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 3,
+              "Title": "User.cs",
+              "DocumentMoniker": "E:\\ManhoosProject\\DBS25G012\\dll\\dll\\BL\\User.cs",
+              "RelativeDocumentMoniker": "dll\\BL\\User.cs",
+              "ToolTip": "E:\\ManhoosProject\\DBS25G012\\dll\\dll\\BL\\User.cs",
+              "RelativeToolTip": "dll\\BL\\User.cs",
+              "ViewState": "AgIAANEAAAAAAAAAAAAkwOEAAAAkAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-05-05T18:39:03.872Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 2,
+              "Title": "User.cs",
+              "DocumentMoniker": "E:\\ManhoosProject\\DBS25G012\\dll\\dll\\DL\\User.cs",
+              "RelativeDocumentMoniker": "dll\\DL\\User.cs",
+              "ToolTip": "E:\\ManhoosProject\\DBS25G012\\dll\\dll\\DL\\User.cs",
+              "RelativeToolTip": "dll\\DL\\User.cs",
+              "ViewState": "AgIAAFcAAAAAAAAAAAAMwGQAAAApAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-05-05T19:36:03.423Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 1,
+              "Title": "Hostelbuildings.cs",
+              "DocumentMoniker": "E:\\ManhoosProject\\DBS25G012\\dll\\dll\\BL\\Hostelbuildings.cs",
+              "RelativeDocumentMoniker": "dll\\BL\\Hostelbuildings.cs",
+              "ToolTip": "E:\\ManhoosProject\\DBS25G012\\dll\\dll\\BL\\Hostelbuildings.cs",
+              "RelativeToolTip": "dll\\BL\\Hostelbuildings.cs",
+              "ViewState": "AgIAAH4AAAAAAAAAAAAYwJMAAAAwAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-05-06T18:37:57.424Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 0,
+              "Title": "HostelBuildings.cs",
+              "DocumentMoniker": "E:\\ManhoosProject\\DBS25G012\\dll\\dll\\DL\\HostelBuildings.cs",
+              "RelativeDocumentMoniker": "dll\\DL\\HostelBuildings.cs",
+              "ToolTip": "E:\\ManhoosProject\\DBS25G012\\dll\\dll\\DL\\HostelBuildings.cs",
+              "RelativeToolTip": "dll\\DL\\HostelBuildings.cs",
+              "ViewState": "AgIAAC0AAAAAAAAAAIAywDcAAABFAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-05-06T19:01:55.542Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 7,
+              "Title": "Student.cs",
+              "DocumentMoniker": "E:\\ManhoosProject\\DBS25G012\\dll\\dll\\DL\\Student.cs",
+              "RelativeDocumentMoniker": "dll\\DL\\Student.cs",
+              "ToolTip": "E:\\ManhoosProject\\DBS25G012\\dll\\dll\\DL\\Student.cs",
+              "RelativeToolTip": "dll\\DL\\Student.cs",
+              "ViewState": "AgIAACAAAAAAAAAAAAAMwDAAAAAWAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-05-05T19:58:16.525Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 8,
+              "Title": "Complaints.cs",
+              "DocumentMoniker": "E:\\ManhoosProject\\DBS25G012\\dll\\dll\\DL\\Complaints.cs",
+              "RelativeDocumentMoniker": "dll\\DL\\Complaints.cs",
+              "ToolTip": "E:\\ManhoosProject\\DBS25G012\\dll\\dll\\DL\\Complaints.cs",
+              "RelativeToolTip": "dll\\DL\\Complaints.cs",
+              "ViewState": "AgIAAAYAAAAAAAAAAAAuwA0AAAAZAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-05-05T22:16:51.095Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 9,
+              "Title": "Complaints.cs",
+              "DocumentMoniker": "E:\\ManhoosProject\\DBS25G012\\dll\\dll\\BL\\Complaints.cs",
+              "RelativeDocumentMoniker": "dll\\BL\\Complaints.cs",
+              "ToolTip": "E:\\ManhoosProject\\DBS25G012\\dll\\dll\\BL\\Complaints.cs",
+              "RelativeToolTip": "dll\\BL\\Complaints.cs",
+              "ViewState": "AgIAACwAAAAAAAAAAAAswDgAAAAoAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-05-05T22:15:26.467Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 10,
+              "Title": "Warden.cs",
+              "DocumentMoniker": "E:\\ManhoosProject\\DBS25G012\\dll\\dll\\DL\\Warden.cs",
+              "RelativeDocumentMoniker": "dll\\DL\\Warden.cs",
+              "ToolTip": "E:\\ManhoosProject\\DBS25G012\\dll\\dll\\DL\\Warden.cs",
+              "RelativeToolTip": "dll\\DL\\Warden.cs",
+              "ViewState": "AgIAABAAAAAAAAAAAAAWwB4AAAAnAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-05-08T15:22:00.42Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 11,
+              "Title": "Warden.cs",
+              "DocumentMoniker": "E:\\ManhoosProject\\DBS25G012\\dll\\dll\\BL\\Warden.cs",
+              "RelativeDocumentMoniker": "dll\\BL\\Warden.cs",
+              "ToolTip": "E:\\ManhoosProject\\DBS25G012\\dll\\dll\\BL\\Warden.cs",
+              "RelativeToolTip": "dll\\BL\\Warden.cs",
+              "ViewState": "AgIAAA0AAAAAAAAAAAAQwB4AAAAoAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-05-06T19:19:45.431Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 12,
+              "Title": "Fees.cs",
+              "DocumentMoniker": "E:\\ManhoosProject\\DBS25G012\\dll\\dll\\DL\\Fees.cs",
+              "RelativeDocumentMoniker": "dll\\DL\\Fees.cs",
+              "ToolTip": "E:\\ManhoosProject\\DBS25G012\\dll\\dll\\DL\\Fees.cs",
+              "RelativeToolTip": "dll\\DL\\Fees.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAA0AAAAgAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-05-07T19:51:15.101Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 13,
+              "Title": "Fees.cs",
+              "DocumentMoniker": "E:\\ManhoosProject\\DBS25G012\\dll\\dll\\BL\\Fees.cs",
+              "RelativeDocumentMoniker": "dll\\BL\\Fees.cs",
+              "ToolTip": "E:\\ManhoosProject\\DBS25G012\\dll\\dll\\BL\\Fees.cs",
+              "RelativeToolTip": "dll\\BL\\Fees.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAABQAAAAeAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-05-05T22:15:46.307Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 14,
+              "Title": "DatabaseHelper.cs",
+              "DocumentMoniker": "E:\\ManhoosProject\\DBS25G012\\dll\\dll\\DatabaseHelper.cs",
+              "RelativeDocumentMoniker": "dll\\DatabaseHelper.cs",
+              "ToolTip": "E:\\ManhoosProject\\DBS25G012\\dll\\dll\\DatabaseHelper.cs",
+              "RelativeToolTip": "dll\\DatabaseHelper.cs",
+              "ViewState": "AgIAAFgAAAAAAAAAAAAuwHYAAAAJAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-05-01T15:04:44.974Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 15,
+              "Title": "DamageRecords.cs",
+              "DocumentMoniker": "E:\\ManhoosProject\\DBS25G012\\dll\\dll\\BL\\DamageRecords.cs",
+              "RelativeDocumentMoniker": "dll\\BL\\DamageRecords.cs",
+              "ToolTip": "E:\\ManhoosProject\\DBS25G012\\dll\\dll\\BL\\DamageRecords.cs",
+              "RelativeToolTip": "dll\\BL\\DamageRecords.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAABIAAAAFAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-05-07T21:54:54.229Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 16,
+              "Title": "Login.cs",
+              "DocumentMoniker": "E:\\ManhoosProject\\DBS25G012\\dll\\dll\\BL\\Login.cs",
+              "RelativeDocumentMoniker": "dll\\BL\\Login.cs",
+              "ToolTip": "E:\\ManhoosProject\\DBS25G012\\dll\\dll\\BL\\Login.cs",
+              "RelativeToolTip": "dll\\BL\\Login.cs",
+              "ViewState": "AgIAAA4AAAAAAAAAAAAAwBAAAAA3AAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-05-01T15:07:58.045Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 17,
+              "Title": "Request.cs",
+              "DocumentMoniker": "E:\\ManhoosProject\\DBS25G012\\dll\\dll\\DL\\Request.cs",
+              "RelativeDocumentMoniker": "dll\\DL\\Request.cs",
+              "ToolTip": "E:\\ManhoosProject\\DBS25G012\\dll\\dll\\DL\\Request.cs",
+              "RelativeToolTip": "dll\\DL\\Request.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAuwBAAAAAMAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-05-06T18:01:06.457Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 18,
+              "Title": "DamageRecords.cs",
+              "DocumentMoniker": "E:\\ManhoosProject\\DBS25G012\\dll\\dll\\DL\\DamageRecords.cs",
+              "RelativeDocumentMoniker": "dll\\DL\\DamageRecords.cs",
+              "ToolTip": "E:\\ManhoosProject\\DBS25G012\\dll\\dll\\DL\\DamageRecords.cs",
+              "RelativeToolTip": "dll\\DL\\DamageRecords.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAA8AAAB1AAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-05-07T21:55:07.298Z"
+            },
+            {
+              "$type": "Bookmark",
+              "Name": "ST:0:0:{e5c86464-96be-4d7c-9a8b-abcb3bbf5f92}"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 19,
+              "Title": "Request.cs",
+              "DocumentMoniker": "E:\\ManhoosProject\\DBS25G012\\dll\\dll\\BL\\Request.cs",
+              "RelativeDocumentMoniker": "dll\\BL\\Request.cs",
+              "ToolTip": "E:\\ManhoosProject\\DBS25G012\\dll\\dll\\BL\\Request.cs",
+              "RelativeToolTip": "dll\\BL\\Request.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAA4AAAA6AAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-05-06T17:58:22.638Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 20,
+              "Title": "Visitors.cs",
+              "DocumentMoniker": "E:\\ManhoosProject\\DBS25G012\\dll\\dll\\BL\\Visitors.cs",
+              "RelativeDocumentMoniker": "dll\\BL\\Visitors.cs",
+              "ToolTip": "E:\\ManhoosProject\\DBS25G012\\dll\\dll\\BL\\Visitors.cs",
+              "RelativeToolTip": "dll\\BL\\Visitors.cs",
+              "ViewState": "AgIAABkAAAAAAAAAAAAQwDQAAAAAAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-05-05T22:16:25.01Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 21,
+              "Title": "Visitors.cs",
+              "DocumentMoniker": "E:\\ManhoosProject\\DBS25G012\\dll\\dll\\DL\\Visitors.cs",
+              "RelativeDocumentMoniker": "dll\\DL\\Visitors.cs",
+              "ToolTip": "E:\\ManhoosProject\\DBS25G012\\dll\\dll\\DL\\Visitors.cs",
+              "RelativeToolTip": "dll\\DL\\Visitors.cs",
+              "ViewState": "AgIAAAMAAAAAAAAAAAAAAAgAAAAQAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-05-05T22:16:38.638Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 22,
+              "Title": "Login.cs",
+              "DocumentMoniker": "E:\\ManhoosProject\\DBS25G012\\dll\\dll\\DL\\Login.cs",
+              "RelativeDocumentMoniker": "dll\\DL\\Login.cs",
+              "ToolTip": "E:\\ManhoosProject\\DBS25G012\\dll\\dll\\DL\\Login.cs",
+              "RelativeToolTip": "dll\\DL\\Login.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-05-01T15:08:07.447Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 23,
+              "Title": "RoomServant.cs",
+              "DocumentMoniker": "E:\\ManhoosProject\\DBS25G012\\dll\\dll\\DL\\RoomServant.cs",
+              "RelativeDocumentMoniker": "dll\\DL\\RoomServant.cs",
+              "ToolTip": "E:\\ManhoosProject\\DBS25G012\\dll\\dll\\DL\\RoomServant.cs",
+              "RelativeToolTip": "dll\\DL\\RoomServant.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-05-06T19:19:59.302Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 24,
+              "Title": "Class1.cs",
+              "DocumentMoniker": "E:\\ManhoosProject\\DBS25G012\\dll\\dll\\Class1.cs",
+              "RelativeDocumentMoniker": "dll\\Class1.cs",
+              "ToolTip": "E:\\ManhoosProject\\DBS25G012\\dll\\dll\\Class1.cs",
+              "RelativeToolTip": "dll\\Class1.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAwAAAAAAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-05-01T15:00:02.775Z"
+            }
+          ]
+        }
+      ]
+    }
+  ]
+}

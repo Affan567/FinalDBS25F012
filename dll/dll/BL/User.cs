@@ -20,14 +20,13 @@ namespace dll.BL
         protected string contact;
         protected string gender;
 
-        public User(string username, string password, string name, string email, string contact, string gender, int roleID)
+        public User(string username, string password, string name, string email, string contact, int roleID)
         {
             SetPassword(password);
             SetPhone(contact);
             SetName(name);
             SetEmail(email);
             SetUsername(username);
-            this.gender = gender;
             this.roleID = roleID;
 
         }
@@ -43,6 +42,17 @@ namespace dll.BL
 
             
 
+        }
+
+        public User(string username, string password , string name, string email, string contact)
+        {
+            
+            this.username = username;
+            this.password = password;
+            this.name = name;
+            this.email = email;
+            this.contact = contact;
+            
         }
 
         public bool AddUser(string Password, string Username, string Email,  string Phone, int roleID , string Name , string gender)

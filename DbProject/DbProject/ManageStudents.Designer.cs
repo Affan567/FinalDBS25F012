@@ -29,7 +29,7 @@
         private void InitializeComponent()
         {
             System.ComponentModel.ComponentResourceManager resources = new System.ComponentModel.ComponentResourceManager(typeof(ManageStudents));
-            System.Windows.Forms.DataGridViewCellStyle dataGridViewCellStyle1 = new System.Windows.Forms.DataGridViewCellStyle();
+            System.Windows.Forms.DataGridViewCellStyle dataGridViewCellStyle4 = new System.Windows.Forms.DataGridViewCellStyle();
             this.tableLayoutPanel4 = new System.Windows.Forms.TableLayoutPanel();
             this.panel4 = new System.Windows.Forms.Panel();
             this.pictureBox13 = new System.Windows.Forms.PictureBox();
@@ -43,7 +43,6 @@
             this.codedButton1 = new DbProject.CodedButton();
             this.codedButton2 = new DbProject.CodedButton();
             this.codedButton3 = new DbProject.CodedButton();
-            this.codedButton4 = new DbProject.CodedButton();
             this.tableLayoutPanel5 = new System.Windows.Forms.TableLayoutPanel();
             this.panel11 = new System.Windows.Forms.Panel();
             this.textBox3 = new System.Windows.Forms.TextBox();
@@ -52,7 +51,6 @@
             this.textBox1 = new System.Windows.Forms.TextBox();
             this.label9 = new System.Windows.Forms.Label();
             this.panel9 = new System.Windows.Forms.Panel();
-            this.numericUpDown2 = new System.Windows.Forms.NumericUpDown();
             this.label8 = new System.Windows.Forms.Label();
             this.panel8 = new System.Windows.Forms.Panel();
             this.numericUpDown1 = new System.Windows.Forms.NumericUpDown();
@@ -70,6 +68,7 @@
             this.textBox2 = new System.Windows.Forms.TextBox();
             this.label10 = new System.Windows.Forms.Label();
             this.dataGridView1 = new System.Windows.Forms.DataGridView();
+            this.comboBox3 = new System.Windows.Forms.ComboBox();
             this.tableLayoutPanel4.SuspendLayout();
             this.panel4.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox13)).BeginInit();
@@ -80,7 +79,6 @@
             this.panel11.SuspendLayout();
             this.panel5.SuspendLayout();
             this.panel9.SuspendLayout();
-            ((System.ComponentModel.ISupportInitialize)(this.numericUpDown2)).BeginInit();
             this.panel8.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)(this.numericUpDown1)).BeginInit();
             this.panel7.SuspendLayout();
@@ -205,14 +203,13 @@
             // tableLayoutPanel1
             // 
             this.tableLayoutPanel1.ColumnCount = 4;
-            this.tableLayoutPanel1.ColumnStyles.Add(new System.Windows.Forms.ColumnStyle(System.Windows.Forms.SizeType.Percent, 25F));
-            this.tableLayoutPanel1.ColumnStyles.Add(new System.Windows.Forms.ColumnStyle(System.Windows.Forms.SizeType.Percent, 25F));
-            this.tableLayoutPanel1.ColumnStyles.Add(new System.Windows.Forms.ColumnStyle(System.Windows.Forms.SizeType.Percent, 25F));
-            this.tableLayoutPanel1.ColumnStyles.Add(new System.Windows.Forms.ColumnStyle(System.Windows.Forms.SizeType.Percent, 25F));
+            this.tableLayoutPanel1.ColumnStyles.Add(new System.Windows.Forms.ColumnStyle(System.Windows.Forms.SizeType.Percent, 32.83582F));
+            this.tableLayoutPanel1.ColumnStyles.Add(new System.Windows.Forms.ColumnStyle(System.Windows.Forms.SizeType.Percent, 31.25F));
+            this.tableLayoutPanel1.ColumnStyles.Add(new System.Windows.Forms.ColumnStyle(System.Windows.Forms.SizeType.Percent, 34.98134F));
+            this.tableLayoutPanel1.ColumnStyles.Add(new System.Windows.Forms.ColumnStyle(System.Windows.Forms.SizeType.Percent, 0.7462686F));
             this.tableLayoutPanel1.Controls.Add(this.codedButton1, 0, 0);
             this.tableLayoutPanel1.Controls.Add(this.codedButton2, 1, 0);
             this.tableLayoutPanel1.Controls.Add(this.codedButton3, 2, 0);
-            this.tableLayoutPanel1.Controls.Add(this.codedButton4, 3, 0);
             this.tableLayoutPanel1.Dock = System.Windows.Forms.DockStyle.Bottom;
             this.tableLayoutPanel1.Location = new System.Drawing.Point(278, 603);
             this.tableLayoutPanel1.Name = "tableLayoutPanel1";
@@ -237,7 +234,7 @@
             this.codedButton1.ForeColor = System.Drawing.Color.White;
             this.codedButton1.Location = new System.Drawing.Point(3, 3);
             this.codedButton1.Name = "codedButton1";
-            this.codedButton1.Size = new System.Drawing.Size(262, 59);
+            this.codedButton1.Size = new System.Drawing.Size(346, 59);
             this.codedButton1.TabIndex = 0;
             this.codedButton1.Text = "Refresh";
             this.codedButton1.TextColor = System.Drawing.Color.White;
@@ -257,13 +254,14 @@
             this.codedButton2.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
             this.codedButton2.Font = new System.Drawing.Font("Yu Gothic UI", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.codedButton2.ForeColor = System.Drawing.Color.White;
-            this.codedButton2.Location = new System.Drawing.Point(271, 3);
+            this.codedButton2.Location = new System.Drawing.Point(355, 3);
             this.codedButton2.Name = "codedButton2";
-            this.codedButton2.Size = new System.Drawing.Size(262, 59);
+            this.codedButton2.Size = new System.Drawing.Size(329, 59);
             this.codedButton2.TabIndex = 0;
             this.codedButton2.Text = "Add";
             this.codedButton2.TextColor = System.Drawing.Color.White;
             this.codedButton2.UseVisualStyleBackColor = false;
+            this.codedButton2.Click += new System.EventHandler(this.codedButton2_Click);
             // 
             // codedButton3
             // 
@@ -279,35 +277,13 @@
             this.codedButton3.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
             this.codedButton3.Font = new System.Drawing.Font("Yu Gothic UI", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.codedButton3.ForeColor = System.Drawing.Color.White;
-            this.codedButton3.Location = new System.Drawing.Point(539, 3);
+            this.codedButton3.Location = new System.Drawing.Point(690, 3);
             this.codedButton3.Name = "codedButton3";
-            this.codedButton3.Size = new System.Drawing.Size(262, 59);
+            this.codedButton3.Size = new System.Drawing.Size(369, 59);
             this.codedButton3.TabIndex = 0;
             this.codedButton3.Text = "Update";
             this.codedButton3.TextColor = System.Drawing.Color.White;
             this.codedButton3.UseVisualStyleBackColor = false;
-            // 
-            // codedButton4
-            // 
-            this.codedButton4.Anchor = ((System.Windows.Forms.AnchorStyles)((((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Bottom) 
-            | System.Windows.Forms.AnchorStyles.Left) 
-            | System.Windows.Forms.AnchorStyles.Right)));
-            this.codedButton4.BackColor = System.Drawing.Color.Black;
-            this.codedButton4.BackgroundColor = System.Drawing.Color.Black;
-            this.codedButton4.BorderColor = System.Drawing.Color.PaleVioletRed;
-            this.codedButton4.BorderRadius = 20;
-            this.codedButton4.BorderSize = 0;
-            this.codedButton4.FlatAppearance.BorderSize = 0;
-            this.codedButton4.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
-            this.codedButton4.Font = new System.Drawing.Font("Yu Gothic UI", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.codedButton4.ForeColor = System.Drawing.Color.White;
-            this.codedButton4.Location = new System.Drawing.Point(807, 3);
-            this.codedButton4.Name = "codedButton4";
-            this.codedButton4.Size = new System.Drawing.Size(262, 59);
-            this.codedButton4.TabIndex = 0;
-            this.codedButton4.Text = "Delete";
-            this.codedButton4.TextColor = System.Drawing.Color.White;
-            this.codedButton4.UseVisualStyleBackColor = false;
             // 
             // tableLayoutPanel5
             // 
@@ -408,7 +384,7 @@
             // panel9
             // 
             this.panel9.BackColor = System.Drawing.Color.SkyBlue;
-            this.panel9.Controls.Add(this.numericUpDown2);
+            this.panel9.Controls.Add(this.comboBox3);
             this.panel9.Controls.Add(this.label8);
             this.panel9.Dock = System.Windows.Forms.DockStyle.Fill;
             this.panel9.Font = new System.Drawing.Font("Yu Gothic UI", 10F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
@@ -417,14 +393,6 @@
             this.panel9.Name = "panel9";
             this.panel9.Size = new System.Drawing.Size(530, 55);
             this.panel9.TabIndex = 29;
-            // 
-            // numericUpDown2
-            // 
-            this.numericUpDown2.Anchor = System.Windows.Forms.AnchorStyles.Right;
-            this.numericUpDown2.Location = new System.Drawing.Point(245, 12);
-            this.numericUpDown2.Name = "numericUpDown2";
-            this.numericUpDown2.Size = new System.Drawing.Size(282, 34);
-            this.numericUpDown2.TabIndex = 42;
             // 
             // label8
             // 
@@ -635,14 +603,14 @@
             this.dataGridView1.BorderStyle = System.Windows.Forms.BorderStyle.None;
             this.dataGridView1.CellBorderStyle = System.Windows.Forms.DataGridViewCellBorderStyle.SingleHorizontal;
             this.dataGridView1.ColumnHeadersHeightSizeMode = System.Windows.Forms.DataGridViewColumnHeadersHeightSizeMode.AutoSize;
-            dataGridViewCellStyle1.Alignment = System.Windows.Forms.DataGridViewContentAlignment.MiddleLeft;
-            dataGridViewCellStyle1.BackColor = System.Drawing.SystemColors.Window;
-            dataGridViewCellStyle1.Font = new System.Drawing.Font("Microsoft Sans Serif", 8F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            dataGridViewCellStyle1.ForeColor = System.Drawing.SystemColors.ControlText;
-            dataGridViewCellStyle1.SelectionBackColor = System.Drawing.Color.ForestGreen;
-            dataGridViewCellStyle1.SelectionForeColor = System.Drawing.SystemColors.HighlightText;
-            dataGridViewCellStyle1.WrapMode = System.Windows.Forms.DataGridViewTriState.False;
-            this.dataGridView1.DefaultCellStyle = dataGridViewCellStyle1;
+            dataGridViewCellStyle4.Alignment = System.Windows.Forms.DataGridViewContentAlignment.MiddleLeft;
+            dataGridViewCellStyle4.BackColor = System.Drawing.SystemColors.Window;
+            dataGridViewCellStyle4.Font = new System.Drawing.Font("Microsoft Sans Serif", 8F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            dataGridViewCellStyle4.ForeColor = System.Drawing.SystemColors.ControlText;
+            dataGridViewCellStyle4.SelectionBackColor = System.Drawing.Color.ForestGreen;
+            dataGridViewCellStyle4.SelectionForeColor = System.Drawing.SystemColors.HighlightText;
+            dataGridViewCellStyle4.WrapMode = System.Windows.Forms.DataGridViewTriState.False;
+            this.dataGridView1.DefaultCellStyle = dataGridViewCellStyle4;
             this.dataGridView1.Dock = System.Windows.Forms.DockStyle.Fill;
             this.dataGridView1.GridColor = System.Drawing.SystemColors.ActiveCaptionText;
             this.dataGridView1.Location = new System.Drawing.Point(278, 157);
@@ -652,6 +620,15 @@
             this.dataGridView1.SelectionMode = System.Windows.Forms.DataGridViewSelectionMode.FullRowSelect;
             this.dataGridView1.Size = new System.Drawing.Size(1072, 199);
             this.dataGridView1.TabIndex = 59;
+            // 
+            // comboBox3
+            // 
+            this.comboBox3.Anchor = System.Windows.Forms.AnchorStyles.Right;
+            this.comboBox3.FormattingEnabled = true;
+            this.comboBox3.Location = new System.Drawing.Point(309, 8);
+            this.comboBox3.Name = "comboBox3";
+            this.comboBox3.Size = new System.Drawing.Size(156, 36);
+            this.comboBox3.TabIndex = 44;
             // 
             // ManageStudents
             // 
@@ -683,7 +660,6 @@
             this.panel5.PerformLayout();
             this.panel9.ResumeLayout(false);
             this.panel9.PerformLayout();
-            ((System.ComponentModel.ISupportInitialize)(this.numericUpDown2)).EndInit();
             this.panel8.ResumeLayout(false);
             this.panel8.PerformLayout();
             ((System.ComponentModel.ISupportInitialize)(this.numericUpDown1)).EndInit();
@@ -716,7 +692,6 @@
         private CodedButton codedButton1;
         private CodedButton codedButton2;
         private CodedButton codedButton3;
-        private CodedButton codedButton4;
         private System.Windows.Forms.TableLayoutPanel tableLayoutPanel5;
         private System.Windows.Forms.Panel panel11;
         private System.Windows.Forms.TextBox textBox3;
@@ -725,7 +700,6 @@
         private System.Windows.Forms.TextBox textBox1;
         private System.Windows.Forms.Label label9;
         private System.Windows.Forms.Panel panel9;
-        private System.Windows.Forms.NumericUpDown numericUpDown2;
         private System.Windows.Forms.Label label8;
         private System.Windows.Forms.Panel panel8;
         private System.Windows.Forms.NumericUpDown numericUpDown1;
@@ -743,5 +717,6 @@
         private System.Windows.Forms.TextBox textBox2;
         private System.Windows.Forms.Label label10;
         private System.Windows.Forms.DataGridView dataGridView1;
+        private System.Windows.Forms.ComboBox comboBox3;
     }
 }

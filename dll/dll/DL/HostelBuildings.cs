@@ -14,7 +14,8 @@ namespace dll.DL
         public HostelBuildings() { }
         public bool Addbuildings(string name , int rooms , int floors , string status , int wardenID)
         {
-            string query = "Insert into hostelbuildings (BuildingName , Floors ,Rooms,WardenID,Status) values ('{name}' , {floors},{rooms},{wardenID},'{status}')";
+            string query = "Insert into hostelbuildings (BuildingName , Floors ,Rooms,WardenID,Status) values ('{0}',{1},{2},{3},'{4}')";
+            query = String.Format(query , name , rooms,floors,wardenID, status);
             int rowsaffected = DatabaseHelper.executeDML(query);
             return rowsaffected > 0;
         }
@@ -29,7 +30,7 @@ namespace dll.DL
         public bool UpdateBuilding(int buildingid, string buildingName, int rooms, int floors, string status, int wardenID)
         {
             string query = "Update Hostelbuildings set BuildingName = '{0}', Floors = {1}, Rooms = {2},  WardenID = {3}, Status = '{4}'  where BuildingID = {5}";
-            query = String.Format(query, buildingName, floors, rooms, wardenID,buildingid);
+            query = String.Format(query, buildingName, floors, rooms, wardenID,status,buildingid);
             int rowsaffected = DatabaseHelper.executeDML(query);
             return rowsaffected > 0;
 
@@ -53,7 +54,7 @@ namespace dll.DL
 
         public bool DelHostel(int buildingid)
         {
-            string query = "Delete * from hostelbuildings where BuildingID = {0} ";
+            string query = "Delete from hostelbuildings where BuildingID = {0} ";
             query = String.Format(query , buildingid);
             int rowsAffected = DatabaseHelper.executeDML(query );
             return rowsAffected > 0;
@@ -66,6 +67,13 @@ namespace dll.DL
             return DatabaseHelper.ExecuteScalar(query);
         }
 
-
+        public List<object> GetBuildingNamesFromDB()
+        {
+            string columnName = "BuildingName";
+            string query = "Select BuildingName from hostelbuildings ";
+            query = String.Format(query);
+            List<object> BuildingNames = DatabaseHelper.GetColumnValues(query, columnName);
+            return BuildingNames;
+        }
     }
 }

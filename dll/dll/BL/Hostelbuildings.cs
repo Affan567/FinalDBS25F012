@@ -148,5 +148,10 @@ namespace dll.BL
             return hostelBuildings.getBuildingsCount();
         }
 
+        public List<object> GetBuildingName()
+        {
+            DL.HostelBuildings w = new DL.HostelBuildings();
+            return w.GetBuildingNamesFromDB();
+        }
     }
 }

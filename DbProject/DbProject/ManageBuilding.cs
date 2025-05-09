@@ -24,6 +24,7 @@ namespace DbProject
             loadTotalBuildings();
             LoadData();
             bindWarden();
+            bindBuilding();
         }
 
         private void loadRegisteredStudents()
@@ -51,6 +52,14 @@ namespace DbProject
             List<object> wardenusername = war.GetWardenUsername();
             comboBox1.DataSource = wardenusername;
             comboBox1.SelectedIndex = -1;
+        }
+
+        private void bindBuilding()
+        {
+            Hostelbuildings building = new Hostelbuildings();
+            List<object> buildingname = building.GetBuildingName();
+            comboBox3.DataSource = buildingname;
+            comboBox3.SelectedIndex = -1;
         }
 
         private void codedButton2_Click(object sender, EventArgs e)
@@ -89,8 +98,7 @@ namespace DbProject
 
         private void codedButton3_Click(object sender, EventArgs e)
         {
-            try
-            {
+            
                 string buildingNameBefore = comboBox3.Text.ToString().Trim();
                 string buildingnameAfter = textBox1.Text.ToString().Trim();
                 string Buildingwarden = comboBox1.Text.ToString().Trim();
@@ -114,11 +122,7 @@ namespace DbProject
                 {
                     MessageBox.Show("Building Updated SuccessFully");
                 }
-            }
-            catch (Exception ex)
-            {
-                MessageBox.Show("An error occurred: " + ex.Message);
-            }
+            
         }
 
 
@@ -135,7 +139,7 @@ namespace DbProject
                 DataGridViewButtonColumn btnDelete = new DataGridViewButtonColumn();
 
                 btnDelete.FlatStyle = FlatStyle.Flat;
-                btnDelete.HeaderText = "Delete Course";
+                btnDelete.HeaderText = "Delete Building";
                 btnDelete.Text = "Delete";
                 btnDelete.Name = "btnDelete";
                 btnDelete.UseColumnTextForButtonValue = true;
@@ -144,37 +148,7 @@ namespace DbProject
                 dataGridView1.Columns.Add(btnDelete);
             }
         }
-            private void DataGridView1_CellClick(object sender, DataGridViewCellEventArgs e)
-        {
-            // Ignore header and out-of-range clicks
-            if (e.RowIndex < 0 || e.ColumnIndex != dataGridView1.Columns["btnDelete"].Index)
-                return;
-
-            // Get ID of the selected row
-            int id = Convert.ToInt32(dataGridView1.Rows[e.RowIndex].Cells["BuildingID"].Value);
-
-            // Confirm deletion
-            var result = MessageBox.Show("Are you sure you want to delete this record?", "Confirm", MessageBoxButtons.YesNo);
-            if (result == DialogResult.Yes)
-            {
-                Hostelbuildings c = new Hostelbuildings();
-                if(c.DeleteBuildings(id))
-                {
-                    MessageBox.Show("Row Deleted SuccessFully");
-                }
-                else
-                {
-                    MessageBox.Show("Can't deleted ");
-                }
-                
-                LoadData(); // Refresh the grid
-            }
-        
-
-
-
-            }
-
+         
         private void codedButton1_Click(object sender, EventArgs e)
         {
             LoadData();
@@ -199,6 +173,43 @@ namespace DbProject
 
         private void LabelBuildingsCount_Click(object sender, EventArgs e)
         {
+
+        }
+
+        private void comboBox1_SelectedIndexChanged_1(object sender, EventArgs e)
+        {
+
+        }
+
+        private void dataGridView1_CellClick_1(object sender, DataGridViewCellEventArgs e)
+        {
+            // Ignore header and out-of-range clicks
+            if (e.RowIndex < 0 || e.ColumnIndex != dataGridView1.Columns["btnDelete"].Index)
+                return;
+
+            // Get ID of the selected row
+            int id = Convert.ToInt32(dataGridView1.Rows[e.RowIndex].Cells["BuildingID"].Value);
+
+            // Confirm deletion
+            var result = MessageBox.Show("Are you sure you want to delete this record?", "Confirm", MessageBoxButtons.YesNo);
+            if (result == DialogResult.Yes)
+            {
+                Hostelbuildings c = new Hostelbuildings();
+                if (c.DeleteBuildings(id))
+                {
+                    MessageBox.Show("Row Deleted SuccessFully");
+                }
+                else
+                {
+                    MessageBox.Show("Can't deleted ");
+                }
+
+                LoadData(); // Refresh the grid
+
+                bindWarden();
+                bindBuilding();
+            }
+
 
         }
     }

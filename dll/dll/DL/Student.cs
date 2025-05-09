@@ -13,9 +13,9 @@ namespace dll.DL
 
         public bool AddStudentToDB(BL.Student s)
         {
-            string insertQuery = "INSERT INTO student(RegistrationNo,  UserID) " +
-                                 "VALUES ('{0}', {1}, {2}, {3}, '{4}', '{5}', '{6}',{7})";
-            insertQuery = string.Format(insertQuery, s.GetRegistrationNumber(), s.GetStudentID(), s.GetroomID(), s.GetSemester(), s.Getgender(), s.RoleID());
+            string insertQuery = "INSERT INTO student(RegistrationNo, Semester, RoomID ,userID) " +
+                                 "VALUES ('{0}', {1}, {2}, {3})";
+            insertQuery = string.Format(insertQuery, s.GetRegistrationNumber(), s.GetSemester(), s.GetroomID(), s.UserID());
 
             int rowsAffected = DatabaseHelper.executeDML(insertQuery);
             return rowsAffected > 0;

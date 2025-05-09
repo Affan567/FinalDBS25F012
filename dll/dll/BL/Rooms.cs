@@ -32,9 +32,23 @@ namespace dll.BL
             DL.Rooms r = new DL.Rooms();
             return r.RoomsOccupied();
 
+
+
         }
 
-        
+
+        public object getRoomID(int roomNumber)
+        {
+            DL.Rooms r = new DL.Rooms();
+            return r.gettingRoomID(roomNumber);
+        }
+
+
+        public List<object> GetRoomNumbers()
+        {
+            DL.Rooms r = new DL.Rooms();
+            return r.GetRoomNumbersFromDB();
+        }
 
 
 

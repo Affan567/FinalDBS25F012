@@ -17,6 +17,7 @@ namespace DbProject
         public ManageStudents()
         {
             InitializeComponent();
+            bindRoomNumber();
         }
 
 
@@ -26,6 +27,13 @@ namespace DbProject
 
         }
 
+        private void bindRoomNumber()
+        {
+            Rooms room = new Rooms();
+            List<object> rooms = room.GetRoomNumbers();
+            comboBox3.DataSource = rooms;
+            comboBox3.SelectedIndex = -1;
+        }
         private void codedButton2_Click(object sender, EventArgs e)
         {
 
@@ -40,26 +48,36 @@ namespace DbProject
                 string StudentUsername = textBox3.Text.ToString().Trim();
                 string StudentPassword = textBox2.Text.ToString().Trim();
 
+            Rooms r = new Rooms();
+            int roomID = (int)r.getRoomID(roomNumber);
 
 
-                //    Student h = new Student(Studentname , StudentContact ,Studentemail ,2, StudentReg , Semester , roomNumber);
+            Student s = new Student(Studentname, StudentContact, Studentemail, 2, StudentReg, Semester, roomID,StudentUsername,StudentPassword);
+
+            if(s.AddStudent(s))
+            {
+                MessageBox.Show("Student Added Successfully");
+            }
+            else
+            {
+                MessageBox.Show("An error occurred: " );
+            }
 
 
+            //    Hostelbuildings building = new Hostelbuildings(buildingname, floors, rooms, wardenID, status);
+            //    bool flag = building.AddHostelBuilding(building);
 
-                //    Hostelbuildings building = new Hostelbuildings(buildingname, floors, rooms, wardenID, status);
-                //    bool flag = building.AddHostelBuilding(building);
+            //    if (flag)
+            //    {
+            //        MessageBox.Show("Building Added SuccessFully");
+            //    }
+            //}
+            //catch (Exception ex)
+            //{
+            //    MessageBox.Show("An error occurred: " + ex.Message);
+            //}
 
-                //    if (flag)
-                //    {
-                //        MessageBox.Show("Building Added SuccessFully");
-                //    }
-                //}
-                //catch (Exception ex)
-                //{
-                //    MessageBox.Show("An error occurred: " + ex.Message);
-                //}
-
-            } 
+        } 
 
     }
 }

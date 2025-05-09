@@ -37,12 +37,12 @@ namespace dll.DL
 
         
 
-         public static bool AddUsertoDB(string Password, string Username, string Email, string Phone,string Name , int roleID,string gender)
+         public static bool AddUsertoDB(string Password, string Username, string Email, string Phone,string Name , int roleID)
         {
             
 
-            string insertusersquery = "$Insert into users (username , password ,role_id ,name,email,contact,Gender) Values ('{0}' , '{1}' ,'{2}' , '{3}','{4}','{5}','{6}')";
-           insertusersquery = String.Format(insertusersquery ,Username ,Password ,roleID, Name,Email,Phone,gender);
+            string insertusersquery = "$Insert into users (username , password ,role_id ,name,email,contact) Values ('{0}' , '{1}' ,{2} , '{3}','{4}','{5}')";
+           insertusersquery = String.Format(insertusersquery ,Username ,Password ,roleID, Name,Email,Phone);
             int rowsaffected2 = DatabaseHelper.executeDML(insertusersquery);
             return rowsaffected2 > 0;
             

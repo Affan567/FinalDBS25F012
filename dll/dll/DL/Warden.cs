@@ -11,9 +11,9 @@ namespace dll.DL
 
 
         public Warden() { } 
-        public object GetWardenID(string wardenUserName)
+        public object GettingWardenID(string wardenUserName)
         {
-            string query = "Select WardenID from hostelwarden w join users u on w.userID = u.userID";
+            string query = "Select w.WardenID from hostelwarden w join users u on w.userID = u.userID where username = '{0}'";
             query = String.Format(query, wardenUserName);   
             return DatabaseHelper.ExecuteScalar(query);
         }
@@ -27,8 +27,9 @@ namespace dll.DL
 
         public List<object> GetWardenNamesFromDB()
         {
-            string columnName = "Warden";
-            string query = "Select username from users u join roles r where r.RoleName = '{0}'";
+            string columnName = "username";
+            string query = "Select username from users u join roles r on u.role_id = r.RoleID where r.RoleName = '{0}'";
+            query = String.Format(query,"Warden");
             List<object> WardenNames = DatabaseHelper.GetColumnValues(query, columnName);
             return WardenNames;
         }

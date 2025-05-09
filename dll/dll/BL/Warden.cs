@@ -21,8 +21,8 @@ namespace dll.BL
 
         public object GetWardenID(string wardenName)
         {
-            Warden warden = new Warden();
-            return warden.GetWardenID(wardenName);
+            DL.Warden warden = new DL.Warden();
+            return warden.GettingWardenID(wardenName);
         }
 
         public List <object> GetWardenUsername()

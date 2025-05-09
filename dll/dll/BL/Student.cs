@@ -14,6 +14,7 @@ namespace dll.BL
         private int StudentID;
         private int semester;
         private int roomID;
+        private int userID;
 
 
         public Student()
@@ -83,12 +84,22 @@ namespace dll.BL
             this.userid = userID;
         }
 
-        public Student(int StudentID ,string RegistrationNumber,int semester,  string Username,string password , string Email,  string Phone,  string Name, string gender , int UserID , int roomID) : base( Username, password , Name, Email, Phone,gender,UserID)
+        public Student(int StudentID ,string RegistrationNumber,int semester,  string Username,string password , string Email,  string Phone,  string Name, string gender , int UserID , int roomID) : base( Username, password , Name, Email, Phone)
         {
             this.StudentID = StudentID;
             this.RegistrationNumber = RegistrationNumber;
             this.roomID = roomID;
             this.semester = semester;
+        }
+        public Student(string Name ,string Phone,string Email,int roleID, string RegistrationNumber, int semester,int roomid , string Username, string password) : base(Username,password, Name, Email, Phone, roleID)
+        {
+            
+            this.RegistrationNumber = RegistrationNumber;
+            this.semester = semester;
+            this.roomID=roomid;
+            this.userid = userID;
+
+
         }
 
         public bool AddStudent(Student s)

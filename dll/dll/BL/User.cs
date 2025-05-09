@@ -55,9 +55,9 @@ namespace dll.BL
             
         }
 
-        public bool AddUser(string Password, string Username, string Email,  string Phone, int roleID , string Name , string gender)
+        public bool AddUser(string Password, string Username, string Email,  string Phone,  int roleID ,string Name )
         {
-            bool flag = DL.User.AddUsertoDB(Password, Username, Email, Phone, Name , roleID, gender);
+            bool flag = DL.User.AddUsertoDB(Password, Username, Email, Phone, Name , roleID);
             return flag;
         }
 

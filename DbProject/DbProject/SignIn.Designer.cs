@@ -39,15 +39,17 @@
             this.txtpassword = new System.Windows.Forms.TextBox();
             this.panelRight = new System.Windows.Forms.Panel();
             this.btnSignIn = new DbProject.CodedButton();
+            this.panel1 = new System.Windows.Forms.Panel();
             this.panelLeft.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox1)).BeginInit();
             this.panelRight.SuspendLayout();
+            this.panel1.SuspendLayout();
             this.SuspendLayout();
             // 
             // panelLeft
             // 
             this.panelLeft.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(41)))), ((int)(((byte)(39)))), ((int)(((byte)(40)))));
-            this.panelLeft.Controls.Add(this.label1);
+            this.panelLeft.Controls.Add(this.panel1);
             this.panelLeft.Controls.Add(this.pictureBox1);
             this.panelLeft.Dock = System.Windows.Forms.DockStyle.Left;
             this.panelLeft.Location = new System.Drawing.Point(0, 0);
@@ -57,10 +59,11 @@
             // 
             // label1
             // 
+            this.label1.Anchor = System.Windows.Forms.AnchorStyles.Top;
             this.label1.AutoSize = true;
             this.label1.Font = new System.Drawing.Font("Century Gothic", 28F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.label1.ForeColor = System.Drawing.Color.White;
-            this.label1.Location = new System.Drawing.Point(47, 449);
+            this.label1.Location = new System.Drawing.Point(45, 15);
             this.label1.Name = "label1";
             this.label1.Size = new System.Drawing.Size(312, 66);
             this.label1.TabIndex = 1;
@@ -159,6 +162,15 @@
             this.btnSignIn.UseVisualStyleBackColor = false;
             this.btnSignIn.Click += new System.EventHandler(this.btnSignIn_Click);
             // 
+            // panel1
+            // 
+            this.panel1.Controls.Add(this.label1);
+            this.panel1.Dock = System.Windows.Forms.DockStyle.Bottom;
+            this.panel1.Location = new System.Drawing.Point(0, 438);
+            this.panel1.Name = "panel1";
+            this.panel1.Size = new System.Drawing.Size(399, 204);
+            this.panel1.TabIndex = 6;
+            // 
             // SignIN
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(9F, 20F);
@@ -173,6 +185,8 @@
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox1)).EndInit();
             this.panelRight.ResumeLayout(false);
             this.panelRight.PerformLayout();
+            this.panel1.ResumeLayout(false);
+            this.panel1.PerformLayout();
             this.ResumeLayout(false);
 
         }
@@ -189,5 +203,6 @@
         private System.Windows.Forms.TextBox txtpassword;
         private System.Windows.Forms.Panel panelRight;
         private CodedButton btnSignIn;
+        private System.Windows.Forms.Panel panel1;
     }
 }

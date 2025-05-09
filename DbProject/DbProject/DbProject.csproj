@@ -174,11 +174,11 @@
     <Compile Include="StudentVisitorForm.Designer.cs">
       <DependentUpon>StudentVisitorForm.cs</DependentUpon>
     </Compile>
-    <Compile Include="ViewComplaints.cs">
+    <Compile Include="ManageComplaints.cs">
       <SubType>Form</SubType>
     </Compile>
-    <Compile Include="ViewComplaints.Designer.cs">
-      <DependentUpon>ViewComplaints.cs</DependentUpon>
+    <Compile Include="ManageComplaints.Designer.cs">
+      <DependentUpon>ManageComplaints.cs</DependentUpon>
     </Compile>
     <EmbeddedResource Include="AdminDashboard.resx">
       <DependentUpon>AdminDashboard.cs</DependentUpon>
@@ -216,6 +216,7 @@
     <EmbeddedResource Include="RegisterEmployees.resx">
       <DependentUpon>RegisterEmployees.cs</DependentUpon>
     </EmbeddedResource>
+    <EmbeddedResource Include="Report1.rdlc" />
     <EmbeddedResource Include="SignIn.resx">
       <DependentUpon>SignIN.cs</DependentUpon>
     </EmbeddedResource>
@@ -249,9 +250,24 @@
     <EmbeddedResource Include="StudentVisitorForm.resx">
       <DependentUpon>StudentVisitorForm.cs</DependentUpon>
     </EmbeddedResource>
-    <EmbeddedResource Include="ViewComplaints.resx">
-      <DependentUpon>ViewComplaints.cs</DependentUpon>
+    <EmbeddedResource Include="ManageComplaints.resx">
+      <DependentUpon>ManageComplaints.cs</DependentUpon>
     </EmbeddedResource>
+    <None Include="Properties\DataSources\DbProject.Properties.Resources.datasource" />
+    <None Include="Properties\DataSources\DbProject.Properties.Settings.datasource" />
+    <None Include="Properties\DataSources\dll.BL.DamageRecords.datasource" />
+    <None Include="Properties\DataSources\dll.BL.Hostelbuildings.datasource" />
+    <None Include="Properties\DataSources\dll.BL.Rooms.datasource" />
+    <None Include="Properties\DataSources\dll.Class1.datasource" />
+    <None Include="Properties\DataSources\dll.DL.Complaints.datasource" />
+    <None Include="Properties\DataSources\dll.DL.DamageRecords.datasource" />
+    <None Include="Properties\DataSources\dll.DL.Fees.datasource" />
+    <None Include="Properties\DataSources\dll.DL.HostelBuildings.datasource" />
+    <None Include="Properties\DataSources\dll.DL.Request.datasource" />
+    <None Include="Properties\DataSources\dll.DL.Student.datasource" />
+    <None Include="Properties\DataSources\dll.DL.User.datasource" />
+    <None Include="Properties\DataSources\dll.DL.Visitors.datasource" />
+    <None Include="Properties\DataSources\dll.DL.Warden.datasource" />
     <None Include="Properties\Settings.settings">
       <Generator>SettingsSingleFileGenerator</Generator>
       <LastGenOutput>Settings.Designer.cs</LastGenOutput>

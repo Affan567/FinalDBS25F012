@@ -43,5 +43,21 @@ namespace dll.DL
             query = String.Format(query , status);
             return DatabaseHelper.ExecuteScalar(query);
         }
+
+        public object gettingRoomID(int roomNumber)
+        {
+            string query = "Select RoomID from rooms where RoomNumber = {0}";
+            query = string.Format(query, roomNumber);
+            return DatabaseHelper.ExecuteScalar(query);
+        }
+
+        public List<object> GetRoomNumbersFromDB()
+        {
+            string columnName = "RoomNumber";
+            string query = "Select RoomNumber from rooms";
+            query = String.Format(query, "RoomNumber");
+            List<object> WardenNames = DatabaseHelper.GetColumnValues(query, columnName);
+            return WardenNames;
+        }
     }
 }

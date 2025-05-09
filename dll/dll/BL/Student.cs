@@ -91,7 +91,7 @@ namespace dll.BL
             this.roomID = roomID;
             this.semester = semester;
         }
-        public Student(string Name ,string Phone,string Email,int roleID, string RegistrationNumber, int semester,int roomid , string Username, string password) : base(Username,password, Name, Email, Phone, roleID)
+        public Student(string Name ,string Phone,string Email,int roleID, string RegistrationNumber, int semester,int roomid , string Username, string password) : base(Username,password, Name, Email, Phone, roleID)//Add constructor
         {
             
             this.RegistrationNumber = RegistrationNumber;
@@ -105,7 +105,7 @@ namespace dll.BL
         public bool AddStudent(Student s)
         {
             BL.User bl = new BL.User();
-            bool flag1 = bl.AddUser(s.getpassword(), s.getUsername(), s.getEmail(),  s.getcontact(), s.RoleID(), s.getName() , s.getGender());
+            bool flag1 = bl.AddUser(s.getpassword(), s.getUsername(), s.getEmail(),  s.getcontact(), s.RoleID(), s.getName() );
             if (flag1)
             {
                 DL.Student dl = new DL.Student();

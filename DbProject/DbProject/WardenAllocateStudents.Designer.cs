@@ -1,6 +1,6 @@
 ﻿namespace DbProject
 {
-    partial class WardenAllocateStudents
+    partial class StudentRoomAllocation
     {
         /// <summary>
         /// Required designer variable.
@@ -28,7 +28,7 @@
         /// </summary>
         private void InitializeComponent()
         {
-            System.ComponentModel.ComponentResourceManager resources = new System.ComponentModel.ComponentResourceManager(typeof(WardenAllocateStudents));
+            System.ComponentModel.ComponentResourceManager resources = new System.ComponentModel.ComponentResourceManager(typeof(StudentRoomAllocation));
             this.panel1 = new System.Windows.Forms.Panel();
             this.labelWarden = new System.Windows.Forms.Label();
             this.label6 = new System.Windows.Forms.Label();
@@ -45,13 +45,11 @@
             this.pictureBox8 = new System.Windows.Forms.PictureBox();
             this.pictureBox4 = new System.Windows.Forms.PictureBox();
             this.pictureBox3 = new System.Windows.Forms.PictureBox();
-            this.btnManageEmployee = new System.Windows.Forms.Button();
             this.btnComplaints = new System.Windows.Forms.Button();
             this.btnStudentFees = new System.Windows.Forms.Button();
             this.btnPayments = new System.Windows.Forms.Button();
             this.btnManageStudent = new System.Windows.Forms.Button();
             this.btnManageBuildings = new System.Windows.Forms.Button();
-            this.pictureBox6 = new System.Windows.Forms.PictureBox();
             this.pictureBox7 = new System.Windows.Forms.PictureBox();
             this.labelResults = new System.Windows.Forms.Label();
             this.pictureBox10 = new System.Windows.Forms.PictureBox();
@@ -60,16 +58,16 @@
             this.tableLayoutPanel1 = new System.Windows.Forms.TableLayoutPanel();
             this.label5 = new System.Windows.Forms.Label();
             this.label8 = new System.Windows.Forms.Label();
+            this.textBox4 = new System.Windows.Forms.TextBox();
             this.label3 = new System.Windows.Forms.Label();
             this.label7 = new System.Windows.Forms.Label();
             this.label4 = new System.Windows.Forms.Label();
             this.label2 = new System.Windows.Forms.Label();
-            this.textBox1 = new System.Windows.Forms.TextBox();
-            this.textBox3 = new System.Windows.Forms.TextBox();
-            this.textBox2 = new System.Windows.Forms.TextBox();
-            this.textBox4 = new System.Windows.Forms.TextBox();
-            this.comboBox1 = new System.Windows.Forms.ComboBox();
+            this.comboBoxRooms = new System.Windows.Forms.ComboBox();
             this.textBox5 = new System.Windows.Forms.TextBox();
+            this.comboBoxStudents = new System.Windows.Forms.ComboBox();
+            this.textBox2 = new System.Windows.Forms.TextBox();
+            this.textBox3 = new System.Windows.Forms.TextBox();
             this.tableLayoutPanel5 = new System.Windows.Forms.TableLayoutPanel();
             this.dataGridView1 = new System.Windows.Forms.DataGridView();
             this.StudentName = new System.Windows.Forms.DataGridViewTextBoxColumn();
@@ -93,7 +91,6 @@
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox8)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox4)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox3)).BeginInit();
-            ((System.ComponentModel.ISupportInitialize)(this.pictureBox6)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox7)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox10)).BeginInit();
             this.tableLayoutPanel4.SuspendLayout();
@@ -240,41 +237,39 @@
             this.tableLayoutPanel2.ColumnCount = 2;
             this.tableLayoutPanel2.ColumnStyles.Add(new System.Windows.Forms.ColumnStyle(System.Windows.Forms.SizeType.Percent, 25F));
             this.tableLayoutPanel2.ColumnStyles.Add(new System.Windows.Forms.ColumnStyle(System.Windows.Forms.SizeType.Percent, 75F));
-            this.tableLayoutPanel2.Controls.Add(this.pictureBox2, 0, 5);
-            this.tableLayoutPanel2.Controls.Add(this.button1, 1, 7);
+            this.tableLayoutPanel2.Controls.Add(this.pictureBox2, 0, 4);
+            this.tableLayoutPanel2.Controls.Add(this.button1, 1, 6);
             this.tableLayoutPanel2.Controls.Add(this.pictureBox9, 0, 0);
             this.tableLayoutPanel2.Controls.Add(this.pictureBox8, 0, 3);
-            this.tableLayoutPanel2.Controls.Add(this.pictureBox4, 0, 6);
+            this.tableLayoutPanel2.Controls.Add(this.pictureBox4, 0, 5);
             this.tableLayoutPanel2.Controls.Add(this.pictureBox3, 0, 1);
-            this.tableLayoutPanel2.Controls.Add(this.btnManageEmployee, 1, 4);
-            this.tableLayoutPanel2.Controls.Add(this.btnComplaints, 1, 6);
+            this.tableLayoutPanel2.Controls.Add(this.btnComplaints, 1, 5);
             this.tableLayoutPanel2.Controls.Add(this.btnStudentFees, 1, 3);
-            this.tableLayoutPanel2.Controls.Add(this.btnPayments, 1, 5);
+            this.tableLayoutPanel2.Controls.Add(this.btnPayments, 1, 4);
             this.tableLayoutPanel2.Controls.Add(this.btnManageStudent, 1, 2);
             this.tableLayoutPanel2.Controls.Add(this.btnManageBuildings, 1, 1);
-            this.tableLayoutPanel2.Controls.Add(this.pictureBox6, 0, 4);
             this.tableLayoutPanel2.Controls.Add(this.pictureBox7, 0, 2);
             this.tableLayoutPanel2.Controls.Add(this.labelResults, 1, 0);
-            this.tableLayoutPanel2.Controls.Add(this.pictureBox10, 0, 7);
+            this.tableLayoutPanel2.Controls.Add(this.pictureBox10, 0, 6);
             this.tableLayoutPanel2.Location = new System.Drawing.Point(12, 4);
             this.tableLayoutPanel2.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
             this.tableLayoutPanel2.Name = "tableLayoutPanel2";
-            this.tableLayoutPanel2.RowCount = 8;
-            this.tableLayoutPanel2.RowStyles.Add(new System.Windows.Forms.RowStyle(System.Windows.Forms.SizeType.Percent, 12.57894F));
-            this.tableLayoutPanel2.RowStyles.Add(new System.Windows.Forms.RowStyle(System.Windows.Forms.SizeType.Percent, 12.57894F));
-            this.tableLayoutPanel2.RowStyles.Add(new System.Windows.Forms.RowStyle(System.Windows.Forms.SizeType.Percent, 12.57894F));
-            this.tableLayoutPanel2.RowStyles.Add(new System.Windows.Forms.RowStyle(System.Windows.Forms.SizeType.Percent, 12.57894F));
-            this.tableLayoutPanel2.RowStyles.Add(new System.Windows.Forms.RowStyle(System.Windows.Forms.SizeType.Percent, 12.57894F));
-            this.tableLayoutPanel2.RowStyles.Add(new System.Windows.Forms.RowStyle(System.Windows.Forms.SizeType.Percent, 12.57894F));
-            this.tableLayoutPanel2.RowStyles.Add(new System.Windows.Forms.RowStyle(System.Windows.Forms.SizeType.Percent, 12.57894F));
-            this.tableLayoutPanel2.RowStyles.Add(new System.Windows.Forms.RowStyle(System.Windows.Forms.SizeType.Percent, 11.94743F));
-            this.tableLayoutPanel2.Size = new System.Drawing.Size(232, 484);
+            this.tableLayoutPanel2.RowCount = 7;
+            this.tableLayoutPanel2.RowStyles.Add(new System.Windows.Forms.RowStyle(System.Windows.Forms.SizeType.Percent, 14.38891F));
+            this.tableLayoutPanel2.RowStyles.Add(new System.Windows.Forms.RowStyle(System.Windows.Forms.SizeType.Percent, 14.38891F));
+            this.tableLayoutPanel2.RowStyles.Add(new System.Windows.Forms.RowStyle(System.Windows.Forms.SizeType.Percent, 14.38891F));
+            this.tableLayoutPanel2.RowStyles.Add(new System.Windows.Forms.RowStyle(System.Windows.Forms.SizeType.Percent, 14.38891F));
+            this.tableLayoutPanel2.RowStyles.Add(new System.Windows.Forms.RowStyle(System.Windows.Forms.SizeType.Percent, 14.38891F));
+            this.tableLayoutPanel2.RowStyles.Add(new System.Windows.Forms.RowStyle(System.Windows.Forms.SizeType.Percent, 14.38891F));
+            this.tableLayoutPanel2.RowStyles.Add(new System.Windows.Forms.RowStyle(System.Windows.Forms.SizeType.Percent, 13.66653F));
+            this.tableLayoutPanel2.RowStyles.Add(new System.Windows.Forms.RowStyle(System.Windows.Forms.SizeType.Absolute, 20F));
+            this.tableLayoutPanel2.Size = new System.Drawing.Size(232, 452);
             this.tableLayoutPanel2.TabIndex = 0;
             // 
             // pictureBox2
             // 
             this.pictureBox2.Image = ((System.Drawing.Image)(resources.GetObject("pictureBox2.Image")));
-            this.pictureBox2.Location = new System.Drawing.Point(3, 302);
+            this.pictureBox2.Location = new System.Drawing.Point(3, 262);
             this.pictureBox2.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
             this.pictureBox2.Name = "pictureBox2";
             this.pictureBox2.Size = new System.Drawing.Size(44, 36);
@@ -289,13 +284,14 @@
             this.button1.BackColor = System.Drawing.Color.Black;
             this.button1.Font = new System.Drawing.Font("Yu Gothic UI", 10F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.button1.ForeColor = System.Drawing.Color.Transparent;
-            this.button1.Location = new System.Drawing.Point(61, 422);
+            this.button1.Location = new System.Drawing.Point(61, 392);
             this.button1.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
             this.button1.Name = "button1";
-            this.button1.Size = new System.Drawing.Size(168, 60);
+            this.button1.Size = new System.Drawing.Size(168, 58);
             this.button1.TabIndex = 40;
             this.button1.Text = "Manage Fines";
             this.button1.UseVisualStyleBackColor = false;
+            this.button1.Click += new System.EventHandler(this.button1_Click);
             // 
             // pictureBox9
             // 
@@ -311,7 +307,7 @@
             // pictureBox8
             // 
             this.pictureBox8.Image = ((System.Drawing.Image)(resources.GetObject("pictureBox8.Image")));
-            this.pictureBox8.Location = new System.Drawing.Point(3, 182);
+            this.pictureBox8.Location = new System.Drawing.Point(3, 197);
             this.pictureBox8.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
             this.pictureBox8.Name = "pictureBox8";
             this.pictureBox8.Size = new System.Drawing.Size(44, 36);
@@ -322,7 +318,7 @@
             // pictureBox4
             // 
             this.pictureBox4.Image = ((System.Drawing.Image)(resources.GetObject("pictureBox4.Image")));
-            this.pictureBox4.Location = new System.Drawing.Point(3, 362);
+            this.pictureBox4.Location = new System.Drawing.Point(3, 327);
             this.pictureBox4.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
             this.pictureBox4.Name = "pictureBox4";
             this.pictureBox4.Size = new System.Drawing.Size(44, 36);
@@ -333,28 +329,13 @@
             // pictureBox3
             // 
             this.pictureBox3.Image = ((System.Drawing.Image)(resources.GetObject("pictureBox3.Image")));
-            this.pictureBox3.Location = new System.Drawing.Point(3, 62);
+            this.pictureBox3.Location = new System.Drawing.Point(3, 67);
             this.pictureBox3.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
             this.pictureBox3.Name = "pictureBox3";
             this.pictureBox3.Size = new System.Drawing.Size(44, 36);
             this.pictureBox3.SizeMode = System.Windows.Forms.PictureBoxSizeMode.Zoom;
             this.pictureBox3.TabIndex = 37;
             this.pictureBox3.TabStop = false;
-            // 
-            // btnManageEmployee
-            // 
-            this.btnManageEmployee.Anchor = ((System.Windows.Forms.AnchorStyles)(((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Bottom) 
-            | System.Windows.Forms.AnchorStyles.Left)));
-            this.btnManageEmployee.BackColor = System.Drawing.Color.Black;
-            this.btnManageEmployee.Font = new System.Drawing.Font("Yu Gothic UI", 10F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.btnManageEmployee.ForeColor = System.Drawing.Color.Transparent;
-            this.btnManageEmployee.Location = new System.Drawing.Point(61, 242);
-            this.btnManageEmployee.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
-            this.btnManageEmployee.Name = "btnManageEmployee";
-            this.btnManageEmployee.Size = new System.Drawing.Size(168, 56);
-            this.btnManageEmployee.TabIndex = 23;
-            this.btnManageEmployee.Text = "RoomServent";
-            this.btnManageEmployee.UseVisualStyleBackColor = false;
             // 
             // btnComplaints
             // 
@@ -363,10 +344,10 @@
             this.btnComplaints.BackColor = System.Drawing.Color.Black;
             this.btnComplaints.Font = new System.Drawing.Font("Yu Gothic UI", 10F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.btnComplaints.ForeColor = System.Drawing.Color.Transparent;
-            this.btnComplaints.Location = new System.Drawing.Point(61, 362);
+            this.btnComplaints.Location = new System.Drawing.Point(61, 327);
             this.btnComplaints.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
             this.btnComplaints.Name = "btnComplaints";
-            this.btnComplaints.Size = new System.Drawing.Size(168, 56);
+            this.btnComplaints.Size = new System.Drawing.Size(168, 61);
             this.btnComplaints.TabIndex = 27;
             this.btnComplaints.Text = "Complaints";
             this.btnComplaints.UseVisualStyleBackColor = false;
@@ -378,10 +359,10 @@
             this.btnStudentFees.BackColor = System.Drawing.Color.Black;
             this.btnStudentFees.Font = new System.Drawing.Font("Yu Gothic UI", 10F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.btnStudentFees.ForeColor = System.Drawing.Color.Transparent;
-            this.btnStudentFees.Location = new System.Drawing.Point(61, 182);
+            this.btnStudentFees.Location = new System.Drawing.Point(61, 197);
             this.btnStudentFees.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
             this.btnStudentFees.Name = "btnStudentFees";
-            this.btnStudentFees.Size = new System.Drawing.Size(168, 56);
+            this.btnStudentFees.Size = new System.Drawing.Size(168, 61);
             this.btnStudentFees.TabIndex = 25;
             this.btnStudentFees.Text = "Student Fees";
             this.btnStudentFees.UseVisualStyleBackColor = false;
@@ -393,10 +374,10 @@
             this.btnPayments.BackColor = System.Drawing.Color.Black;
             this.btnPayments.Font = new System.Drawing.Font("Yu Gothic UI", 10F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.btnPayments.ForeColor = System.Drawing.Color.Transparent;
-            this.btnPayments.Location = new System.Drawing.Point(61, 302);
+            this.btnPayments.Location = new System.Drawing.Point(61, 262);
             this.btnPayments.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
             this.btnPayments.Name = "btnPayments";
-            this.btnPayments.Size = new System.Drawing.Size(168, 56);
+            this.btnPayments.Size = new System.Drawing.Size(168, 61);
             this.btnPayments.TabIndex = 26;
             this.btnPayments.Text = "Visitor Approval";
             this.btnPayments.UseVisualStyleBackColor = false;
@@ -408,10 +389,10 @@
             this.btnManageStudent.BackColor = System.Drawing.Color.Black;
             this.btnManageStudent.Font = new System.Drawing.Font("Yu Gothic UI", 10F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.btnManageStudent.ForeColor = System.Drawing.Color.Transparent;
-            this.btnManageStudent.Location = new System.Drawing.Point(61, 122);
+            this.btnManageStudent.Location = new System.Drawing.Point(61, 132);
             this.btnManageStudent.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
             this.btnManageStudent.Name = "btnManageStudent";
-            this.btnManageStudent.Size = new System.Drawing.Size(168, 56);
+            this.btnManageStudent.Size = new System.Drawing.Size(168, 61);
             this.btnManageStudent.TabIndex = 24;
             this.btnManageStudent.Text = "Allocate Student";
             this.btnManageStudent.UseVisualStyleBackColor = false;
@@ -423,29 +404,18 @@
             this.btnManageBuildings.BackColor = System.Drawing.Color.Black;
             this.btnManageBuildings.Font = new System.Drawing.Font("Yu Gothic UI", 10F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.btnManageBuildings.ForeColor = System.Drawing.Color.Transparent;
-            this.btnManageBuildings.Location = new System.Drawing.Point(61, 62);
+            this.btnManageBuildings.Location = new System.Drawing.Point(61, 67);
             this.btnManageBuildings.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
             this.btnManageBuildings.Name = "btnManageBuildings";
-            this.btnManageBuildings.Size = new System.Drawing.Size(168, 56);
+            this.btnManageBuildings.Size = new System.Drawing.Size(168, 61);
             this.btnManageBuildings.TabIndex = 21;
             this.btnManageBuildings.Text = "View Profile";
             this.btnManageBuildings.UseVisualStyleBackColor = false;
             // 
-            // pictureBox6
-            // 
-            this.pictureBox6.Image = ((System.Drawing.Image)(resources.GetObject("pictureBox6.Image")));
-            this.pictureBox6.Location = new System.Drawing.Point(3, 242);
-            this.pictureBox6.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
-            this.pictureBox6.Name = "pictureBox6";
-            this.pictureBox6.Size = new System.Drawing.Size(44, 36);
-            this.pictureBox6.SizeMode = System.Windows.Forms.PictureBoxSizeMode.Zoom;
-            this.pictureBox6.TabIndex = 33;
-            this.pictureBox6.TabStop = false;
-            // 
             // pictureBox7
             // 
             this.pictureBox7.Image = ((System.Drawing.Image)(resources.GetObject("pictureBox7.Image")));
-            this.pictureBox7.Location = new System.Drawing.Point(3, 122);
+            this.pictureBox7.Location = new System.Drawing.Point(3, 132);
             this.pictureBox7.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
             this.pictureBox7.Name = "pictureBox7";
             this.pictureBox7.Size = new System.Drawing.Size(44, 36);
@@ -462,7 +432,7 @@
             this.labelResults.ForeColor = System.Drawing.Color.White;
             this.labelResults.Location = new System.Drawing.Point(61, 0);
             this.labelResults.Name = "labelResults";
-            this.labelResults.Size = new System.Drawing.Size(168, 60);
+            this.labelResults.Size = new System.Drawing.Size(168, 65);
             this.labelResults.TabIndex = 20;
             this.labelResults.Text = "Dashboard";
             this.labelResults.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
@@ -470,7 +440,7 @@
             // pictureBox10
             // 
             this.pictureBox10.Image = ((System.Drawing.Image)(resources.GetObject("pictureBox10.Image")));
-            this.pictureBox10.Location = new System.Drawing.Point(3, 422);
+            this.pictureBox10.Location = new System.Drawing.Point(3, 392);
             this.pictureBox10.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
             this.pictureBox10.Name = "pictureBox10";
             this.pictureBox10.Size = new System.Drawing.Size(44, 36);
@@ -505,6 +475,7 @@
             this.buttonallocate.TabIndex = 0;
             this.buttonallocate.Text = "Allocate";
             this.buttonallocate.UseVisualStyleBackColor = false;
+            this.buttonallocate.Click += new System.EventHandler(this.buttonallocate_Click_1);
             // 
             // tableLayoutPanel1
             // 
@@ -515,16 +486,16 @@
             this.tableLayoutPanel1.ColumnStyles.Add(new System.Windows.Forms.ColumnStyle(System.Windows.Forms.SizeType.Absolute, 673F));
             this.tableLayoutPanel1.Controls.Add(this.label5, 0, 5);
             this.tableLayoutPanel1.Controls.Add(this.label8, 0, 4);
+            this.tableLayoutPanel1.Controls.Add(this.textBox4, 1, 3);
             this.tableLayoutPanel1.Controls.Add(this.label3, 0, 3);
             this.tableLayoutPanel1.Controls.Add(this.label7, 0, 2);
             this.tableLayoutPanel1.Controls.Add(this.label4, 0, 1);
             this.tableLayoutPanel1.Controls.Add(this.label2, 0, 0);
-            this.tableLayoutPanel1.Controls.Add(this.textBox1, 1, 0);
-            this.tableLayoutPanel1.Controls.Add(this.textBox3, 1, 3);
-            this.tableLayoutPanel1.Controls.Add(this.textBox2, 1, 2);
-            this.tableLayoutPanel1.Controls.Add(this.textBox4, 1, 1);
-            this.tableLayoutPanel1.Controls.Add(this.comboBox1, 1, 5);
+            this.tableLayoutPanel1.Controls.Add(this.comboBoxRooms, 1, 5);
             this.tableLayoutPanel1.Controls.Add(this.textBox5, 1, 4);
+            this.tableLayoutPanel1.Controls.Add(this.comboBoxStudents, 1, 0);
+            this.tableLayoutPanel1.Controls.Add(this.textBox2, 1, 1);
+            this.tableLayoutPanel1.Controls.Add(this.textBox3, 1, 2);
             this.tableLayoutPanel1.Dock = System.Windows.Forms.DockStyle.Top;
             this.tableLayoutPanel1.Location = new System.Drawing.Point(254, 48);
             this.tableLayoutPanel1.Name = "tableLayoutPanel1";
@@ -559,6 +530,14 @@
             this.label8.Size = new System.Drawing.Size(267, 23);
             this.label8.TabIndex = 18;
             this.label8.Text = "Password:";
+            // 
+            // textBox4
+            // 
+            this.textBox4.Anchor = ((System.Windows.Forms.AnchorStyles)((System.Windows.Forms.AnchorStyles.Left | System.Windows.Forms.AnchorStyles.Right)));
+            this.textBox4.Location = new System.Drawing.Point(276, 90);
+            this.textBox4.Name = "textBox4";
+            this.textBox4.Size = new System.Drawing.Size(667, 22);
+            this.textBox4.TabIndex = 11;
             // 
             // label3
             // 
@@ -604,48 +583,16 @@
             this.label2.TabIndex = 14;
             this.label2.Text = "Student Name:";
             // 
-            // textBox1
+            // comboBoxRooms
             // 
-            this.textBox1.Anchor = ((System.Windows.Forms.AnchorStyles)((System.Windows.Forms.AnchorStyles.Left | System.Windows.Forms.AnchorStyles.Right)));
-            this.textBox1.Location = new System.Drawing.Point(276, 3);
-            this.textBox1.Name = "textBox1";
-            this.textBox1.Size = new System.Drawing.Size(667, 22);
-            this.textBox1.TabIndex = 0;
-            // 
-            // textBox3
-            // 
-            this.textBox3.Anchor = ((System.Windows.Forms.AnchorStyles)((System.Windows.Forms.AnchorStyles.Left | System.Windows.Forms.AnchorStyles.Right)));
-            this.textBox3.Location = new System.Drawing.Point(276, 90);
-            this.textBox3.Name = "textBox3";
-            this.textBox3.Size = new System.Drawing.Size(667, 22);
-            this.textBox3.TabIndex = 6;
-            // 
-            // textBox2
-            // 
-            this.textBox2.Anchor = ((System.Windows.Forms.AnchorStyles)((System.Windows.Forms.AnchorStyles.Left | System.Windows.Forms.AnchorStyles.Right)));
-            this.textBox2.Location = new System.Drawing.Point(276, 61);
-            this.textBox2.Name = "textBox2";
-            this.textBox2.Size = new System.Drawing.Size(667, 22);
-            this.textBox2.TabIndex = 5;
-            // 
-            // textBox4
-            // 
-            this.textBox4.Anchor = ((System.Windows.Forms.AnchorStyles)((System.Windows.Forms.AnchorStyles.Left | System.Windows.Forms.AnchorStyles.Right)));
-            this.textBox4.Location = new System.Drawing.Point(276, 32);
-            this.textBox4.Name = "textBox4";
-            this.textBox4.Size = new System.Drawing.Size(667, 22);
-            this.textBox4.TabIndex = 11;
-            // 
-            // comboBox1
-            // 
-            this.comboBox1.Anchor = ((System.Windows.Forms.AnchorStyles)((((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Bottom) 
+            this.comboBoxRooms.Anchor = ((System.Windows.Forms.AnchorStyles)((((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Bottom) 
             | System.Windows.Forms.AnchorStyles.Left) 
             | System.Windows.Forms.AnchorStyles.Right)));
-            this.comboBox1.FormattingEnabled = true;
-            this.comboBox1.Location = new System.Drawing.Point(276, 148);
-            this.comboBox1.Name = "comboBox1";
-            this.comboBox1.Size = new System.Drawing.Size(667, 24);
-            this.comboBox1.TabIndex = 12;
+            this.comboBoxRooms.FormattingEnabled = true;
+            this.comboBoxRooms.Location = new System.Drawing.Point(276, 148);
+            this.comboBoxRooms.Name = "comboBoxRooms";
+            this.comboBoxRooms.Size = new System.Drawing.Size(667, 24);
+            this.comboBoxRooms.TabIndex = 12;
             // 
             // textBox5
             // 
@@ -654,6 +601,33 @@
             this.textBox5.Name = "textBox5";
             this.textBox5.Size = new System.Drawing.Size(667, 22);
             this.textBox5.TabIndex = 13;
+            // 
+            // comboBoxStudents
+            // 
+            this.comboBoxStudents.Anchor = ((System.Windows.Forms.AnchorStyles)((((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Bottom) 
+            | System.Windows.Forms.AnchorStyles.Left) 
+            | System.Windows.Forms.AnchorStyles.Right)));
+            this.comboBoxStudents.FormattingEnabled = true;
+            this.comboBoxStudents.Location = new System.Drawing.Point(276, 3);
+            this.comboBoxStudents.Name = "comboBoxStudents";
+            this.comboBoxStudents.Size = new System.Drawing.Size(667, 24);
+            this.comboBoxStudents.TabIndex = 29;
+            // 
+            // textBox2
+            // 
+            this.textBox2.Anchor = ((System.Windows.Forms.AnchorStyles)((System.Windows.Forms.AnchorStyles.Left | System.Windows.Forms.AnchorStyles.Right)));
+            this.textBox2.Location = new System.Drawing.Point(276, 32);
+            this.textBox2.Name = "textBox2";
+            this.textBox2.Size = new System.Drawing.Size(667, 22);
+            this.textBox2.TabIndex = 5;
+            // 
+            // textBox3
+            // 
+            this.textBox3.Anchor = ((System.Windows.Forms.AnchorStyles)((System.Windows.Forms.AnchorStyles.Left | System.Windows.Forms.AnchorStyles.Right)));
+            this.textBox3.Location = new System.Drawing.Point(276, 61);
+            this.textBox3.Name = "textBox3";
+            this.textBox3.Size = new System.Drawing.Size(667, 22);
+            this.textBox3.TabIndex = 6;
             // 
             // tableLayoutPanel5
             // 
@@ -744,6 +718,7 @@
             this.buttondelete.TabIndex = 1;
             this.buttondelete.Text = "Delete Record";
             this.buttondelete.UseVisualStyleBackColor = false;
+            this.buttondelete.Click += new System.EventHandler(this.buttondelete_Click);
             // 
             // buttonedit
             // 
@@ -759,6 +734,7 @@
             this.buttonedit.TabIndex = 0;
             this.buttonedit.Text = "Edit Record";
             this.buttonedit.UseVisualStyleBackColor = false;
+            this.buttonedit.Click += new System.EventHandler(this.buttonedit_Click);
             // 
             // panel3
             // 
@@ -785,7 +761,7 @@
             this.tableLayoutPanel6.Size = new System.Drawing.Size(943, 48);
             this.tableLayoutPanel6.TabIndex = 2;
             // 
-            // WardenAllocateStudents
+            // StudentRoomAllocation
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(8F, 16F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
@@ -795,7 +771,7 @@
             this.Controls.Add(this.tableLayoutPanel1);
             this.Controls.Add(this.panel2);
             this.Controls.Add(this.panel1);
-            this.Name = "WardenAllocateStudents";
+            this.Name = "StudentRoomAllocation";
             this.Text = "WardenAllocateStudents";
             this.panel1.ResumeLayout(false);
             this.panel1.PerformLayout();
@@ -811,7 +787,6 @@
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox8)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox4)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox3)).EndInit();
-            ((System.ComponentModel.ISupportInitialize)(this.pictureBox6)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox7)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox10)).EndInit();
             this.tableLayoutPanel4.ResumeLayout(false);
@@ -844,24 +819,21 @@
         private System.Windows.Forms.PictureBox pictureBox8;
         private System.Windows.Forms.PictureBox pictureBox4;
         private System.Windows.Forms.PictureBox pictureBox3;
-        private System.Windows.Forms.Button btnManageEmployee;
         private System.Windows.Forms.Button btnComplaints;
         private System.Windows.Forms.Button btnStudentFees;
         private System.Windows.Forms.Button btnPayments;
         private System.Windows.Forms.Button btnManageStudent;
         private System.Windows.Forms.Button btnManageBuildings;
-        private System.Windows.Forms.PictureBox pictureBox6;
         private System.Windows.Forms.PictureBox pictureBox7;
         private System.Windows.Forms.Label labelResults;
         private System.Windows.Forms.PictureBox pictureBox10;
         private System.Windows.Forms.TableLayoutPanel tableLayoutPanel4;
         private System.Windows.Forms.Button buttonallocate;
         private System.Windows.Forms.TableLayoutPanel tableLayoutPanel1;
-        private System.Windows.Forms.TextBox textBox1;
         private System.Windows.Forms.TextBox textBox3;
         private System.Windows.Forms.TextBox textBox2;
         private System.Windows.Forms.TextBox textBox4;
-        private System.Windows.Forms.ComboBox comboBox1;
+        private System.Windows.Forms.ComboBox comboBoxRooms;
         private System.Windows.Forms.TextBox textBox5;
         private System.Windows.Forms.TableLayoutPanel tableLayoutPanel5;
         private System.Windows.Forms.Button buttonedit;
@@ -881,5 +853,6 @@
         private System.Windows.Forms.DataGridViewTextBoxColumn Username;
         private System.Windows.Forms.DataGridViewTextBoxColumn Password;
         private System.Windows.Forms.DataGridViewTextBoxColumn AssignedRoom;
+        private System.Windows.Forms.ComboBox comboBoxStudents;
     }
 }

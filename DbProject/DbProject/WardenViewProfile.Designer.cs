@@ -45,13 +45,11 @@
             this.pictureBox8 = new System.Windows.Forms.PictureBox();
             this.pictureBox4 = new System.Windows.Forms.PictureBox();
             this.pictureBox3 = new System.Windows.Forms.PictureBox();
-            this.btnManageEmployee = new System.Windows.Forms.Button();
             this.btnComplaints = new System.Windows.Forms.Button();
             this.btnStudentFees = new System.Windows.Forms.Button();
             this.btnPayments = new System.Windows.Forms.Button();
             this.btnManageStudent = new System.Windows.Forms.Button();
             this.btnManageBuildings = new System.Windows.Forms.Button();
-            this.pictureBox6 = new System.Windows.Forms.PictureBox();
             this.pictureBox7 = new System.Windows.Forms.PictureBox();
             this.labelResults = new System.Windows.Forms.Label();
             this.pictureBox10 = new System.Windows.Forms.PictureBox();
@@ -69,10 +67,9 @@
             this.panel3 = new System.Windows.Forms.Panel();
             this.dataGridView1 = new System.Windows.Forms.DataGridView();
             this.WardenName = new System.Windows.Forms.DataGridViewTextBoxColumn();
-            this.CNICNumber = new System.Windows.Forms.DataGridViewTextBoxColumn();
+            this.Email = new System.Windows.Forms.DataGridViewTextBoxColumn();
             this.PhoneNumber = new System.Windows.Forms.DataGridViewTextBoxColumn();
             this.AssignedBuilding = new System.Windows.Forms.DataGridViewTextBoxColumn();
-            this.Address = new System.Windows.Forms.DataGridViewTextBoxColumn();
             this.panel1.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox11)).BeginInit();
             this.panel2.SuspendLayout();
@@ -84,7 +81,6 @@
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox8)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox4)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox3)).BeginInit();
-            ((System.ComponentModel.ISupportInitialize)(this.pictureBox6)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox7)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox10)).BeginInit();
             this.tableLayoutPanel1.SuspendLayout();
@@ -229,41 +225,39 @@
             this.tableLayoutPanel2.ColumnCount = 2;
             this.tableLayoutPanel2.ColumnStyles.Add(new System.Windows.Forms.ColumnStyle(System.Windows.Forms.SizeType.Percent, 25F));
             this.tableLayoutPanel2.ColumnStyles.Add(new System.Windows.Forms.ColumnStyle(System.Windows.Forms.SizeType.Percent, 75F));
-            this.tableLayoutPanel2.Controls.Add(this.pictureBox2, 0, 5);
-            this.tableLayoutPanel2.Controls.Add(this.button1, 1, 7);
+            this.tableLayoutPanel2.Controls.Add(this.pictureBox2, 0, 4);
+            this.tableLayoutPanel2.Controls.Add(this.button1, 1, 6);
             this.tableLayoutPanel2.Controls.Add(this.pictureBox9, 0, 0);
             this.tableLayoutPanel2.Controls.Add(this.pictureBox8, 0, 3);
-            this.tableLayoutPanel2.Controls.Add(this.pictureBox4, 0, 6);
+            this.tableLayoutPanel2.Controls.Add(this.pictureBox4, 0, 5);
             this.tableLayoutPanel2.Controls.Add(this.pictureBox3, 0, 1);
-            this.tableLayoutPanel2.Controls.Add(this.btnManageEmployee, 1, 4);
-            this.tableLayoutPanel2.Controls.Add(this.btnComplaints, 1, 6);
+            this.tableLayoutPanel2.Controls.Add(this.btnComplaints, 1, 5);
             this.tableLayoutPanel2.Controls.Add(this.btnStudentFees, 1, 3);
-            this.tableLayoutPanel2.Controls.Add(this.btnPayments, 1, 5);
+            this.tableLayoutPanel2.Controls.Add(this.btnPayments, 1, 4);
             this.tableLayoutPanel2.Controls.Add(this.btnManageStudent, 1, 2);
             this.tableLayoutPanel2.Controls.Add(this.btnManageBuildings, 1, 1);
-            this.tableLayoutPanel2.Controls.Add(this.pictureBox6, 0, 4);
             this.tableLayoutPanel2.Controls.Add(this.pictureBox7, 0, 2);
             this.tableLayoutPanel2.Controls.Add(this.labelResults, 1, 0);
-            this.tableLayoutPanel2.Controls.Add(this.pictureBox10, 0, 7);
+            this.tableLayoutPanel2.Controls.Add(this.pictureBox10, 0, 6);
             this.tableLayoutPanel2.Location = new System.Drawing.Point(12, 7);
             this.tableLayoutPanel2.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
             this.tableLayoutPanel2.Name = "tableLayoutPanel2";
-            this.tableLayoutPanel2.RowCount = 8;
-            this.tableLayoutPanel2.RowStyles.Add(new System.Windows.Forms.RowStyle(System.Windows.Forms.SizeType.Percent, 12.69841F));
-            this.tableLayoutPanel2.RowStyles.Add(new System.Windows.Forms.RowStyle(System.Windows.Forms.SizeType.Percent, 12.69841F));
-            this.tableLayoutPanel2.RowStyles.Add(new System.Windows.Forms.RowStyle(System.Windows.Forms.SizeType.Percent, 12.69841F));
-            this.tableLayoutPanel2.RowStyles.Add(new System.Windows.Forms.RowStyle(System.Windows.Forms.SizeType.Percent, 12.69841F));
-            this.tableLayoutPanel2.RowStyles.Add(new System.Windows.Forms.RowStyle(System.Windows.Forms.SizeType.Percent, 12.69841F));
-            this.tableLayoutPanel2.RowStyles.Add(new System.Windows.Forms.RowStyle(System.Windows.Forms.SizeType.Percent, 12.69841F));
-            this.tableLayoutPanel2.RowStyles.Add(new System.Windows.Forms.RowStyle(System.Windows.Forms.SizeType.Percent, 12.69841F));
-            this.tableLayoutPanel2.RowStyles.Add(new System.Windows.Forms.RowStyle(System.Windows.Forms.SizeType.Percent, 11.11111F));
-            this.tableLayoutPanel2.Size = new System.Drawing.Size(232, 441);
+            this.tableLayoutPanel2.RowCount = 7;
+            this.tableLayoutPanel2.RowStyles.Add(new System.Windows.Forms.RowStyle(System.Windows.Forms.SizeType.Percent, 14.54546F));
+            this.tableLayoutPanel2.RowStyles.Add(new System.Windows.Forms.RowStyle(System.Windows.Forms.SizeType.Percent, 14.54546F));
+            this.tableLayoutPanel2.RowStyles.Add(new System.Windows.Forms.RowStyle(System.Windows.Forms.SizeType.Percent, 14.54546F));
+            this.tableLayoutPanel2.RowStyles.Add(new System.Windows.Forms.RowStyle(System.Windows.Forms.SizeType.Percent, 14.54546F));
+            this.tableLayoutPanel2.RowStyles.Add(new System.Windows.Forms.RowStyle(System.Windows.Forms.SizeType.Percent, 14.54546F));
+            this.tableLayoutPanel2.RowStyles.Add(new System.Windows.Forms.RowStyle(System.Windows.Forms.SizeType.Percent, 14.54546F));
+            this.tableLayoutPanel2.RowStyles.Add(new System.Windows.Forms.RowStyle(System.Windows.Forms.SizeType.Percent, 12.72727F));
+            this.tableLayoutPanel2.RowStyles.Add(new System.Windows.Forms.RowStyle(System.Windows.Forms.SizeType.Absolute, 20F));
+            this.tableLayoutPanel2.Size = new System.Drawing.Size(232, 440);
             this.tableLayoutPanel2.TabIndex = 0;
             // 
             // pictureBox2
             // 
             this.pictureBox2.Image = ((System.Drawing.Image)(resources.GetObject("pictureBox2.Image")));
-            this.pictureBox2.Location = new System.Drawing.Point(3, 282);
+            this.pictureBox2.Location = new System.Drawing.Point(3, 258);
             this.pictureBox2.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
             this.pictureBox2.Name = "pictureBox2";
             this.pictureBox2.Size = new System.Drawing.Size(44, 36);
@@ -278,10 +272,10 @@
             this.button1.BackColor = System.Drawing.Color.Black;
             this.button1.Font = new System.Drawing.Font("Yu Gothic UI", 10F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.button1.ForeColor = System.Drawing.Color.Transparent;
-            this.button1.Location = new System.Drawing.Point(61, 394);
+            this.button1.Location = new System.Drawing.Point(61, 386);
             this.button1.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
             this.button1.Name = "button1";
-            this.button1.Size = new System.Drawing.Size(168, 45);
+            this.button1.Size = new System.Drawing.Size(168, 52);
             this.button1.TabIndex = 40;
             this.button1.Text = "Manage Fines";
             this.button1.UseVisualStyleBackColor = false;
@@ -300,7 +294,7 @@
             // pictureBox8
             // 
             this.pictureBox8.Image = ((System.Drawing.Image)(resources.GetObject("pictureBox8.Image")));
-            this.pictureBox8.Location = new System.Drawing.Point(3, 170);
+            this.pictureBox8.Location = new System.Drawing.Point(3, 194);
             this.pictureBox8.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
             this.pictureBox8.Name = "pictureBox8";
             this.pictureBox8.Size = new System.Drawing.Size(44, 36);
@@ -311,7 +305,7 @@
             // pictureBox4
             // 
             this.pictureBox4.Image = ((System.Drawing.Image)(resources.GetObject("pictureBox4.Image")));
-            this.pictureBox4.Location = new System.Drawing.Point(3, 338);
+            this.pictureBox4.Location = new System.Drawing.Point(3, 322);
             this.pictureBox4.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
             this.pictureBox4.Name = "pictureBox4";
             this.pictureBox4.Size = new System.Drawing.Size(44, 36);
@@ -322,28 +316,13 @@
             // pictureBox3
             // 
             this.pictureBox3.Image = ((System.Drawing.Image)(resources.GetObject("pictureBox3.Image")));
-            this.pictureBox3.Location = new System.Drawing.Point(3, 58);
+            this.pictureBox3.Location = new System.Drawing.Point(3, 66);
             this.pictureBox3.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
             this.pictureBox3.Name = "pictureBox3";
             this.pictureBox3.Size = new System.Drawing.Size(44, 36);
             this.pictureBox3.SizeMode = System.Windows.Forms.PictureBoxSizeMode.Zoom;
             this.pictureBox3.TabIndex = 37;
             this.pictureBox3.TabStop = false;
-            // 
-            // btnManageEmployee
-            // 
-            this.btnManageEmployee.Anchor = ((System.Windows.Forms.AnchorStyles)(((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Bottom) 
-            | System.Windows.Forms.AnchorStyles.Left)));
-            this.btnManageEmployee.BackColor = System.Drawing.Color.Black;
-            this.btnManageEmployee.Font = new System.Drawing.Font("Yu Gothic UI", 10F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.btnManageEmployee.ForeColor = System.Drawing.Color.Transparent;
-            this.btnManageEmployee.Location = new System.Drawing.Point(61, 226);
-            this.btnManageEmployee.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
-            this.btnManageEmployee.Name = "btnManageEmployee";
-            this.btnManageEmployee.Size = new System.Drawing.Size(168, 52);
-            this.btnManageEmployee.TabIndex = 23;
-            this.btnManageEmployee.Text = "RoomServent";
-            this.btnManageEmployee.UseVisualStyleBackColor = false;
             // 
             // btnComplaints
             // 
@@ -352,10 +331,10 @@
             this.btnComplaints.BackColor = System.Drawing.Color.Black;
             this.btnComplaints.Font = new System.Drawing.Font("Yu Gothic UI", 10F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.btnComplaints.ForeColor = System.Drawing.Color.Transparent;
-            this.btnComplaints.Location = new System.Drawing.Point(61, 338);
+            this.btnComplaints.Location = new System.Drawing.Point(61, 322);
             this.btnComplaints.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
             this.btnComplaints.Name = "btnComplaints";
-            this.btnComplaints.Size = new System.Drawing.Size(168, 52);
+            this.btnComplaints.Size = new System.Drawing.Size(168, 60);
             this.btnComplaints.TabIndex = 27;
             this.btnComplaints.Text = "Complaints";
             this.btnComplaints.UseVisualStyleBackColor = false;
@@ -367,10 +346,10 @@
             this.btnStudentFees.BackColor = System.Drawing.Color.Black;
             this.btnStudentFees.Font = new System.Drawing.Font("Yu Gothic UI", 10F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.btnStudentFees.ForeColor = System.Drawing.Color.Transparent;
-            this.btnStudentFees.Location = new System.Drawing.Point(61, 170);
+            this.btnStudentFees.Location = new System.Drawing.Point(61, 194);
             this.btnStudentFees.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
             this.btnStudentFees.Name = "btnStudentFees";
-            this.btnStudentFees.Size = new System.Drawing.Size(168, 52);
+            this.btnStudentFees.Size = new System.Drawing.Size(168, 60);
             this.btnStudentFees.TabIndex = 25;
             this.btnStudentFees.Text = "Student Fees";
             this.btnStudentFees.UseVisualStyleBackColor = false;
@@ -382,10 +361,10 @@
             this.btnPayments.BackColor = System.Drawing.Color.Black;
             this.btnPayments.Font = new System.Drawing.Font("Yu Gothic UI", 10F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.btnPayments.ForeColor = System.Drawing.Color.Transparent;
-            this.btnPayments.Location = new System.Drawing.Point(61, 282);
+            this.btnPayments.Location = new System.Drawing.Point(61, 258);
             this.btnPayments.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
             this.btnPayments.Name = "btnPayments";
-            this.btnPayments.Size = new System.Drawing.Size(168, 52);
+            this.btnPayments.Size = new System.Drawing.Size(168, 60);
             this.btnPayments.TabIndex = 26;
             this.btnPayments.Text = "Visitor Approval";
             this.btnPayments.UseVisualStyleBackColor = false;
@@ -397,10 +376,10 @@
             this.btnManageStudent.BackColor = System.Drawing.Color.Black;
             this.btnManageStudent.Font = new System.Drawing.Font("Yu Gothic UI", 10F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.btnManageStudent.ForeColor = System.Drawing.Color.Transparent;
-            this.btnManageStudent.Location = new System.Drawing.Point(61, 114);
+            this.btnManageStudent.Location = new System.Drawing.Point(61, 130);
             this.btnManageStudent.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
             this.btnManageStudent.Name = "btnManageStudent";
-            this.btnManageStudent.Size = new System.Drawing.Size(168, 52);
+            this.btnManageStudent.Size = new System.Drawing.Size(168, 60);
             this.btnManageStudent.TabIndex = 24;
             this.btnManageStudent.Text = "Allocate Student";
             this.btnManageStudent.UseVisualStyleBackColor = false;
@@ -412,29 +391,18 @@
             this.btnManageBuildings.BackColor = System.Drawing.Color.Black;
             this.btnManageBuildings.Font = new System.Drawing.Font("Yu Gothic UI", 10F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.btnManageBuildings.ForeColor = System.Drawing.Color.Transparent;
-            this.btnManageBuildings.Location = new System.Drawing.Point(61, 58);
+            this.btnManageBuildings.Location = new System.Drawing.Point(61, 66);
             this.btnManageBuildings.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
             this.btnManageBuildings.Name = "btnManageBuildings";
-            this.btnManageBuildings.Size = new System.Drawing.Size(168, 52);
+            this.btnManageBuildings.Size = new System.Drawing.Size(168, 60);
             this.btnManageBuildings.TabIndex = 21;
             this.btnManageBuildings.Text = "View Profile";
             this.btnManageBuildings.UseVisualStyleBackColor = false;
             // 
-            // pictureBox6
-            // 
-            this.pictureBox6.Image = ((System.Drawing.Image)(resources.GetObject("pictureBox6.Image")));
-            this.pictureBox6.Location = new System.Drawing.Point(3, 226);
-            this.pictureBox6.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
-            this.pictureBox6.Name = "pictureBox6";
-            this.pictureBox6.Size = new System.Drawing.Size(44, 36);
-            this.pictureBox6.SizeMode = System.Windows.Forms.PictureBoxSizeMode.Zoom;
-            this.pictureBox6.TabIndex = 33;
-            this.pictureBox6.TabStop = false;
-            // 
             // pictureBox7
             // 
             this.pictureBox7.Image = ((System.Drawing.Image)(resources.GetObject("pictureBox7.Image")));
-            this.pictureBox7.Location = new System.Drawing.Point(3, 114);
+            this.pictureBox7.Location = new System.Drawing.Point(3, 130);
             this.pictureBox7.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
             this.pictureBox7.Name = "pictureBox7";
             this.pictureBox7.Size = new System.Drawing.Size(44, 36);
@@ -451,7 +419,7 @@
             this.labelResults.ForeColor = System.Drawing.Color.White;
             this.labelResults.Location = new System.Drawing.Point(61, 0);
             this.labelResults.Name = "labelResults";
-            this.labelResults.Size = new System.Drawing.Size(168, 56);
+            this.labelResults.Size = new System.Drawing.Size(168, 64);
             this.labelResults.TabIndex = 20;
             this.labelResults.Text = "Dashboard";
             this.labelResults.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
@@ -459,7 +427,7 @@
             // pictureBox10
             // 
             this.pictureBox10.Image = ((System.Drawing.Image)(resources.GetObject("pictureBox10.Image")));
-            this.pictureBox10.Location = new System.Drawing.Point(3, 394);
+            this.pictureBox10.Location = new System.Drawing.Point(3, 386);
             this.pictureBox10.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
             this.pictureBox10.Name = "pictureBox10";
             this.pictureBox10.Size = new System.Drawing.Size(44, 36);
@@ -614,16 +582,15 @@
             this.dataGridView1.ColumnHeadersHeightSizeMode = System.Windows.Forms.DataGridViewColumnHeadersHeightSizeMode.AutoSize;
             this.dataGridView1.Columns.AddRange(new System.Windows.Forms.DataGridViewColumn[] {
             this.WardenName,
-            this.CNICNumber,
+            this.Email,
             this.PhoneNumber,
-            this.AssignedBuilding,
-            this.Address});
+            this.AssignedBuilding});
             this.dataGridView1.Dock = System.Windows.Forms.DockStyle.Top;
             this.dataGridView1.Location = new System.Drawing.Point(0, 0);
             this.dataGridView1.Name = "dataGridView1";
             this.dataGridView1.RowHeadersWidth = 51;
             this.dataGridView1.RowTemplate.Height = 24;
-            this.dataGridView1.Size = new System.Drawing.Size(946, 142);
+            this.dataGridView1.Size = new System.Drawing.Size(946, 208);
             this.dataGridView1.TabIndex = 1;
             // 
             // WardenName
@@ -631,35 +598,28 @@
             this.WardenName.HeaderText = "WardenName";
             this.WardenName.MinimumWidth = 6;
             this.WardenName.Name = "WardenName";
-            this.WardenName.Width = 170;
+            this.WardenName.Width = 200;
             // 
-            // CNICNumber
+            // Email
             // 
-            this.CNICNumber.HeaderText = "CNICNumber";
-            this.CNICNumber.MinimumWidth = 6;
-            this.CNICNumber.Name = "CNICNumber";
-            this.CNICNumber.Width = 170;
+            this.Email.HeaderText = "Email";
+            this.Email.MinimumWidth = 6;
+            this.Email.Name = "Email";
+            this.Email.Width = 210;
             // 
             // PhoneNumber
             // 
             this.PhoneNumber.HeaderText = "PhoneNumber";
             this.PhoneNumber.MinimumWidth = 6;
             this.PhoneNumber.Name = "PhoneNumber";
-            this.PhoneNumber.Width = 170;
+            this.PhoneNumber.Width = 200;
             // 
             // AssignedBuilding
             // 
             this.AssignedBuilding.HeaderText = "AssignedBuilding";
             this.AssignedBuilding.MinimumWidth = 6;
             this.AssignedBuilding.Name = "AssignedBuilding";
-            this.AssignedBuilding.Width = 170;
-            // 
-            // Address
-            // 
-            this.Address.HeaderText = "Address";
-            this.Address.MinimumWidth = 6;
-            this.Address.Name = "Address";
-            this.Address.Width = 210;
+            this.AssignedBuilding.Width = 200;
             // 
             // WardenViewProfile
             // 
@@ -688,7 +648,6 @@
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox8)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox4)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox3)).EndInit();
-            ((System.ComponentModel.ISupportInitialize)(this.pictureBox6)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox7)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox10)).EndInit();
             this.tableLayoutPanel1.ResumeLayout(false);
@@ -719,13 +678,11 @@
         private System.Windows.Forms.PictureBox pictureBox8;
         private System.Windows.Forms.PictureBox pictureBox4;
         private System.Windows.Forms.PictureBox pictureBox3;
-        private System.Windows.Forms.Button btnManageEmployee;
         private System.Windows.Forms.Button btnComplaints;
         private System.Windows.Forms.Button btnStudentFees;
         private System.Windows.Forms.Button btnPayments;
         private System.Windows.Forms.Button btnManageStudent;
         private System.Windows.Forms.Button btnManageBuildings;
-        private System.Windows.Forms.PictureBox pictureBox6;
         private System.Windows.Forms.PictureBox pictureBox7;
         private System.Windows.Forms.Label labelResults;
         private System.Windows.Forms.PictureBox pictureBox10;
@@ -743,9 +700,8 @@
         private System.Windows.Forms.Panel panel3;
         private System.Windows.Forms.DataGridView dataGridView1;
         private System.Windows.Forms.DataGridViewTextBoxColumn WardenName;
-        private System.Windows.Forms.DataGridViewTextBoxColumn CNICNumber;
+        private System.Windows.Forms.DataGridViewTextBoxColumn Email;
         private System.Windows.Forms.DataGridViewTextBoxColumn PhoneNumber;
         private System.Windows.Forms.DataGridViewTextBoxColumn AssignedBuilding;
-        private System.Windows.Forms.DataGridViewTextBoxColumn Address;
     }
 }

@@ -7,12 +7,19 @@ using dll.DL;
 
 namespace dll.BL
 {
-    internal class RoomType
+    public class RoomType
     {
 
         protected int roomtypeID;
         protected string typename;
         protected int capacity;
+
+
+        public RoomType()
+        {
+
+        }
+
 
 
         public RoomType(int roomtypeID, string typename, int capacity)
@@ -33,10 +40,11 @@ namespace dll.BL
 
         
 
-        public void addRooomType(string typename, int capacity)
+        public bool AddRoomType(string typeName, int capacity)
         {
             DL.roomtype roomtype = new DL.roomtype();
-            //roomtype.AddRoomType();
+            return roomtype.AddRoomTypeData(typeName, capacity);
+            
 
         }
 
@@ -54,6 +62,23 @@ namespace dll.BL
         }
 
 
+        public int getRoomTypeID(string RoomTypeName, int capacity)
+        {
+            DL.roomtype r = new DL.roomtype();
+            return r.GetRoomTypeID(RoomTypeName, capacity);
+        }
 
+
+        public void SetTypeID(int TypeID)
+        {
+            this.roomtypeID = TypeID;
+        }
+
+
+        public List <object> GettingTypeName()
+        {
+            DL.roomtype type = new DL.roomtype();
+            return type.GetTypeName();
+        }
     }
 }

@@ -299,6 +299,7 @@
             this.btnManageStudent.TabIndex = 49;
             this.btnManageStudent.Text = "Manage Student";
             this.btnManageStudent.UseVisualStyleBackColor = false;
+            this.btnManageStudent.Click += new System.EventHandler(this.btnManageStudent_Click);
             // 
             // btnManageRooms
             // 
@@ -313,6 +314,7 @@
             this.btnManageRooms.TabIndex = 48;
             this.btnManageRooms.Text = "Manage Rooms";
             this.btnManageRooms.UseVisualStyleBackColor = false;
+            this.btnManageRooms.Click += new System.EventHandler(this.btnManageRooms_Click);
             // 
             // labelResults
             // 

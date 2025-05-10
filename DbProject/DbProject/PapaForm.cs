@@ -52,5 +52,10 @@ namespace DbProject
             buildings.Show();
             this.Hide();
         }
+
+        private void btnManageEmployee_Click(object sender, EventArgs e)
+        {
+            
+        }
     }
 }

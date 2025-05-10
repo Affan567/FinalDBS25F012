@@ -91,5 +91,17 @@ namespace DbProject
             form.Show();
             this.Hide();
         }
+
+        private void btnManageStudent_Click(object sender, EventArgs e)
+        {
+            ManageStudents students = new ManageStudents();
+            students.Show();
+            this.Hide();
+        }
+
+        private void btnManageRooms_Click(object sender, EventArgs e)
+        {
+            ManageRooms rooms = new ManageRooms();
+        }
     }
 }

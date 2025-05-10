@@ -111,6 +111,7 @@
     <Compile Include="BL\Login.cs" />
     <Compile Include="BL\Request.cs" />
     <Compile Include="BL\Rooms.cs" />
+    <Compile Include="BL\RoomType.cs" />
     <Compile Include="BL\Student.cs" />
     <Compile Include="BL\User.cs" />
     <Compile Include="BL\Visitors.cs" />
@@ -125,6 +126,7 @@
     <Compile Include="DL\Request.cs" />
     <Compile Include="DL\Rooms.cs" />
     <Compile Include="DL\RoomServant.cs" />
+    <Compile Include="DL\roomtype.cs" />
     <Compile Include="DL\Student.cs" />
     <Compile Include="DL\User.cs" />
     <Compile Include="DL\Visitors.cs" />

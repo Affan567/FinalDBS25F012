@@ -32,7 +32,7 @@ namespace dll.DL
         {
             string updateQuery = "UPDATE student SET RegistrationNo = '{0}', Hostellite = {1}, CGPA = {2}, SessionYear = {3}, " +
                                  "Nationality = '{4}',SessionTerm = '{5}' Where UserID = {6}";
-            updateQuery = string.Format(updateQuery, s.GetRegistrationNumber(), s.RoleID(),s.Getgender(),s.GetSemester(), s.GetUserID());
+            updateQuery = string.Format(updateQuery, s.GetRegistrationNumber(), s.RoleID(),s.GetSemester(), s.GetUserID());
 
             int rowsAffected = DatabaseHelper.executeDML(updateQuery);
             return rowsAffected > 0;
@@ -53,6 +53,31 @@ namespace dll.DL
             return DatabaseHelper.ExecuteScalar(query);
         }
 
+        public bool DeleteStudentFromDB(int studentid, int userid)
+        {
+            List<string> queries = new List<string>();
+
+            queries.Add($"Delete From students Where StudentID = {studentid}");
+            queries.Add($"DELETE FROM users WHERE userID = {userid}");
+
+            bool rowsAffected = DatabaseHelper.ExecuteTransaction(queries);
+
+            if (rowsAffected)
+            {
+                return true;
+            }
+            else
+            {
+                return false;
+            }
+        }
+
+        public object getStudentID(int userID)
+        {
+            string query = "Select StudentID from students where userID = {0}";
+            query = String.Format (query, userID);
+            return DatabaseHelper.ExecuteScalar(query);
+        }
 
 
 

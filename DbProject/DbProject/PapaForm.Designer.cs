@@ -240,6 +240,7 @@
             this.btnManageEmployee.TabIndex = 51;
             this.btnManageEmployee.Text = "Manage Servants";
             this.btnManageEmployee.UseVisualStyleBackColor = false;
+            this.btnManageEmployee.Click += new System.EventHandler(this.btnManageEmployee_Click);
             // 
             // btnManageStudent
             // 

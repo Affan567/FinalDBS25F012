@@ -57,12 +57,12 @@
             this.label8 = new System.Windows.Forms.Label();
             this.tableLayoutPanel2 = new System.Windows.Forms.TableLayoutPanel();
             this.panel3 = new System.Windows.Forms.Panel();
-            this.panel4 = new System.Windows.Forms.Panel();
-            this.panel5 = new System.Windows.Forms.Panel();
-            this.panel6 = new System.Windows.Forms.Panel();
             this.label2 = new System.Windows.Forms.Label();
+            this.panel4 = new System.Windows.Forms.Panel();
             this.label4 = new System.Windows.Forms.Label();
+            this.panel5 = new System.Windows.Forms.Panel();
             this.textBox1 = new System.Windows.Forms.TextBox();
+            this.panel6 = new System.Windows.Forms.Panel();
             this.textBox2 = new System.Windows.Forms.TextBox();
             this.dataGridView1 = new System.Windows.Forms.DataGridView();
             this.RoomID = new System.Windows.Forms.DataGridViewTextBoxColumn();
@@ -98,10 +98,10 @@
             // tableLayoutPanel4
             // 
             this.tableLayoutPanel4.ColumnCount = 4;
-            this.tableLayoutPanel4.ColumnStyles.Add(new System.Windows.Forms.ColumnStyle(System.Windows.Forms.SizeType.Percent, 25F));
-            this.tableLayoutPanel4.ColumnStyles.Add(new System.Windows.Forms.ColumnStyle(System.Windows.Forms.SizeType.Percent, 25F));
-            this.tableLayoutPanel4.ColumnStyles.Add(new System.Windows.Forms.ColumnStyle(System.Windows.Forms.SizeType.Percent, 25F));
-            this.tableLayoutPanel4.ColumnStyles.Add(new System.Windows.Forms.ColumnStyle(System.Windows.Forms.SizeType.Percent, 25F));
+            this.tableLayoutPanel4.ColumnStyles.Add(new System.Windows.Forms.ColumnStyle(System.Windows.Forms.SizeType.Percent, 26.30597F));
+            this.tableLayoutPanel4.ColumnStyles.Add(new System.Windows.Forms.ColumnStyle(System.Windows.Forms.SizeType.Percent, 21.45522F));
+            this.tableLayoutPanel4.ColumnStyles.Add(new System.Windows.Forms.ColumnStyle(System.Windows.Forms.SizeType.Percent, 26.49254F));
+            this.tableLayoutPanel4.ColumnStyles.Add(new System.Windows.Forms.ColumnStyle(System.Windows.Forms.SizeType.Percent, 25.65298F));
             this.tableLayoutPanel4.Controls.Add(this.panel21, 3, 2);
             this.tableLayoutPanel4.Controls.Add(this.panel20, 2, 2);
             this.tableLayoutPanel4.Controls.Add(this.panel19, 1, 2);
@@ -129,9 +129,9 @@
             this.panel21.BackColor = System.Drawing.Color.Transparent;
             this.panel21.Controls.Add(this.codedButton5);
             this.panel21.Dock = System.Windows.Forms.DockStyle.Fill;
-            this.panel21.Location = new System.Drawing.Point(807, 163);
+            this.panel21.Location = new System.Drawing.Point(799, 163);
             this.panel21.Name = "panel21";
-            this.panel21.Size = new System.Drawing.Size(262, 76);
+            this.panel21.Size = new System.Drawing.Size(270, 76);
             this.panel21.TabIndex = 31;
             // 
             // codedButton5
@@ -148,7 +148,7 @@
             this.codedButton5.ForeColor = System.Drawing.Color.White;
             this.codedButton5.Location = new System.Drawing.Point(0, 0);
             this.codedButton5.Name = "codedButton5";
-            this.codedButton5.Size = new System.Drawing.Size(262, 76);
+            this.codedButton5.Size = new System.Drawing.Size(270, 76);
             this.codedButton5.TabIndex = 0;
             this.codedButton5.Text = "Delete";
             this.codedButton5.TextColor = System.Drawing.Color.White;
@@ -159,9 +159,9 @@
             this.panel20.BackColor = System.Drawing.Color.Transparent;
             this.panel20.Controls.Add(this.codedButton6);
             this.panel20.Dock = System.Windows.Forms.DockStyle.Fill;
-            this.panel20.Location = new System.Drawing.Point(539, 163);
+            this.panel20.Location = new System.Drawing.Point(515, 163);
             this.panel20.Name = "panel20";
-            this.panel20.Size = new System.Drawing.Size(262, 76);
+            this.panel20.Size = new System.Drawing.Size(278, 76);
             this.panel20.TabIndex = 30;
             // 
             // codedButton6
@@ -178,7 +178,7 @@
             this.codedButton6.ForeColor = System.Drawing.Color.White;
             this.codedButton6.Location = new System.Drawing.Point(0, 0);
             this.codedButton6.Name = "codedButton6";
-            this.codedButton6.Size = new System.Drawing.Size(262, 76);
+            this.codedButton6.Size = new System.Drawing.Size(278, 76);
             this.codedButton6.TabIndex = 0;
             this.codedButton6.Text = "Update";
             this.codedButton6.TextColor = System.Drawing.Color.White;
@@ -189,9 +189,9 @@
             this.panel19.BackColor = System.Drawing.Color.Transparent;
             this.panel19.Controls.Add(this.codedButton7);
             this.panel19.Dock = System.Windows.Forms.DockStyle.Fill;
-            this.panel19.Location = new System.Drawing.Point(271, 163);
+            this.panel19.Location = new System.Drawing.Point(285, 163);
             this.panel19.Name = "panel19";
-            this.panel19.Size = new System.Drawing.Size(262, 76);
+            this.panel19.Size = new System.Drawing.Size(224, 76);
             this.panel19.TabIndex = 29;
             // 
             // codedButton7
@@ -208,7 +208,7 @@
             this.codedButton7.ForeColor = System.Drawing.Color.White;
             this.codedButton7.Location = new System.Drawing.Point(0, 0);
             this.codedButton7.Name = "codedButton7";
-            this.codedButton7.Size = new System.Drawing.Size(262, 76);
+            this.codedButton7.Size = new System.Drawing.Size(224, 76);
             this.codedButton7.TabIndex = 0;
             this.codedButton7.Text = "Save";
             this.codedButton7.TextColor = System.Drawing.Color.White;
@@ -221,7 +221,7 @@
             this.panel18.Dock = System.Windows.Forms.DockStyle.Fill;
             this.panel18.Location = new System.Drawing.Point(3, 163);
             this.panel18.Name = "panel18";
-            this.panel18.Size = new System.Drawing.Size(262, 76);
+            this.panel18.Size = new System.Drawing.Size(276, 76);
             this.panel18.TabIndex = 28;
             // 
             // codedButton8
@@ -238,7 +238,7 @@
             this.codedButton8.ForeColor = System.Drawing.Color.White;
             this.codedButton8.Location = new System.Drawing.Point(0, 0);
             this.codedButton8.Name = "codedButton8";
-            this.codedButton8.Size = new System.Drawing.Size(262, 76);
+            this.codedButton8.Size = new System.Drawing.Size(276, 76);
             this.codedButton8.TabIndex = 0;
             this.codedButton8.Text = "Refresh";
             this.codedButton8.TextColor = System.Drawing.Color.White;
@@ -249,16 +249,16 @@
             this.panel17.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(0)))), ((int)(((byte)(122)))), ((int)(((byte)(195)))));
             this.panel17.Controls.Add(this.comboBox3);
             this.panel17.Dock = System.Windows.Forms.DockStyle.Fill;
-            this.panel17.Location = new System.Drawing.Point(807, 83);
+            this.panel17.Location = new System.Drawing.Point(799, 83);
             this.panel17.Name = "panel17";
-            this.panel17.Size = new System.Drawing.Size(262, 74);
+            this.panel17.Size = new System.Drawing.Size(270, 74);
             this.panel17.TabIndex = 27;
             // 
             // comboBox3
             // 
             this.comboBox3.Anchor = System.Windows.Forms.AnchorStyles.Right;
             this.comboBox3.FormattingEnabled = true;
-            this.comboBox3.Location = new System.Drawing.Point(-29, 23);
+            this.comboBox3.Location = new System.Drawing.Point(-21, 23);
             this.comboBox3.Name = "comboBox3";
             this.comboBox3.Size = new System.Drawing.Size(289, 28);
             this.comboBox3.TabIndex = 0;
@@ -268,16 +268,16 @@
             this.panel16.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(0)))), ((int)(((byte)(122)))), ((int)(((byte)(195)))));
             this.panel16.Controls.Add(this.comboBox1);
             this.panel16.Dock = System.Windows.Forms.DockStyle.Fill;
-            this.panel16.Location = new System.Drawing.Point(271, 83);
+            this.panel16.Location = new System.Drawing.Point(285, 83);
             this.panel16.Name = "panel16";
-            this.panel16.Size = new System.Drawing.Size(262, 74);
+            this.panel16.Size = new System.Drawing.Size(224, 74);
             this.panel16.TabIndex = 26;
             // 
             // comboBox1
             // 
             this.comboBox1.Anchor = System.Windows.Forms.AnchorStyles.Right;
             this.comboBox1.FormattingEnabled = true;
-            this.comboBox1.Location = new System.Drawing.Point(-24, 23);
+            this.comboBox1.Location = new System.Drawing.Point(-62, 23);
             this.comboBox1.Name = "comboBox1";
             this.comboBox1.Size = new System.Drawing.Size(283, 28);
             this.comboBox1.TabIndex = 0;
@@ -287,16 +287,16 @@
             this.panel15.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(0)))), ((int)(((byte)(122)))), ((int)(((byte)(195)))));
             this.panel15.Controls.Add(this.comboBox2);
             this.panel15.Dock = System.Windows.Forms.DockStyle.Fill;
-            this.panel15.Location = new System.Drawing.Point(807, 3);
+            this.panel15.Location = new System.Drawing.Point(799, 3);
             this.panel15.Name = "panel15";
-            this.panel15.Size = new System.Drawing.Size(262, 74);
+            this.panel15.Size = new System.Drawing.Size(270, 74);
             this.panel15.TabIndex = 25;
             // 
             // comboBox2
             // 
             this.comboBox2.Anchor = System.Windows.Forms.AnchorStyles.Right;
             this.comboBox2.FormattingEnabled = true;
-            this.comboBox2.Location = new System.Drawing.Point(-30, 21);
+            this.comboBox2.Location = new System.Drawing.Point(-22, 21);
             this.comboBox2.Name = "comboBox2";
             this.comboBox2.Size = new System.Drawing.Size(289, 28);
             this.comboBox2.TabIndex = 0;
@@ -306,9 +306,9 @@
             this.panel12.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(0)))), ((int)(((byte)(122)))), ((int)(((byte)(195)))));
             this.panel12.Controls.Add(this.panel13);
             this.panel12.Dock = System.Windows.Forms.DockStyle.Fill;
-            this.panel12.Location = new System.Drawing.Point(271, 3);
+            this.panel12.Location = new System.Drawing.Point(285, 3);
             this.panel12.Name = "panel12";
-            this.panel12.Size = new System.Drawing.Size(262, 74);
+            this.panel12.Size = new System.Drawing.Size(224, 74);
             this.panel12.TabIndex = 24;
             // 
             // panel13
@@ -318,7 +318,7 @@
             this.panel13.Dock = System.Windows.Forms.DockStyle.Fill;
             this.panel13.Location = new System.Drawing.Point(0, 0);
             this.panel13.Name = "panel13";
-            this.panel13.Size = new System.Drawing.Size(262, 74);
+            this.panel13.Size = new System.Drawing.Size(224, 74);
             this.panel13.TabIndex = 25;
             // 
             // panel14
@@ -328,13 +328,13 @@
             this.panel14.Dock = System.Windows.Forms.DockStyle.Fill;
             this.panel14.Location = new System.Drawing.Point(0, 0);
             this.panel14.Name = "panel14";
-            this.panel14.Size = new System.Drawing.Size(262, 74);
+            this.panel14.Size = new System.Drawing.Size(224, 74);
             this.panel14.TabIndex = 25;
             // 
             // textBox3
             // 
             this.textBox3.Anchor = System.Windows.Forms.AnchorStyles.Right;
-            this.textBox3.Location = new System.Drawing.Point(-24, 15);
+            this.textBox3.Location = new System.Drawing.Point(-62, 15);
             this.textBox3.Multiline = true;
             this.textBox3.Name = "textBox3";
             this.textBox3.Size = new System.Drawing.Size(286, 39);
@@ -347,7 +347,7 @@
             this.panel8.Dock = System.Windows.Forms.DockStyle.Fill;
             this.panel8.Location = new System.Drawing.Point(3, 3);
             this.panel8.Name = "panel8";
-            this.panel8.Size = new System.Drawing.Size(262, 74);
+            this.panel8.Size = new System.Drawing.Size(276, 74);
             this.panel8.TabIndex = 23;
             // 
             // label3
@@ -358,7 +358,7 @@
             this.label3.Font = new System.Drawing.Font("Yu Gothic UI", 11F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.label3.ForeColor = System.Drawing.Color.Black;
             this.label3.ImageAlign = System.Drawing.ContentAlignment.MiddleRight;
-            this.label3.Location = new System.Drawing.Point(16, 19);
+            this.label3.Location = new System.Drawing.Point(23, 19);
             this.label3.Name = "label3";
             this.label3.Size = new System.Drawing.Size(223, 30);
             this.label3.TabIndex = 42;
@@ -372,7 +372,7 @@
             this.panel9.Dock = System.Windows.Forms.DockStyle.Fill;
             this.panel9.Location = new System.Drawing.Point(3, 83);
             this.panel9.Name = "panel9";
-            this.panel9.Size = new System.Drawing.Size(262, 74);
+            this.panel9.Size = new System.Drawing.Size(276, 74);
             this.panel9.TabIndex = 23;
             // 
             // label5
@@ -383,7 +383,7 @@
             this.label5.Font = new System.Drawing.Font("Yu Gothic UI", 11F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.label5.ForeColor = System.Drawing.Color.Black;
             this.label5.ImageAlign = System.Drawing.ContentAlignment.MiddleRight;
-            this.label5.Location = new System.Drawing.Point(16, 19);
+            this.label5.Location = new System.Drawing.Point(23, 19);
             this.label5.Name = "label5";
             this.label5.Size = new System.Drawing.Size(225, 30);
             this.label5.TabIndex = 42;
@@ -395,9 +395,9 @@
             this.panel10.BackColor = System.Drawing.Color.SkyBlue;
             this.panel10.Controls.Add(this.label7);
             this.panel10.Dock = System.Windows.Forms.DockStyle.Fill;
-            this.panel10.Location = new System.Drawing.Point(539, 3);
+            this.panel10.Location = new System.Drawing.Point(515, 3);
             this.panel10.Name = "panel10";
-            this.panel10.Size = new System.Drawing.Size(262, 74);
+            this.panel10.Size = new System.Drawing.Size(278, 74);
             this.panel10.TabIndex = 23;
             // 
             // label7
@@ -408,7 +408,7 @@
             this.label7.Font = new System.Drawing.Font("Yu Gothic UI", 11F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.label7.ForeColor = System.Drawing.Color.Black;
             this.label7.ImageAlign = System.Drawing.ContentAlignment.MiddleRight;
-            this.label7.Location = new System.Drawing.Point(16, 19);
+            this.label7.Location = new System.Drawing.Point(24, 19);
             this.label7.Name = "label7";
             this.label7.Size = new System.Drawing.Size(187, 30);
             this.label7.TabIndex = 42;
@@ -420,9 +420,9 @@
             this.panel11.BackColor = System.Drawing.Color.SkyBlue;
             this.panel11.Controls.Add(this.label8);
             this.panel11.Dock = System.Windows.Forms.DockStyle.Fill;
-            this.panel11.Location = new System.Drawing.Point(539, 83);
+            this.panel11.Location = new System.Drawing.Point(515, 83);
             this.panel11.Name = "panel11";
-            this.panel11.Size = new System.Drawing.Size(262, 74);
+            this.panel11.Size = new System.Drawing.Size(278, 74);
             this.panel11.TabIndex = 23;
             // 
             // label8
@@ -433,7 +433,7 @@
             this.label8.Font = new System.Drawing.Font("Yu Gothic UI", 11F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.label8.ForeColor = System.Drawing.Color.Black;
             this.label8.ImageAlign = System.Drawing.ContentAlignment.MiddleRight;
-            this.label8.Location = new System.Drawing.Point(16, 19);
+            this.label8.Location = new System.Drawing.Point(24, 19);
             this.label8.Name = "label8";
             this.label8.Size = new System.Drawing.Size(202, 30);
             this.label8.TabIndex = 42;
@@ -456,7 +456,7 @@
             this.tableLayoutPanel2.Name = "tableLayoutPanel2";
             this.tableLayoutPanel2.RowCount = 1;
             this.tableLayoutPanel2.RowStyles.Add(new System.Windows.Forms.RowStyle(System.Windows.Forms.SizeType.Percent, 100F));
-            this.tableLayoutPanel2.RowStyles.Add(new System.Windows.Forms.RowStyle(System.Windows.Forms.SizeType.Absolute, 20F));
+            this.tableLayoutPanel2.RowStyles.Add(new System.Windows.Forms.RowStyle(System.Windows.Forms.SizeType.Absolute, 71F));
             this.tableLayoutPanel2.Size = new System.Drawing.Size(1072, 71);
             this.tableLayoutPanel2.TabIndex = 56;
             // 
@@ -469,37 +469,6 @@
             this.panel3.Name = "panel3";
             this.panel3.Size = new System.Drawing.Size(315, 65);
             this.panel3.TabIndex = 0;
-            // 
-            // panel4
-            // 
-            this.panel4.BackColor = System.Drawing.Color.SkyBlue;
-            this.panel4.Controls.Add(this.label4);
-            this.panel4.Dock = System.Windows.Forms.DockStyle.Fill;
-            this.panel4.Location = new System.Drawing.Point(538, 3);
-            this.panel4.Name = "panel4";
-            this.panel4.Size = new System.Drawing.Size(315, 65);
-            this.panel4.TabIndex = 0;
-            this.panel4.Paint += new System.Windows.Forms.PaintEventHandler(this.panel4_Paint);
-            // 
-            // panel5
-            // 
-            this.panel5.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(0)))), ((int)(((byte)(122)))), ((int)(((byte)(195)))));
-            this.panel5.Controls.Add(this.textBox1);
-            this.panel5.Dock = System.Windows.Forms.DockStyle.Fill;
-            this.panel5.Location = new System.Drawing.Point(324, 3);
-            this.panel5.Name = "panel5";
-            this.panel5.Size = new System.Drawing.Size(208, 65);
-            this.panel5.TabIndex = 1;
-            // 
-            // panel6
-            // 
-            this.panel6.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(0)))), ((int)(((byte)(122)))), ((int)(((byte)(195)))));
-            this.panel6.Controls.Add(this.textBox2);
-            this.panel6.Dock = System.Windows.Forms.DockStyle.Fill;
-            this.panel6.Location = new System.Drawing.Point(859, 3);
-            this.panel6.Name = "panel6";
-            this.panel6.Size = new System.Drawing.Size(210, 65);
-            this.panel6.TabIndex = 1;
             // 
             // label2
             // 
@@ -516,6 +485,17 @@
             this.label2.Text = "Total Rooms:";
             this.label2.TextAlign = System.Drawing.ContentAlignment.MiddleLeft;
             // 
+            // panel4
+            // 
+            this.panel4.BackColor = System.Drawing.Color.SkyBlue;
+            this.panel4.Controls.Add(this.label4);
+            this.panel4.Dock = System.Windows.Forms.DockStyle.Fill;
+            this.panel4.Location = new System.Drawing.Point(538, 3);
+            this.panel4.Name = "panel4";
+            this.panel4.Size = new System.Drawing.Size(315, 65);
+            this.panel4.TabIndex = 0;
+            this.panel4.Paint += new System.Windows.Forms.PaintEventHandler(this.panel4_Paint);
+            // 
             // label4
             // 
             this.label4.Anchor = System.Windows.Forms.AnchorStyles.None;
@@ -531,6 +511,16 @@
             this.label4.Text = "Available Rooms:";
             this.label4.TextAlign = System.Drawing.ContentAlignment.MiddleLeft;
             // 
+            // panel5
+            // 
+            this.panel5.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(0)))), ((int)(((byte)(122)))), ((int)(((byte)(195)))));
+            this.panel5.Controls.Add(this.textBox1);
+            this.panel5.Dock = System.Windows.Forms.DockStyle.Fill;
+            this.panel5.Location = new System.Drawing.Point(324, 3);
+            this.panel5.Name = "panel5";
+            this.panel5.Size = new System.Drawing.Size(208, 65);
+            this.panel5.TabIndex = 1;
+            // 
             // textBox1
             // 
             this.textBox1.Location = new System.Drawing.Point(45, 12);
@@ -540,6 +530,16 @@
             this.textBox1.Size = new System.Drawing.Size(119, 41);
             this.textBox1.TabIndex = 1;
             this.textBox1.TabStop = false;
+            // 
+            // panel6
+            // 
+            this.panel6.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(0)))), ((int)(((byte)(122)))), ((int)(((byte)(195)))));
+            this.panel6.Controls.Add(this.textBox2);
+            this.panel6.Dock = System.Windows.Forms.DockStyle.Fill;
+            this.panel6.Location = new System.Drawing.Point(859, 3);
+            this.panel6.Name = "panel6";
+            this.panel6.Size = new System.Drawing.Size(210, 65);
+            this.panel6.TabIndex = 1;
             // 
             // textBox2
             // 

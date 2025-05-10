@@ -65,10 +65,10 @@ namespace dll.DL
             return (int)ID;
         }
 
-        static public bool UpdateUsertoDB(int UserID, string Password, string Username, string Email,string Phone, string Name)
+        static public bool UpdateUsertoDB(int UserID, string Username, string Password, int roleID , string Email,string Phone, string Name)
         {
-            string updateQuery = "UPDATE users SET password = '{0}',username = '{1}', password = '{2}' ,Email = '{3}', Phone = '{4}',Name = '{5}' Where UserID = {6}";
-            updateQuery = String.Format(updateQuery, Username, Password, Email, Phone,  Name);
+            string updateQuery = "UPDATE users SET password = '{0}',username = '{1}', role_id = {2} ,email = '{3}', contact = '{4}',name = '{5}' Where userID = {6}";
+            updateQuery = String.Format(updateQuery, Username, Password, roleID,Email, Phone,  Name,UserID);
             int rowsAffected = DatabaseHelper.executeDML(updateQuery);
             if (rowsAffected > 0)
             {

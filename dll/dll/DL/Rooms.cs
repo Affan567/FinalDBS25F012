@@ -59,5 +59,32 @@ namespace dll.DL
             List<object> WardenNames = DatabaseHelper.GetColumnValues(query, columnName);
             return WardenNames;
         }
+
+        public bool AddRoom(BL.Rooms r)
+        {
+            string insertQuery = "INSERT INTO student(RoomNumber, RoomTypeID, Status,BuildingID) " +
+                                 "VALUES ('{0}', {1}, {2}, {3})";
+            insertQuery = string.Format(insertQuery, r.GetRoomNumber(), r.getRommtypeID(), r.GetStatus() , r.GetBuildingID());
+
+            int rowsAffected = DatabaseHelper.executeDML(insertQuery);
+            return rowsAffected > 0;
+        }
+
+        public DataTable GettingRoomData()
+        {
+            string query = "Select r.RoomNumber , r.Status ,rt.TypeName , rt.Capacity from rooms r join roomtype as rt on r.RoomTypeID = rt.RoomTypeID ";
+            query = String.Format(query);
+            return DatabaseHelper.getDataTable(query);
+        }
+
+        public List<object> GetBuildingRoomIDFromDB()
+        {
+            string columnName = "RoomID";
+            string query = "Select RoomID from rooms";
+            query = String.Format(query, "RoomID");
+            List<object> WardenNames = DatabaseHelper.GetColumnValues(query, columnName);
+            return WardenNames;
+
+        }
     }
 }

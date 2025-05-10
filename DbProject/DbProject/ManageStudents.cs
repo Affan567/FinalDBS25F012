@@ -46,38 +46,10 @@ namespace DbProject
             }
         }
 
-        private void dataGridView1_CellClick_1(object sender, DataGridViewCellEventArgs e)
-        {
-
-            if (e.RowIndex < 0 || e.ColumnIndex != dataGridView1.Columns["btnDelete"].Index)
-                return;
+        
 
 
-            int Studentid = Convert.ToInt32(dataGridView1.Rows[e.RowIndex].Cells["StudentID"].Value);
-            int userid = Convert.ToInt32(dataGridView1.Rows[e.RowIndex].Cells["userID"].Value);
-
-
-            var result = MessageBox.Show("Are you sure you want to delete this record?", "Confirm", MessageBoxButtons.YesNo);
-
-            if (result == DialogResult.Yes)
-            {
-                Student s = new Student();
-                if (s.DeleteStudent(Studentid , userid))
-                {
-                    MessageBox.Show("Row Deleted SuccessFully");
-                }
-                else
-                {
-                    MessageBox.Show("Can't deleted ");
-                }
-
-                LoadData();
-
-                bindRoomNumber();
-            }
-
-
-        }
+        
         private void loadRegisteredStudents()
         {
             Student s = new Student();
@@ -102,42 +74,44 @@ namespace DbProject
             Rooms room = new Rooms();
             List<object> rooms = room.GetRoomNumbers();
 
-            
+
             comboBox3.DataSource = rooms;
             comboBox3.SelectedIndex = -1;
         }
         private void codedButton2_Click(object sender, EventArgs e)
         {
 
-            
-                string Studentname = textBox4.Text.ToString().Trim();
-                string StudentContact = textBox1.Text.ToString().Trim();
-                string Studentemail = textBox6.Text.ToString().Trim();
-                string StudentReg = textBox7.Text.ToString().Trim();
-                int Semester = int.Parse(numericUpDown1.Text.Trim());
-                int roomNumber = int.Parse(comboBox3.Text.ToString().Trim());
 
-                string StudentUsername = textBox3.Text.ToString().Trim();
-                string StudentPassword = textBox2.Text.ToString().Trim();
+            string Studentname = textBox4.Text.ToString().Trim();
+            string StudentContact = textBox1.Text.ToString().Trim();
+            string Studentemail = textBox6.Text.ToString().Trim();
+            string StudentReg = textBox7.Text.ToString().Trim();
+            int Semester = int.Parse(numericUpDown1.Text.Trim());
+            int roomNumber = int.Parse(comboBox3.Text.ToString().Trim());
+
+
+
+            string StudentUsername = textBox3.Text.ToString().Trim();
+            string StudentPassword = textBox2.Text.ToString().Trim();
 
             Rooms r = new Rooms();
             int roomID = (int)r.getRoomID(roomNumber);
 
 
-            Student s = new Student(Studentname, StudentContact, Studentemail, 2, StudentReg, Semester, roomID,StudentUsername,StudentPassword);
+            Student s = new Student(Studentname, StudentContact, Studentemail, 2, StudentReg, Semester, roomID, StudentUsername, StudentPassword);
 
-            if(s.AddStudent(s))
+            if (s.AddStudent(s))
             {
                 MessageBox.Show("Student Added Successfully");
             }
             else
             {
-                MessageBox.Show("An error occurred: " );
+                MessageBox.Show("An error occurred: ");
             }
 
             LoadData();
 
-            
+
 
         }
 
@@ -154,10 +128,10 @@ namespace DbProject
             string StudentUsername = textBox3.Text.ToString().Trim();
             string StudentPassword = textBox2.Text.ToString().Trim();
 
-            
+
             Student stu = new Student();
             int userID = stu.GetUserID(StudentUsername, StudentPassword);
-            
+
             int studentID = (int)stu.GetStudentID(userID);
 
             Rooms room = new Rooms();
@@ -167,7 +141,7 @@ namespace DbProject
 
 
 
-            Student student = new Student(userID , studentID,Studentname ,StudentContact,Studentemail,StudentReg,Semester,roomid,StudentUsername,StudentPassword);
+            Student student = new Student(userID, studentID, Studentname, StudentContact, Studentemail, StudentReg, Semester, roomid, StudentUsername, StudentPassword);
             bool flag = student.UpdateStudent(student);
 
             if (flag)
@@ -179,6 +153,36 @@ namespace DbProject
         private void codedButton1_Click(object sender, EventArgs e)
         {
             LoadData();
+        }
+
+        private void dataGridView1_CellClick(object sender, DataGridViewCellEventArgs e)
+        {
+            if (e.RowIndex < 0 || e.ColumnIndex != dataGridView1.Columns["btnDelete"].Index)
+                return;
+
+
+            int Studentid = Convert.ToInt32(dataGridView1.Rows[e.RowIndex].Cells["StudentID"].Value);
+            int userid = Convert.ToInt32(dataGridView1.Rows[e.RowIndex].Cells["userID"].Value);
+
+
+            var result = MessageBox.Show("Are you sure you want to delete this record?", "Confirm", MessageBoxButtons.YesNo);
+
+            if (result == DialogResult.Yes)
+            {
+                Student s = new Student();
+                if (s.DeleteStudent(Studentid, userid))
+                {
+                    MessageBox.Show("Row Deleted SuccessFully");
+                }
+                else
+                {
+                    MessageBox.Show("Can't deleted ");
+                }
+
+                LoadData();
+
+                bindRoomNumber();
+            }
         }
     }
 }

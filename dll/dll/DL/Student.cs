@@ -4,6 +4,8 @@ using System.Data;
 using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
+using Mysqlx.Crud;
+using System.Windows.Forms;
 using Org.BouncyCastle.Bcpg;
 
 namespace dll.DL
@@ -57,9 +59,14 @@ namespace dll.DL
         {
             List<string> queries = new List<string>();
 
-            queries.Add($"Delete From students Where StudentID = {studentid}");
-            queries.Add($"DELETE FROM users WHERE userID = {userid}");
+            string query = "Delete From students Where StudentID = {0}";
+            query = String.Format(query, studentid);
+            string query2 = "Delete From users Where userID = {0}";
+            query2 = String.Format(query2, userid);
 
+
+            queries.Add(query);
+            queries.Add(query2);
             bool rowsAffected = DatabaseHelper.ExecuteTransaction(queries);
 
             if (rowsAffected)

@@ -16,5 +16,10 @@ namespace DbProject
         {
             InitializeComponent();
         }
+
+        private void ManagePayment_Load(object sender, EventArgs e)
+        {
+
+        }
     }
 }

@@ -174,12 +174,6 @@
     <Compile Include="StudentVisitorForm.Designer.cs">
       <DependentUpon>StudentVisitorForm.cs</DependentUpon>
     </Compile>
-    <Compile Include="ManageComplaints.cs">
-      <SubType>Form</SubType>
-    </Compile>
-    <Compile Include="ManageComplaints.Designer.cs">
-      <DependentUpon>ManageComplaints.cs</DependentUpon>
-    </Compile>
     <EmbeddedResource Include="AdminDashboard.resx">
       <DependentUpon>AdminDashboard.cs</DependentUpon>
     </EmbeddedResource>
@@ -249,9 +243,6 @@
     </EmbeddedResource>
     <EmbeddedResource Include="StudentVisitorForm.resx">
       <DependentUpon>StudentVisitorForm.cs</DependentUpon>
-    </EmbeddedResource>
-    <EmbeddedResource Include="ManageComplaints.resx">
-      <DependentUpon>ManageComplaints.cs</DependentUpon>
     </EmbeddedResource>
     <None Include="Properties\DataSources\DbProject.Properties.Resources.datasource" />
     <None Include="Properties\DataSources\DbProject.Properties.Settings.datasource" />

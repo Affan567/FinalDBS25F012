@@ -105,16 +105,16 @@ namespace DbProject
                 int floors = int.Parse(numericUpDown2.Text.Trim());
                 int rooms = int.Parse(numericUpDown1.Text.ToString().Trim());
                 string status = comboBox2.Text.ToString().Trim();
-
-
+                
+                
                 Hostelbuildings hb = new Hostelbuildings();
                 int buildingID = (int)hb.GetBuildingID(buildingNameBefore);
 
 
                 Warden h = new Warden();
                 int wardenID = (int)h.GetWardenID(Buildingwarden);
-
-
+                
+                
                 Hostelbuildings building = new Hostelbuildings(buildingID,buildingnameAfter, floors, rooms, wardenID, status);
                 bool flag = building.UpdateBuildings(building);
 
@@ -183,14 +183,14 @@ namespace DbProject
 
         private void dataGridView1_CellClick_1(object sender, DataGridViewCellEventArgs e)
         {
-            // Ignore header and out-of-range clicks
+            
             if (e.RowIndex < 0 || e.ColumnIndex != dataGridView1.Columns["btnDelete"].Index)
                 return;
 
-            // Get ID of the selected row
+            
             int id = Convert.ToInt32(dataGridView1.Rows[e.RowIndex].Cells["BuildingID"].Value);
 
-            // Confirm deletion
+            
             var result = MessageBox.Show("Are you sure you want to delete this record?", "Confirm", MessageBoxButtons.YesNo);
             if (result == DialogResult.Yes)
             {
@@ -204,7 +204,7 @@ namespace DbProject
                     MessageBox.Show("Can't deleted ");
                 }
 
-                LoadData(); // Refresh the grid
+                LoadData(); 
 
                 bindWarden();
                 bindBuilding();

@@ -30,6 +30,7 @@
         {
             System.ComponentModel.ComponentResourceManager resources = new System.ComponentModel.ComponentResourceManager(typeof(SignIN));
             this.panelLeft = new System.Windows.Forms.Panel();
+            this.panel1 = new System.Windows.Forms.Panel();
             this.label1 = new System.Windows.Forms.Label();
             this.pictureBox1 = new System.Windows.Forms.PictureBox();
             this.label2 = new System.Windows.Forms.Label();
@@ -39,11 +40,10 @@
             this.txtpassword = new System.Windows.Forms.TextBox();
             this.panelRight = new System.Windows.Forms.Panel();
             this.btnSignIn = new DbProject.CodedButton();
-            this.panel1 = new System.Windows.Forms.Panel();
             this.panelLeft.SuspendLayout();
+            this.panel1.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox1)).BeginInit();
             this.panelRight.SuspendLayout();
-            this.panel1.SuspendLayout();
             this.SuspendLayout();
             // 
             // panelLeft
@@ -54,8 +54,17 @@
             this.panelLeft.Dock = System.Windows.Forms.DockStyle.Left;
             this.panelLeft.Location = new System.Drawing.Point(0, 0);
             this.panelLeft.Name = "panelLeft";
-            this.panelLeft.Size = new System.Drawing.Size(399, 642);
+            this.panelLeft.Size = new System.Drawing.Size(399, 653);
             this.panelLeft.TabIndex = 1;
+            // 
+            // panel1
+            // 
+            this.panel1.Controls.Add(this.label1);
+            this.panel1.Dock = System.Windows.Forms.DockStyle.Bottom;
+            this.panel1.Location = new System.Drawing.Point(0, 449);
+            this.panel1.Name = "panel1";
+            this.panel1.Size = new System.Drawing.Size(399, 204);
+            this.panel1.TabIndex = 6;
             // 
             // label1
             // 
@@ -139,7 +148,7 @@
             this.panelRight.Dock = System.Windows.Forms.DockStyle.Fill;
             this.panelRight.Location = new System.Drawing.Point(399, 0);
             this.panelRight.Name = "panelRight";
-            this.panelRight.Size = new System.Drawing.Size(536, 642);
+            this.panelRight.Size = new System.Drawing.Size(564, 653);
             this.panelRight.TabIndex = 2;
             // 
             // btnSignIn
@@ -162,31 +171,22 @@
             this.btnSignIn.UseVisualStyleBackColor = false;
             this.btnSignIn.Click += new System.EventHandler(this.btnSignIn_Click);
             // 
-            // panel1
-            // 
-            this.panel1.Controls.Add(this.label1);
-            this.panel1.Dock = System.Windows.Forms.DockStyle.Bottom;
-            this.panel1.Location = new System.Drawing.Point(0, 438);
-            this.panel1.Name = "panel1";
-            this.panel1.Size = new System.Drawing.Size(399, 204);
-            this.panel1.TabIndex = 6;
-            // 
             // SignIN
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(9F, 20F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
-            this.ClientSize = new System.Drawing.Size(935, 642);
+            this.ClientSize = new System.Drawing.Size(963, 653);
             this.Controls.Add(this.panelRight);
             this.Controls.Add(this.panelLeft);
             this.Name = "SignIN";
             this.Text = "SignIN";
             this.panelLeft.ResumeLayout(false);
             this.panelLeft.PerformLayout();
+            this.panel1.ResumeLayout(false);
+            this.panel1.PerformLayout();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox1)).EndInit();
             this.panelRight.ResumeLayout(false);
             this.panelRight.PerformLayout();
-            this.panel1.ResumeLayout(false);
-            this.panel1.PerformLayout();
             this.ResumeLayout(false);
 
         }

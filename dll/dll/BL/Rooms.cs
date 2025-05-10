@@ -10,6 +10,9 @@ namespace dll.BL
     public class Rooms
     {
 
+
+
+        
         public Rooms() { }
         public object getTotalRooms()
         {

@@ -4,6 +4,7 @@ using System.Data;
 using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
+using dll.DL;
 
 namespace dll.BL
 {
@@ -29,10 +30,7 @@ namespace dll.BL
             return RegistrationNumber;
         }
 
-        public string Getgender()
-        {
-            return gender;
-        }
+        
 
         public int GetSemester()
         {
@@ -84,12 +82,12 @@ namespace dll.BL
             this.userid = userID;
         }
 
-        public Student(int StudentID ,string RegistrationNumber,int semester,  string Username,string password , string Email,  string Phone,  string Name, string gender , int UserID , int roomID) : base( Username, password , Name, Email, Phone)
+        public Student(int userID ,int studentID,string Studentname ,string StudentContact,string Studentemail,string StudentReg,int Semester,int roomID,string StudentUsername,string StudentPassword) : base( userID, StudentUsername, StudentPassword, Studentname, Studentemail, StudentContact)//Edit student constructor
         {
-            this.StudentID = StudentID;
-            this.RegistrationNumber = RegistrationNumber;
+            this.StudentID =studentID;
+            this.RegistrationNumber = StudentReg;
             this.roomID = roomID;
-            this.semester = semester;
+            this.semester = Semester;
         }
         public Student(string Name ,string Phone,string Email,int roleID, string RegistrationNumber, int semester,int roomid , string Username, string password) : base(Username,password, Name, Email, Phone, roleID)//Add constructor
         {
@@ -126,7 +124,7 @@ namespace dll.BL
         public bool UpdateStudent(Student s)
         {
             BL.User bl = new BL.User();
-            bool flag1 = bl.UpdateUser(s.GetUserID(), s.GetPassword(), s.GetUsername(), s.GetEmail(),s.GetContact() , s.GetName());
+            bool flag1 = bl.UpdateUser(s.GetUserID(), s.GetPassword(), s.GetUsername(), s.GetEmail(), s.RoleID(), s.GetContact() , s.GetName());
             if (flag1)
             {
                 DL.Student dl = new DL.Student();
@@ -141,18 +139,23 @@ namespace dll.BL
             DL.Student.getRegistrationNumber();
         }
 
-        //public bool DeleteStudent(int facultyid, int userid)
-        //{
-        //    DL.Student dl = new DL.Student();
-        //    return dl.DeleteStudentFromDB(facultyid, userid);
+        public bool DeleteStudent(int Studentid, int userid)
+        {
+            DL.Student dl = new DL.Student();
+            return dl.DeleteStudentFromDB(Studentid, userid);
 
-        //}
+        }
 
         public object getTotalStudents()
         {
             DL.Student s = new DL.Student();
             return s.GetRegisteredStudents();
+        }
 
+        public object GetStudentID(int userID)
+        {
+            DL.Student stu = new DL.Student();
+            return stu.getStudentID(userID);
         }
     }
 }

@@ -49,10 +49,8 @@
             this.pictureBox5 = new System.Windows.Forms.PictureBox();
             this.pictureBox6 = new System.Windows.Forms.PictureBox();
             this.pictureBox10 = new System.Windows.Forms.PictureBox();
-            this.pictureBox4 = new System.Windows.Forms.PictureBox();
             this.pictureBox12 = new System.Windows.Forms.PictureBox();
             this.btnManageBuildings = new System.Windows.Forms.Button();
-            this.btnComplaints = new System.Windows.Forms.Button();
             this.btnAddEmployees = new System.Windows.Forms.Button();
             this.panel1.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox11)).BeginInit();
@@ -65,7 +63,6 @@
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox5)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox6)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox10)).BeginInit();
-            ((System.ComponentModel.ISupportInitialize)(this.pictureBox4)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox12)).BeginInit();
             this.SuspendLayout();
             // 
@@ -193,22 +190,19 @@
             this.tableLayoutPanel1.Controls.Add(this.pictureBox5, 0, 2);
             this.tableLayoutPanel1.Controls.Add(this.pictureBox6, 0, 4);
             this.tableLayoutPanel1.Controls.Add(this.pictureBox10, 0, 5);
-            this.tableLayoutPanel1.Controls.Add(this.pictureBox4, 0, 6);
-            this.tableLayoutPanel1.Controls.Add(this.pictureBox12, 0, 7);
+            this.tableLayoutPanel1.Controls.Add(this.pictureBox12, 0, 6);
             this.tableLayoutPanel1.Controls.Add(this.btnManageBuildings, 1, 1);
-            this.tableLayoutPanel1.Controls.Add(this.btnComplaints, 1, 6);
-            this.tableLayoutPanel1.Controls.Add(this.btnAddEmployees, 1, 7);
+            this.tableLayoutPanel1.Controls.Add(this.btnAddEmployees, 1, 6);
             this.tableLayoutPanel1.Location = new System.Drawing.Point(0, 3);
             this.tableLayoutPanel1.Name = "tableLayoutPanel1";
-            this.tableLayoutPanel1.RowCount = 8;
-            this.tableLayoutPanel1.RowStyles.Add(new System.Windows.Forms.RowStyle(System.Windows.Forms.SizeType.Percent, 12.5F));
-            this.tableLayoutPanel1.RowStyles.Add(new System.Windows.Forms.RowStyle(System.Windows.Forms.SizeType.Percent, 12.5F));
-            this.tableLayoutPanel1.RowStyles.Add(new System.Windows.Forms.RowStyle(System.Windows.Forms.SizeType.Percent, 12.5F));
-            this.tableLayoutPanel1.RowStyles.Add(new System.Windows.Forms.RowStyle(System.Windows.Forms.SizeType.Percent, 12.5F));
-            this.tableLayoutPanel1.RowStyles.Add(new System.Windows.Forms.RowStyle(System.Windows.Forms.SizeType.Percent, 12.5F));
-            this.tableLayoutPanel1.RowStyles.Add(new System.Windows.Forms.RowStyle(System.Windows.Forms.SizeType.Percent, 12.5F));
-            this.tableLayoutPanel1.RowStyles.Add(new System.Windows.Forms.RowStyle(System.Windows.Forms.SizeType.Percent, 12.5F));
-            this.tableLayoutPanel1.RowStyles.Add(new System.Windows.Forms.RowStyle(System.Windows.Forms.SizeType.Percent, 12.5F));
+            this.tableLayoutPanel1.RowCount = 7;
+            this.tableLayoutPanel1.RowStyles.Add(new System.Windows.Forms.RowStyle(System.Windows.Forms.SizeType.Percent, 14.28571F));
+            this.tableLayoutPanel1.RowStyles.Add(new System.Windows.Forms.RowStyle(System.Windows.Forms.SizeType.Percent, 14.28571F));
+            this.tableLayoutPanel1.RowStyles.Add(new System.Windows.Forms.RowStyle(System.Windows.Forms.SizeType.Percent, 14.28571F));
+            this.tableLayoutPanel1.RowStyles.Add(new System.Windows.Forms.RowStyle(System.Windows.Forms.SizeType.Percent, 14.28571F));
+            this.tableLayoutPanel1.RowStyles.Add(new System.Windows.Forms.RowStyle(System.Windows.Forms.SizeType.Percent, 14.28571F));
+            this.tableLayoutPanel1.RowStyles.Add(new System.Windows.Forms.RowStyle(System.Windows.Forms.SizeType.Percent, 14.28571F));
+            this.tableLayoutPanel1.RowStyles.Add(new System.Windows.Forms.RowStyle(System.Windows.Forms.SizeType.Percent, 14.28571F));
             this.tableLayoutPanel1.RowStyles.Add(new System.Windows.Forms.RowStyle(System.Windows.Forms.SizeType.Absolute, 20F));
             this.tableLayoutPanel1.Size = new System.Drawing.Size(275, 493);
             this.tableLayoutPanel1.TabIndex = 19;
@@ -220,9 +214,9 @@
             this.btnPayments.BackColor = System.Drawing.Color.Black;
             this.btnPayments.Font = new System.Drawing.Font("Yu Gothic UI", 10F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.btnPayments.ForeColor = System.Drawing.Color.Transparent;
-            this.btnPayments.Location = new System.Drawing.Point(58, 308);
+            this.btnPayments.Location = new System.Drawing.Point(58, 353);
             this.btnPayments.Name = "btnPayments";
-            this.btnPayments.Size = new System.Drawing.Size(214, 55);
+            this.btnPayments.Size = new System.Drawing.Size(214, 64);
             this.btnPayments.TabIndex = 52;
             this.btnPayments.Text = "Manage Payments";
             this.btnPayments.UseVisualStyleBackColor = false;
@@ -234,9 +228,9 @@
             this.btnManageEmployee.BackColor = System.Drawing.Color.Black;
             this.btnManageEmployee.Font = new System.Drawing.Font("Yu Gothic UI", 10F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.btnManageEmployee.ForeColor = System.Drawing.Color.Transparent;
-            this.btnManageEmployee.Location = new System.Drawing.Point(58, 247);
+            this.btnManageEmployee.Location = new System.Drawing.Point(58, 283);
             this.btnManageEmployee.Name = "btnManageEmployee";
-            this.btnManageEmployee.Size = new System.Drawing.Size(214, 55);
+            this.btnManageEmployee.Size = new System.Drawing.Size(214, 64);
             this.btnManageEmployee.TabIndex = 51;
             this.btnManageEmployee.Text = "Manage Servants";
             this.btnManageEmployee.UseVisualStyleBackColor = false;
@@ -249,9 +243,9 @@
             this.btnManageStudent.BackColor = System.Drawing.Color.Black;
             this.btnManageStudent.Font = new System.Drawing.Font("Yu Gothic UI", 10F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.btnManageStudent.ForeColor = System.Drawing.Color.Transparent;
-            this.btnManageStudent.Location = new System.Drawing.Point(58, 186);
+            this.btnManageStudent.Location = new System.Drawing.Point(58, 213);
             this.btnManageStudent.Name = "btnManageStudent";
-            this.btnManageStudent.Size = new System.Drawing.Size(214, 55);
+            this.btnManageStudent.Size = new System.Drawing.Size(214, 64);
             this.btnManageStudent.TabIndex = 49;
             this.btnManageStudent.Text = "Manage Student";
             this.btnManageStudent.UseVisualStyleBackColor = false;
@@ -264,9 +258,9 @@
             this.btnManageRooms.BackColor = System.Drawing.Color.Black;
             this.btnManageRooms.Font = new System.Drawing.Font("Yu Gothic UI", 10F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.btnManageRooms.ForeColor = System.Drawing.Color.Transparent;
-            this.btnManageRooms.Location = new System.Drawing.Point(58, 125);
+            this.btnManageRooms.Location = new System.Drawing.Point(58, 143);
             this.btnManageRooms.Name = "btnManageRooms";
-            this.btnManageRooms.Size = new System.Drawing.Size(214, 55);
+            this.btnManageRooms.Size = new System.Drawing.Size(214, 64);
             this.btnManageRooms.TabIndex = 48;
             this.btnManageRooms.Text = "Manage Rooms";
             this.btnManageRooms.UseVisualStyleBackColor = false;
@@ -281,7 +275,7 @@
             this.labelResults.ForeColor = System.Drawing.Color.White;
             this.labelResults.Location = new System.Drawing.Point(58, 0);
             this.labelResults.Name = "labelResults";
-            this.labelResults.Size = new System.Drawing.Size(214, 61);
+            this.labelResults.Size = new System.Drawing.Size(214, 70);
             this.labelResults.TabIndex = 46;
             this.labelResults.Text = "Dashboard";
             this.labelResults.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
@@ -299,7 +293,7 @@
             // pictureBox3
             // 
             this.pictureBox3.Image = ((System.Drawing.Image)(resources.GetObject("pictureBox3.Image")));
-            this.pictureBox3.Location = new System.Drawing.Point(3, 64);
+            this.pictureBox3.Location = new System.Drawing.Point(3, 73);
             this.pictureBox3.Name = "pictureBox3";
             this.pictureBox3.Size = new System.Drawing.Size(49, 45);
             this.pictureBox3.SizeMode = System.Windows.Forms.PictureBoxSizeMode.Zoom;
@@ -309,7 +303,7 @@
             // pictureBox7
             // 
             this.pictureBox7.Image = ((System.Drawing.Image)(resources.GetObject("pictureBox7.Image")));
-            this.pictureBox7.Location = new System.Drawing.Point(3, 186);
+            this.pictureBox7.Location = new System.Drawing.Point(3, 213);
             this.pictureBox7.Name = "pictureBox7";
             this.pictureBox7.Size = new System.Drawing.Size(49, 45);
             this.pictureBox7.SizeMode = System.Windows.Forms.PictureBoxSizeMode.Zoom;
@@ -319,7 +313,7 @@
             // pictureBox5
             // 
             this.pictureBox5.Image = ((System.Drawing.Image)(resources.GetObject("pictureBox5.Image")));
-            this.pictureBox5.Location = new System.Drawing.Point(3, 125);
+            this.pictureBox5.Location = new System.Drawing.Point(3, 143);
             this.pictureBox5.Name = "pictureBox5";
             this.pictureBox5.Size = new System.Drawing.Size(49, 45);
             this.pictureBox5.SizeMode = System.Windows.Forms.PictureBoxSizeMode.Zoom;
@@ -329,7 +323,7 @@
             // pictureBox6
             // 
             this.pictureBox6.Image = ((System.Drawing.Image)(resources.GetObject("pictureBox6.Image")));
-            this.pictureBox6.Location = new System.Drawing.Point(3, 247);
+            this.pictureBox6.Location = new System.Drawing.Point(3, 283);
             this.pictureBox6.Name = "pictureBox6";
             this.pictureBox6.Size = new System.Drawing.Size(49, 45);
             this.pictureBox6.SizeMode = System.Windows.Forms.PictureBoxSizeMode.Zoom;
@@ -339,27 +333,17 @@
             // pictureBox10
             // 
             this.pictureBox10.Image = ((System.Drawing.Image)(resources.GetObject("pictureBox10.Image")));
-            this.pictureBox10.Location = new System.Drawing.Point(3, 308);
+            this.pictureBox10.Location = new System.Drawing.Point(3, 353);
             this.pictureBox10.Name = "pictureBox10";
             this.pictureBox10.Size = new System.Drawing.Size(49, 45);
             this.pictureBox10.SizeMode = System.Windows.Forms.PictureBoxSizeMode.Zoom;
             this.pictureBox10.TabIndex = 43;
             this.pictureBox10.TabStop = false;
             // 
-            // pictureBox4
-            // 
-            this.pictureBox4.Image = ((System.Drawing.Image)(resources.GetObject("pictureBox4.Image")));
-            this.pictureBox4.Location = new System.Drawing.Point(3, 369);
-            this.pictureBox4.Name = "pictureBox4";
-            this.pictureBox4.Size = new System.Drawing.Size(49, 45);
-            this.pictureBox4.SizeMode = System.Windows.Forms.PictureBoxSizeMode.Zoom;
-            this.pictureBox4.TabIndex = 44;
-            this.pictureBox4.TabStop = false;
-            // 
             // pictureBox12
             // 
             this.pictureBox12.Image = ((System.Drawing.Image)(resources.GetObject("pictureBox12.Image")));
-            this.pictureBox12.Location = new System.Drawing.Point(3, 430);
+            this.pictureBox12.Location = new System.Drawing.Point(3, 423);
             this.pictureBox12.Name = "pictureBox12";
             this.pictureBox12.Size = new System.Drawing.Size(49, 45);
             this.pictureBox12.SizeMode = System.Windows.Forms.PictureBoxSizeMode.Zoom;
@@ -373,27 +357,13 @@
             this.btnManageBuildings.BackColor = System.Drawing.Color.Black;
             this.btnManageBuildings.Font = new System.Drawing.Font("Yu Gothic UI", 10F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.btnManageBuildings.ForeColor = System.Drawing.Color.Transparent;
-            this.btnManageBuildings.Location = new System.Drawing.Point(58, 64);
+            this.btnManageBuildings.Location = new System.Drawing.Point(58, 73);
             this.btnManageBuildings.Name = "btnManageBuildings";
-            this.btnManageBuildings.Size = new System.Drawing.Size(214, 55);
+            this.btnManageBuildings.Size = new System.Drawing.Size(214, 64);
             this.btnManageBuildings.TabIndex = 47;
             this.btnManageBuildings.Text = "Manage Buildings";
             this.btnManageBuildings.UseVisualStyleBackColor = false;
             this.btnManageBuildings.Click += new System.EventHandler(this.btnManageBuildings_Click);
-            // 
-            // btnComplaints
-            // 
-            this.btnComplaints.Anchor = ((System.Windows.Forms.AnchorStyles)(((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Bottom) 
-            | System.Windows.Forms.AnchorStyles.Left)));
-            this.btnComplaints.BackColor = System.Drawing.Color.Black;
-            this.btnComplaints.Font = new System.Drawing.Font("Yu Gothic UI", 10F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.btnComplaints.ForeColor = System.Drawing.Color.Transparent;
-            this.btnComplaints.Location = new System.Drawing.Point(58, 369);
-            this.btnComplaints.Name = "btnComplaints";
-            this.btnComplaints.Size = new System.Drawing.Size(214, 55);
-            this.btnComplaints.TabIndex = 53;
-            this.btnComplaints.Text = "Complaints";
-            this.btnComplaints.UseVisualStyleBackColor = false;
             // 
             // btnAddEmployees
             // 
@@ -402,9 +372,9 @@
             this.btnAddEmployees.BackColor = System.Drawing.Color.Black;
             this.btnAddEmployees.Font = new System.Drawing.Font("Yu Gothic UI", 10F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.btnAddEmployees.ForeColor = System.Drawing.Color.Transparent;
-            this.btnAddEmployees.Location = new System.Drawing.Point(58, 430);
+            this.btnAddEmployees.Location = new System.Drawing.Point(58, 423);
             this.btnAddEmployees.Name = "btnAddEmployees";
-            this.btnAddEmployees.Size = new System.Drawing.Size(214, 60);
+            this.btnAddEmployees.Size = new System.Drawing.Size(214, 67);
             this.btnAddEmployees.TabIndex = 54;
             this.btnAddEmployees.Text = "Manage Warden";
             this.btnAddEmployees.UseVisualStyleBackColor = false;
@@ -432,7 +402,6 @@
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox5)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox6)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox10)).EndInit();
-            ((System.ComponentModel.ISupportInitialize)(this.pictureBox4)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox12)).EndInit();
             this.ResumeLayout(false);
             this.PerformLayout();
@@ -461,10 +430,8 @@
         private System.Windows.Forms.PictureBox pictureBox5;
         private System.Windows.Forms.PictureBox pictureBox6;
         private System.Windows.Forms.PictureBox pictureBox10;
-        private System.Windows.Forms.PictureBox pictureBox4;
         private System.Windows.Forms.PictureBox pictureBox12;
         private System.Windows.Forms.Button btnManageBuildings;
-        private System.Windows.Forms.Button btnComplaints;
         private System.Windows.Forms.Button btnAddEmployees;
     }
 }

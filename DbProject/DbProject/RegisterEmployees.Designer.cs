@@ -138,9 +138,9 @@
             this.label2.ImageAlign = System.Drawing.ContentAlignment.MiddleRight;
             this.label2.Location = new System.Drawing.Point(180, 6);
             this.label2.Name = "label2";
-            this.label2.Size = new System.Drawing.Size(263, 45);
+            this.label2.Size = new System.Drawing.Size(232, 45);
             this.label2.TabIndex = 42;
-            this.label2.Text = "Total Employees:";
+            this.label2.Text = "Total Servants:";
             this.label2.TextAlign = System.Drawing.ContentAlignment.MiddleLeft;
             // 
             // tableLayoutPanel2
@@ -279,16 +279,16 @@
             this.panel9.Dock = System.Windows.Forms.DockStyle.Fill;
             this.panel9.Font = new System.Drawing.Font("Yu Gothic UI", 10F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.panel9.ForeColor = System.Drawing.Color.White;
-            this.panel9.Location = new System.Drawing.Point(600, 137);
+            this.panel9.Location = new System.Drawing.Point(601, 137);
             this.panel9.Name = "panel9";
-            this.panel9.Size = new System.Drawing.Size(649, 78);
+            this.panel9.Size = new System.Drawing.Size(648, 78);
             this.panel9.TabIndex = 29;
             // 
             // comboBox2
             // 
             this.comboBox2.Anchor = System.Windows.Forms.AnchorStyles.Right;
             this.comboBox2.FormattingEnabled = true;
-            this.comboBox2.Location = new System.Drawing.Point(361, 19);
+            this.comboBox2.Location = new System.Drawing.Point(360, 19);
             this.comboBox2.Name = "comboBox2";
             this.comboBox2.Size = new System.Drawing.Size(285, 36);
             this.comboBox2.TabIndex = 43;
@@ -317,14 +317,14 @@
             this.panel8.ForeColor = System.Drawing.Color.White;
             this.panel8.Location = new System.Drawing.Point(3, 137);
             this.panel8.Name = "panel8";
-            this.panel8.Size = new System.Drawing.Size(591, 78);
+            this.panel8.Size = new System.Drawing.Size(592, 78);
             this.panel8.TabIndex = 28;
             // 
             // comboBox1
             // 
             this.comboBox1.Anchor = System.Windows.Forms.AnchorStyles.Right;
             this.comboBox1.FormattingEnabled = true;
-            this.comboBox1.Location = new System.Drawing.Point(279, 19);
+            this.comboBox1.Location = new System.Drawing.Point(280, 19);
             this.comboBox1.Name = "comboBox1";
             this.comboBox1.Size = new System.Drawing.Size(285, 36);
             this.comboBox1.TabIndex = 43;
@@ -340,7 +340,7 @@
             this.label7.Name = "label7";
             this.label7.Size = new System.Drawing.Size(152, 28);
             this.label7.TabIndex = 41;
-            this.label7.Text = "Employee Role:";
+            this.label7.Text = "Room Number:";
             this.label7.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
             // 
             // panel7
@@ -351,16 +351,16 @@
             this.panel7.Dock = System.Windows.Forms.DockStyle.Fill;
             this.panel7.Font = new System.Drawing.Font("Yu Gothic UI", 10F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.panel7.ForeColor = System.Drawing.Color.White;
-            this.panel7.Location = new System.Drawing.Point(600, 75);
+            this.panel7.Location = new System.Drawing.Point(601, 75);
             this.panel7.Name = "panel7";
-            this.panel7.Size = new System.Drawing.Size(649, 56);
+            this.panel7.Size = new System.Drawing.Size(648, 56);
             this.panel7.TabIndex = 27;
             // 
             // textBox3
             // 
             this.textBox3.Anchor = System.Windows.Forms.AnchorStyles.Right;
             this.textBox3.Font = new System.Drawing.Font("Yu Gothic UI Semibold", 10F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.textBox3.Location = new System.Drawing.Point(364, 8);
+            this.textBox3.Location = new System.Drawing.Point(363, 8);
             this.textBox3.Name = "textBox3";
             this.textBox3.Size = new System.Drawing.Size(282, 34);
             this.textBox3.TabIndex = 47;
@@ -374,9 +374,9 @@
             this.label5.ImageAlign = System.Drawing.ContentAlignment.MiddleRight;
             this.label5.Location = new System.Drawing.Point(13, 14);
             this.label5.Name = "label5";
-            this.label5.Size = new System.Drawing.Size(160, 28);
+            this.label5.Size = new System.Drawing.Size(65, 28);
             this.label5.TabIndex = 41;
-            this.label5.Text = "Employee Email:";
+            this.label5.Text = "Email:";
             this.label5.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
             // 
             // panel6
@@ -389,14 +389,14 @@
             this.panel6.ForeColor = System.Drawing.Color.White;
             this.panel6.Location = new System.Drawing.Point(3, 75);
             this.panel6.Name = "panel6";
-            this.panel6.Size = new System.Drawing.Size(591, 56);
+            this.panel6.Size = new System.Drawing.Size(592, 56);
             this.panel6.TabIndex = 26;
             // 
             // textBox2
             // 
             this.textBox2.Anchor = System.Windows.Forms.AnchorStyles.Right;
             this.textBox2.Font = new System.Drawing.Font("Yu Gothic UI Semibold", 10F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.textBox2.Location = new System.Drawing.Point(306, 8);
+            this.textBox2.Location = new System.Drawing.Point(307, 8);
             this.textBox2.Name = "textBox2";
             this.textBox2.Size = new System.Drawing.Size(282, 34);
             this.textBox2.TabIndex = 47;
@@ -410,9 +410,9 @@
             this.label4.ImageAlign = System.Drawing.ContentAlignment.MiddleRight;
             this.label4.Location = new System.Drawing.Point(13, 14);
             this.label4.Name = "label4";
-            this.label4.Size = new System.Drawing.Size(181, 28);
+            this.label4.Size = new System.Drawing.Size(86, 28);
             this.label4.TabIndex = 41;
-            this.label4.Text = "Employee Contact:";
+            this.label4.Text = "Contact:";
             this.label4.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
             // 
             // panel5
@@ -423,16 +423,16 @@
             this.panel5.Dock = System.Windows.Forms.DockStyle.Fill;
             this.panel5.Font = new System.Drawing.Font("Yu Gothic UI", 10F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.panel5.ForeColor = System.Drawing.Color.White;
-            this.panel5.Location = new System.Drawing.Point(600, 3);
+            this.panel5.Location = new System.Drawing.Point(601, 3);
             this.panel5.Name = "panel5";
-            this.panel5.Size = new System.Drawing.Size(649, 66);
+            this.panel5.Size = new System.Drawing.Size(648, 66);
             this.panel5.TabIndex = 25;
             // 
             // textBox1
             // 
             this.textBox1.Anchor = System.Windows.Forms.AnchorStyles.Right;
             this.textBox1.Font = new System.Drawing.Font("Yu Gothic UI Semibold", 10F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.textBox1.Location = new System.Drawing.Point(364, 13);
+            this.textBox1.Location = new System.Drawing.Point(363, 13);
             this.textBox1.Name = "textBox1";
             this.textBox1.Size = new System.Drawing.Size(282, 34);
             this.textBox1.TabIndex = 47;
@@ -446,9 +446,9 @@
             this.label3.ImageAlign = System.Drawing.ContentAlignment.MiddleRight;
             this.label3.Location = new System.Drawing.Point(13, 14);
             this.label3.Name = "label3";
-            this.label3.Size = new System.Drawing.Size(166, 28);
+            this.label3.Size = new System.Drawing.Size(71, 28);
             this.label3.TabIndex = 41;
-            this.label3.Text = "Employee Name:";
+            this.label3.Text = "Name:";
             this.label3.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
             // 
             // panel19
@@ -461,14 +461,14 @@
             this.panel19.ForeColor = System.Drawing.Color.White;
             this.panel19.Location = new System.Drawing.Point(3, 3);
             this.panel19.Name = "panel19";
-            this.panel19.Size = new System.Drawing.Size(591, 66);
+            this.panel19.Size = new System.Drawing.Size(592, 66);
             this.panel19.TabIndex = 24;
             // 
             // textBox4
             // 
             this.textBox4.Anchor = System.Windows.Forms.AnchorStyles.Right;
             this.textBox4.Font = new System.Drawing.Font("Yu Gothic UI Semibold", 10F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.textBox4.Location = new System.Drawing.Point(306, 13);
+            this.textBox4.Location = new System.Drawing.Point(307, 13);
             this.textBox4.Name = "textBox4";
             this.textBox4.ReadOnly = true;
             this.textBox4.Size = new System.Drawing.Size(282, 34);
@@ -484,9 +484,9 @@
             this.label18.ImageAlign = System.Drawing.ContentAlignment.MiddleRight;
             this.label18.Location = new System.Drawing.Point(13, 14);
             this.label18.Name = "label18";
-            this.label18.Size = new System.Drawing.Size(132, 28);
+            this.label18.Size = new System.Drawing.Size(111, 28);
             this.label18.TabIndex = 41;
-            this.label18.Text = "Employee ID:";
+            this.label18.Text = "Servant ID:";
             this.label18.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
             // 
             // dataGridView1

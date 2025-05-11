@@ -8,7 +8,7 @@ using System.Threading.Tasks;
 using MySqlConnector;
 namespace dll
 {
-    internal class DatabaseHelper
+    public class DatabaseHelper
     {
 
 

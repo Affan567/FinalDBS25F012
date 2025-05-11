@@ -21,5 +21,12 @@ namespace dll.BL
             return DL.Fees.GETFee(userID);
         }
 
+        public object GetFeeStatus(int userID)
+        {
+            return DL.Fees.GetStatusFee(userID);
+        }
+
+
+
     }
 }

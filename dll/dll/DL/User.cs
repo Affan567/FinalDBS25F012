@@ -41,7 +41,7 @@ namespace dll.DL
         {
             
 
-            string insertusersquery = "Insert into users (username , password ,role_id ,name,email,contact) Values ('{0}' , '{1}' ,{2}, '{3}','{4}','{5}')";
+            string insertusersquery = "Insert into users (username , password ,role_id ,name,email,contact) Values ('{0}','{1}' ,{2}, '{3}','{4}','{5}')";
            insertusersquery = String.Format(insertusersquery ,Username ,Password ,roleID, Name,Email,Phone);
             int rowsaffected2 = DatabaseHelper.executeDML(insertusersquery);
             return rowsaffected2 > 0;

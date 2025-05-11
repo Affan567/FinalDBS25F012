@@ -34,7 +34,6 @@
             this.panel2 = new System.Windows.Forms.Panel();
             this.pictureBox1 = new System.Windows.Forms.PictureBox();
             this.button1 = new System.Windows.Forms.Button();
-            this.label6 = new System.Windows.Forms.Label();
             this.label5 = new System.Windows.Forms.Label();
             this.label4 = new System.Windows.Forms.Label();
             this.label3 = new System.Windows.Forms.Label();
@@ -78,7 +77,6 @@
             this.panel2.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(120)))), ((int)(((byte)(175)))), ((int)(((byte)(230)))));
             this.panel2.Controls.Add(this.pictureBox1);
             this.panel2.Controls.Add(this.button1);
-            this.panel2.Controls.Add(this.label6);
             this.panel2.Controls.Add(this.label5);
             this.panel2.Controls.Add(this.label4);
             this.panel2.Controls.Add(this.label3);
@@ -116,22 +114,7 @@
             this.button1.TabIndex = 29;
             this.button1.Text = "Log Out";
             this.button1.UseVisualStyleBackColor = false;
-            // 
-            // label6
-            // 
-            this.label6.Anchor = System.Windows.Forms.AnchorStyles.None;
-            this.label6.BackColor = System.Drawing.Color.Black;
-            this.label6.Font = new System.Drawing.Font("Yu Gothic UI", 10F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.label6.ForeColor = System.Drawing.Color.White;
-            this.label6.Location = new System.Drawing.Point(21, 377);
-            this.label6.Margin = new System.Windows.Forms.Padding(3);
-            this.label6.Name = "label6";
-            this.label6.Padding = new System.Windows.Forms.Padding(3);
-            this.label6.Size = new System.Drawing.Size(203, 47);
-            this.label6.TabIndex = 26;
-            this.label6.Text = "Other Requests";
-            this.label6.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
-            this.label6.Click += new System.EventHandler(this.label6_Click);
+            this.button1.Click += new System.EventHandler(this.button1_Click);
             // 
             // label5
             // 
@@ -139,7 +122,7 @@
             this.label5.BackColor = System.Drawing.Color.Black;
             this.label5.Font = new System.Drawing.Font("Yu Gothic UI", 10F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.label5.ForeColor = System.Drawing.Color.White;
-            this.label5.Location = new System.Drawing.Point(21, 318);
+            this.label5.Location = new System.Drawing.Point(21, 351);
             this.label5.Name = "label5";
             this.label5.Size = new System.Drawing.Size(203, 47);
             this.label5.TabIndex = 25;
@@ -153,7 +136,7 @@
             this.label4.BackColor = System.Drawing.Color.Black;
             this.label4.Font = new System.Drawing.Font("Yu Gothic UI", 10F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.label4.ForeColor = System.Drawing.Color.White;
-            this.label4.Location = new System.Drawing.Point(21, 256);
+            this.label4.Location = new System.Drawing.Point(21, 282);
             this.label4.Name = "label4";
             this.label4.Size = new System.Drawing.Size(203, 47);
             this.label4.TabIndex = 24;
@@ -167,7 +150,7 @@
             this.label3.BackColor = System.Drawing.Color.Black;
             this.label3.Font = new System.Drawing.Font("Yu Gothic UI", 10F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.label3.ForeColor = System.Drawing.Color.White;
-            this.label3.Location = new System.Drawing.Point(21, 198);
+            this.label3.Location = new System.Drawing.Point(21, 213);
             this.label3.Name = "label3";
             this.label3.Size = new System.Drawing.Size(203, 47);
             this.label3.TabIndex = 23;
@@ -181,7 +164,7 @@
             this.label2.BackColor = System.Drawing.Color.Black;
             this.label2.Font = new System.Drawing.Font("Yu Gothic UI", 10F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.label2.ForeColor = System.Drawing.Color.White;
-            this.label2.Location = new System.Drawing.Point(21, 141);
+            this.label2.Location = new System.Drawing.Point(21, 154);
             this.label2.Name = "label2";
             this.label2.Size = new System.Drawing.Size(203, 47);
             this.label2.TabIndex = 22;
@@ -195,7 +178,7 @@
             this.label1.BackColor = System.Drawing.Color.Black;
             this.label1.Font = new System.Drawing.Font("Yu Gothic UI", 10F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.label1.ForeColor = System.Drawing.Color.White;
-            this.label1.Location = new System.Drawing.Point(17, 83);
+            this.label1.Location = new System.Drawing.Point(21, 98);
             this.label1.Name = "label1";
             this.label1.Size = new System.Drawing.Size(207, 47);
             this.label1.TabIndex = 21;
@@ -209,7 +192,7 @@
             this.labelResults.BackColor = System.Drawing.Color.Black;
             this.labelResults.Font = new System.Drawing.Font("Yu Gothic UI", 10F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.labelResults.ForeColor = System.Drawing.Color.White;
-            this.labelResults.Location = new System.Drawing.Point(17, 24);
+            this.labelResults.Location = new System.Drawing.Point(21, 30);
             this.labelResults.Name = "labelResults";
             this.labelResults.Size = new System.Drawing.Size(207, 49);
             this.labelResults.TabIndex = 20;
@@ -261,7 +244,6 @@
         private System.Windows.Forms.Label label3;
         private System.Windows.Forms.Label label2;
         private System.Windows.Forms.Label label1;
-        private System.Windows.Forms.Label label6;
         private System.Windows.Forms.Label label5;
         private System.Windows.Forms.PictureBox pictureBox1;
         private System.Windows.Forms.Button button1;

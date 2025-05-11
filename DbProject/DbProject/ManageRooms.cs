@@ -8,6 +8,8 @@ using System.Text;
 using System.Threading.Tasks;
 using System.Windows.Forms;
 using dll.BL;
+using dll.DL;
+using static System.Windows.Forms.VisualStyles.VisualStyleElement;
 
 namespace DbProject
 {
@@ -19,7 +21,9 @@ namespace DbProject
             LoadData();
             bindRoomID();
             bindBuilding();
-            bindRoomType();
+            loadRooms();
+            LoadAvailableRooms();
+
         }
 
         private void ManageRooms_Load(object sender, EventArgs e)
@@ -34,39 +38,34 @@ namespace DbProject
 
         private void codedButton7_Click(object sender, EventArgs e)
         {
-            try
+
+            string BuildingName = comboBox5.Text.ToString().Trim();
+            //int roomID = int.Parse(comboBox4.Text.ToString().Trim());
+            int RoomNumber = int.Parse(textBox3.Text.ToString().Trim());
+            string RoomTypeName = comboBox2.Text.ToString().Trim();
+
+            int capacity = int.Parse(comboBox1.Text.ToString().Trim());
+            string status = comboBox3.Text.ToString().Trim();
+
+
+            //Rooms r = new Rooms();
+            //int getroomID = (int)r.getRoomID(RoomNumber);
+
+            //RoomType rT = new RoomType();
+            //int roomTypeID = (int)rT.getRoomTypeID(RoomTypeName, capacity);
+
+
+            Hostelbuildings hb = new Hostelbuildings();
+            int buildingID = (int)hb.GetBuildingID(BuildingName);
+
+            Rooms room = new Rooms(RoomNumber, buildingID, RoomTypeName, capacity, status);
+            bool flag = room.AddRoom(room);
+
+            if (flag)
             {
-                string BuildingName = comboBox5.Text.ToString().Trim();
-                int roomID = int.Parse(comboBox4.Text.ToString().Trim());
-                int RoomNumber = int.Parse(textBox3.Text.ToString().Trim());
-                string RoomTypeName = comboBox2.Text.ToString().Trim();
-
-                int capacity = int.Parse(comboBox1.Text.ToString().Trim());
-                string status = comboBox1.Text.ToString().Trim();
-
-
-                //Rooms r = new Rooms();
-                //int getroomID = (int)r.getRoomID(RoomNumber);
-
-                RoomType rT = new RoomType();
-                int roomTypeID = (int)rT.getRoomTypeID(RoomTypeName, capacity);
-
-
-                Hostelbuildings hb = new Hostelbuildings();
-                int buildingID = (int)hb.GetBuildingID(BuildingName);
-
-                Rooms room = new Rooms(RoomNumber, buildingID, RoomTypeName, capacity, status, roomTypeID);
-                bool flag = room.AddRoom(room);
-
-                if (flag)
-                {
-                    MessageBox.Show("Building Added SuccessFully");
-                }
+                MessageBox.Show("Building Added SuccessFully");
             }
-            catch (Exception ex)
-            {
-                MessageBox.Show("An error occurred: " + ex.Message);
-            }
+
         }
 
 
@@ -92,7 +91,7 @@ namespace DbProject
             }
         }
 
-       
+
         private void codedButton8_Click(object sender, EventArgs e)
         {
             LoadData();
@@ -134,7 +133,7 @@ namespace DbProject
                 return;
 
 
-            
+
             int roomid = Convert.ToInt32(dataGridView1.Rows[e.RowIndex].Cells["RoomID"].Value);
             int RoomTypeid = Convert.ToInt32(dataGridView1.Rows[e.RowIndex].Cells["RoomTypeID"].Value);
 
@@ -143,7 +142,7 @@ namespace DbProject
             if (result == DialogResult.Yes)
             {
                 Rooms r = new Rooms();
-                if (r.DeleteRoom(roomid , RoomTypeid))
+                if (r.DeleteRoom(roomid, RoomTypeid))
                 {
                     MessageBox.Show("Row Deleted SuccessFully");
                 }
@@ -161,6 +160,71 @@ namespace DbProject
 
         private void dataGridView1_CellContentClick(object sender, DataGridViewCellEventArgs e)
         {
+
+        }
+
+        private void comboBox2_SelectedIndexChanged(object sender, EventArgs e)
+        {
+
+        }
+
+        private void comboBox3_SelectedIndexChanged(object sender, EventArgs e)
+        {
+
+        }
+
+        private void codedButton6_Click(object sender, EventArgs e)
+        {
+
+            string BuildingName = comboBox5.Text.ToString().Trim();
+            int roomTypeID = int.Parse(comboBox4.Text.ToString().Trim());
+            int RoomNumber = int.Parse(textBox3.Text.ToString().Trim());
+            string RoomTypeName = comboBox2.Text.ToString().Trim();
+
+            int capacity = int.Parse(comboBox1.Text.ToString().Trim());
+            string status = comboBox3.Text.ToString().Trim();
+
+            Rooms r = new Rooms();
+            int roomID = (int)r.getRoomID(RoomNumber);
+
+
+            Hostelbuildings hb = new Hostelbuildings();
+            int buildingID = (int)hb.GetBuildingID(BuildingName);
+
+
+
+
+
+            Rooms rooms  = new Rooms(roomTypeID, roomID, BuildingName, capacity, status, RoomTypeName,buildingID, RoomNumber);
+            bool flag = rooms.UpdateRoom(rooms);
+
+            if (flag)
+            {
+                MessageBox.Show("Room Data Updated SuccessFully");
+            }
+        }
+        
+        private void textBox1_TextChanged(object sender, EventArgs e)
+        {
+            
+        }
+        private void loadRooms()
+        {
+            Rooms r = new Rooms();
+            object countRooms = r.getTotalRooms();
+            textBox1.Text = countRooms.ToString(); // Convert object to string
+        }
+
+
+        private void LoadAvailableRooms()
+        {
+            Rooms r = new Rooms();
+            object countRooms = r.getRoomsAvailable();
+            textBox2.Text = countRooms.ToString(); // Convert object to string
+        }
+        private void textBox2_TextChanged(object sender, EventArgs e)
+        {
+            
 
         }
     }

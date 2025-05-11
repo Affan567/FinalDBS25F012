@@ -25,7 +25,7 @@ namespace dll.DL
 
         public DataTable GetAllStudents()
         {
-            string query = "Select s.StudentID , u.userID , u.name, u.contact ,u.username ,u.password ,s.RegistrationNumber , s.Semester , r.RoomNumber From students as s join users as u on s.userID = u.userID join rooms as r on s.RoomID = r.RoomID";
+            string query = "Select StudentID , userID , name, contact ,username ,password ,RegistrationNumber , Semester , RoomNumber From student_details";
             DataTable studentTable = DatabaseHelper.getDataTable(query);
             return studentTable;
         }
@@ -39,17 +39,17 @@ namespace dll.DL
             return rowsAffected > 0;
         }
 
-        public static bool getRegistrationNumber()
+        public static object getRegistrationNumber(int userID)
         {
-            string query = "Select RegistrationNumber From Students where userID = {}";
-            //query = string.Format(query, UserId);
-            int rowsaffected = DatabaseHelper.executeDML(query);
-            return rowsaffected > 0;
+            string query = "Select RegistrationNumber From Students where userID = {0}";
+            query = string.Format(query, userID);
+            return DatabaseHelper.ExecuteScalar(query);
+            
         }
 
         public object GetRegisteredStudents()
         {
-            string query = "Select Count(RegistrationNumber) From students";
+            string query = "call GetStudentRegistrationCount()";
             query = String.Format(query);
             return DatabaseHelper.ExecuteScalar(query);
         }

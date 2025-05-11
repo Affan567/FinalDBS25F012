@@ -27,9 +27,19 @@ namespace dll.DL
 
         }
 
+        public bool AddVisitors(BL.Visitors vis)
+        {
+            string query = "Insert into visitors (VisitorName , StudentID, VisitDate) values ('{0}',{1},'{2}')";
+            query = String.Format(query, vis.Getname(), vis.GetStudentID(), vis.Getdate());
+            int rowsaffected = DatabaseHelper.executeDML(query);
+            return rowsaffected > 0;
 
-    
-    
-    
+        }
+
+
+
+
+
+
     }
 }

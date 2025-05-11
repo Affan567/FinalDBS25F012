@@ -21,16 +21,16 @@ namespace dll.BL
         }
         private int visitorID;
         private int StudentID;
-        private DateTime date;
+        private string date;
         private string Visitorname;
 
 
-        public Visitors(int visitorID , int StudentID , DateTime date , string visitorName )
+        public Visitors(int StudentID, string Visitorname,  string date)
         {
-            this.visitorID = visitorID; 
             this.StudentID = StudentID;
+            this.Visitorname = Visitorname;
             this.date = date;
-            this.Visitorname = visitorName;
+
         }
         public string Getname()
         {
@@ -44,12 +44,20 @@ namespace dll.BL
         {
             return StudentID;
         }
-        public DateTime Getdate()
+        public string Getdate()
         {
             return date;
         }
 
-
+        public bool InsertVisitor(BL.Visitors b)
+        {
+            DL.Visitors vis = new DL.Visitors();
+            if(vis.AddVisitors(b))
+            {
+                return true;
+            }
+            return false;
+        }
 
         public DataTable GetVisitorsoftheUser(int userID)
         {
@@ -78,13 +86,14 @@ namespace dll.BL
             this.visitorID = VisitorID;
         }
 
-        public void setDate()
-        {
-            date = DateTime.Now;
-        }
+        //public void setDate()
+        //{
+        //    this.date = date;
+        //}
         public void viewVisitors()
         {
             DL.Visitors.ViewVisitors();
         }
+        
     }
 }

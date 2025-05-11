@@ -12,10 +12,10 @@ namespace dll.DL
     {
 
         public HostelBuildings() { }
-        public bool Addbuildings(string name , int rooms , int floors , string status , int wardenID)
+        public bool Addbuildings(string name ,int rooms, int floors, string status, int wardenID)
         {
-            string query = "Insert into hostelbuildings (BuildingName , Floors ,Rooms,WardenID,Status) values ('{0}',{1},{2},{3},'{4}')";
-            query = String.Format(query , name , rooms,floors,wardenID, status);
+            string query = "call InsertHostelBuilding('{0}',{1},{2},{3},'{4}')";
+            query = String.Format(query , name ,floors, rooms,wardenID, status);
             int rowsaffected = DatabaseHelper.executeDML(query);
             return rowsaffected > 0;
         }
@@ -31,8 +31,8 @@ namespace dll.DL
 
         public bool UpdateBuilding(int buildingid, string buildingName, int rooms, int floors, string status,int wardenID)
         {
-            string query = "Update Hostelbuildings set BuildingName = '{0}', Floors = {1}, Rooms = {2},  Status = '{3}',WardenID = {4}  where BuildingID = {5}";
-            query = String.Format(query, buildingName, floors, rooms, status,wardenID,buildingid);
+            string query = "call UpdateHostelBuilding({0},'{1}',{2},{3},'{4}',{5})";
+            query = String.Format(query, buildingid,buildingName, floors, rooms, status,wardenID);
             int rowsaffected = DatabaseHelper.executeDML(query);
             return rowsaffected > 0;
 

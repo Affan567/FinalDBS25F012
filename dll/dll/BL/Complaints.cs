@@ -70,5 +70,12 @@ namespace dll.BL
         }
 
 
+        public object GetComplaintStatus(int userID)
+        {
+            return DL.Complaints.GetComplaint(userID);
+        }
+
+
+
     }
 }

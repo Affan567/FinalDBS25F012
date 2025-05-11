@@ -246,6 +246,7 @@
             this.btnPayments.TabIndex = 52;
             this.btnPayments.Text = "Manage Payments";
             this.btnPayments.UseVisualStyleBackColor = false;
+            this.btnPayments.Click += new System.EventHandler(this.btnPayments_Click);
             // 
             // btnManageEmployee
             // 
@@ -260,6 +261,7 @@
             this.btnManageEmployee.TabIndex = 51;
             this.btnManageEmployee.Text = "Manage Servant";
             this.btnManageEmployee.UseVisualStyleBackColor = false;
+            this.btnManageEmployee.Click += new System.EventHandler(this.btnManageEmployee_Click);
             // 
             // btnManageStudent
             // 
@@ -403,6 +405,7 @@
             this.btnAddEmployees.TabIndex = 54;
             this.btnAddEmployees.Text = "Manage Warden";
             this.btnAddEmployees.UseVisualStyleBackColor = false;
+            this.btnAddEmployees.Click += new System.EventHandler(this.btnAddEmployees_Click);
             // 
             // tableLayoutPanel2
             // 

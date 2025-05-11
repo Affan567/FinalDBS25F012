@@ -4,6 +4,10 @@ using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
 using System.Windows.Forms;
+using System.Xml.Linq;
+using dll.BL;
+using static System.Windows.Forms.VisualStyles.VisualStyleElement.ListView;
+using static System.Windows.Forms.VisualStyles.VisualStyleElement.StartPanel;
 
 namespace dll.DL
 {
@@ -30,6 +34,18 @@ namespace dll.DL
             query = String.Format (query, typeName, capacity);  
             int affectedrows = DatabaseHelper.executeDML(query);
             return affectedrows > 0;
+        }
+
+        public static bool UpdateRoomTypetoDB(int roomTypeID, string roomTypeName, int capacity)
+        {
+            string updateQuery = "UPDATE roomtype SET TypeName = '{0}',Capacity = {1} Where RoomTypeID = {2}";
+            updateQuery = String.Format(updateQuery, roomTypeName, capacity,roomTypeID);
+            int rowsAffected = DatabaseHelper.executeDML(updateQuery);
+            if (rowsAffected > 0)
+            {
+                return true;
+            }
+            return false;
         }
 
         public List<object> GetTypeName()

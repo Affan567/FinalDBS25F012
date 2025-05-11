@@ -127,5 +127,44 @@ namespace DbProject
 
             LoadData();
         }
+
+        private void codedButton3_Click(object sender, EventArgs e)
+        {
+
+            string name = textBox4.Text.ToString().Trim();
+            string BuildingName = comboBox1.Text.ToString().Trim();
+            string WardenContact = textBox3.Text.ToString().Trim();
+
+            string WardenUsername = textBox1.Text.ToString().Trim();
+            string WardenPassword = textBox2.Text.ToString().Trim();
+
+            string email = textBox5.Text.ToString().Trim();
+
+
+            Warden stu = new Warden();
+            int userID = stu.GetUserID(WardenUsername, WardenPassword);
+
+            int WardenID = (int)stu.GettingWardenID(userID);
+
+            Hostelbuildings hostel = new Hostelbuildings();
+            int buildingid = (int)hostel.GetBuildingID(BuildingName);
+
+
+
+
+
+            Warden warden = new Warden(userID, WardenID, name, WardenContact, email,  buildingid, WardenUsername, WardenPassword, 2);
+            bool flag = warden.UpdateWarden(warden);
+
+            if (flag)
+            {
+                MessageBox.Show("Student Data Updated SuccessFully");
+            }
+        }
+
+        private void codedButton1_Click(object sender, EventArgs e)
+        {
+            LoadData();
+        }
     }
 }

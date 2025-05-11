@@ -76,6 +76,12 @@ namespace dll.BL
 
         }
 
+        public object GetStudentID(int userID)
+        {
+            DL.Student student = new DL.Student();
+            return student.getStudentID(userID);
+        }
+
         public bool AddStudent(Student s)
         {
             BL.User bl = new BL.User();
@@ -111,10 +117,10 @@ namespace dll.BL
             return false;
         }
 
-        //public void GetRegNO()
-        //{
-        //    DL.Student.getRegistrationNumber();
-        //}
+        public object GetRegNO(int userID)
+        {
+            return DL.Student.getRegistrationNumber(userID);
+        }
 
         public bool DeleteStudent(int Studentid, int userid)
         {

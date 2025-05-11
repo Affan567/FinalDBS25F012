@@ -3,7 +3,10 @@ using System.Collections.Generic;
 using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
+using System.Xml.Linq;
 using dll.DL;
+using static System.Windows.Forms.VisualStyles.VisualStyleElement.ListView;
+using static System.Windows.Forms.VisualStyles.VisualStyleElement.StartPanel;
 
 namespace dll.BL
 {
@@ -62,6 +65,7 @@ namespace dll.BL
         }
 
 
+
         public int getRoomTypeID(string RoomTypeName, int capacity)
         {
             DL.roomtype r = new DL.roomtype();
@@ -75,6 +79,12 @@ namespace dll.BL
         }
 
 
+
+        public bool UpdateRoomType(int roomTypeID , string roomTypeName , int capacity)
+        {
+            bool flag = DL.roomtype.UpdateRoomTypetoDB(roomTypeID, roomTypeName, capacity);
+            return flag;
+        }
         public List <object> GettingTypeName()
         {
             DL.roomtype type = new DL.roomtype();

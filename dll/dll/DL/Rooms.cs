@@ -43,7 +43,13 @@ namespace dll.DL
             query = String.Format(query, status);
             return DatabaseHelper.ExecuteScalar(query);
         }
-
+        public object RoomsAvailable()
+        {
+            string status = "Available";
+            string query = "call GetRoomCountByStatus('{0}')";
+            query = String.Format(query, status);
+            return DatabaseHelper.ExecuteScalar(query);
+        }
         public object gettingRoomID(int roomNumber)
         {
             string query = "Select RoomID from rooms where RoomNumber = {0}";
@@ -62,8 +68,8 @@ namespace dll.DL
 
         public bool AddRoom(BL.Rooms r)
         {
-            string insertQuery = "INSERT INTO student(RoomNumber, RoomTypeID, Status,BuildingID) " +
-                                 "VALUES ('{0}', {1}, {2}, {3})";
+            string insertQuery = "INSERT INTO rooms(RoomNumber, RoomTypeID, Status,buildingID) " +
+                                 "VALUES ({0}, {1}, '{2}', {3})";
             insertQuery = string.Format(insertQuery, r.GetRoomNumber(), r.getRommtypeID(), r.GetStatus(), r.GetBuildingID());
 
             int rowsAffected = DatabaseHelper.executeDML(insertQuery);
@@ -97,16 +103,31 @@ namespace dll.DL
             query2 = String.Format(query2, roomid);
             string query1 = "Delete from roomservants where roomID = {0}";
             query1 = String.Format(query1, roomid);
+            string query5 = "Delete from rooms where RoomTypeID = {0}";
+            query5 = String.Format(query5, roomid);
+            
             string query3 = "Delete from rooms where RoomID = {0}";
             query3 = String.Format(query3, roomid);
-            string query4 = "Delete from roomtype where RoomTypeID = {0}";
+            string query4 = $@"
+        DELETE FROM roomtype 
+        WHERE RoomTypeID = {roomTypeid} 
+        AND NOT EXISTS (
+            SELECT 1 FROM rooms WHERE RoomTypeID = {roomTypeid}
+        )";
+
+
             query4 = String.Format(query4, roomTypeid);
+            
+
+
 
 
             queries.Add(query1);
             queries.Add(query2);
+            queries.Add(query5);
             queries.Add(query3);
             queries.Add(query4);
+
 
 
 
@@ -119,6 +140,15 @@ namespace dll.DL
             {
                 return false;
             }
+        }
+
+        public bool UpdateRoomInDB(BL.Rooms s)
+        {
+            string updateQuery = "UPDATE rooms SET RoomNumber = '{0}', Status = '{1}', BuildingID = {2} Where RoomTypeID = {3}";
+            updateQuery = string.Format(updateQuery, s.GetRoomNumber(), s.GetStatus(),s.getRommtypeID());
+
+            int rowsAffected = DatabaseHelper.executeDML(updateQuery);
+            return rowsAffected > 0;
         }
     }
 }

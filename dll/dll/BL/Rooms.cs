@@ -6,6 +6,7 @@ using System.Text;
 using System.Threading.Tasks;
 using System.Xml.Linq;
 using dll.DL;
+using static System.Windows.Forms.VisualStyles.VisualStyleElement;
 using static System.Windows.Forms.VisualStyles.VisualStyleElement.ListView;
 using static System.Windows.Forms.VisualStyles.VisualStyleElement.StartPanel;
 
@@ -33,7 +34,10 @@ namespace dll.BL
 
 
         
-
+        public int GetroomtypeID()
+        {
+            return roomTypeID;
+        }
         
         public int GetBuildingID()
         {
@@ -55,21 +59,45 @@ namespace dll.BL
         {
             this.roomID = roomID;
         }
-        public Rooms(int roomNumber ,int buildingID ,string typeName , int capacity ,string status ,int roomTypeID) : base(typeName,capacity)
+        public Rooms(int roomNumber ,int buildingID ,string typeName , int capacity ,string status ) : base(typeName,capacity)
         {
             this.roomNumber= roomNumber;
-            this.roomTypeID= roomTypeID;
             this.status = status;
             this.buildingID = buildingID;
         }
         
+        public Rooms(int roomTypeID, int roomID,string  uildingName,int capacity,string status, string RoomTypeName,int buildingID,int roomNumber)
+        {
+            this.roomTypeID = roomTypeID;
+            this.roomNumber = roomNumber;
+            this.status = status;
+            this.buildingID = buildingID;
+        }
+
+
+        public bool UpdateRoom(Rooms s)
+        {
+            BL.RoomType bl = new BL.RoomType();
+            bool flag1 = bl.UpdateRoomType(s.getRommtypeID(), s.GetTypeName(), s.Capacity());
+            if (flag1)
+            {
+                DL.Rooms dl = new DL.Rooms();
+
+                bool flag2 = dl.UpdateRoomInDB(s);
+                return flag2;
+            }
+            return false;
+        }
         public Rooms() { }
         public object getTotalRooms()
         {
             return DL.Rooms.getTotalRoomsFromDB();
         }
         
+        public void GetRoomTypeID(string RoomTypeName, int capacity)
+        {
 
+        }
         public DataTable ViewRoomofStudent(int userID)
         {
             return DL.Rooms.ViewRoom(userID);
@@ -80,6 +108,14 @@ namespace dll.BL
             DL.Rooms.viewRoomsData();
         }
 
+        public object getRoomsAvailable()
+        {
+            DL.Rooms r = new DL.Rooms();
+            return r.RoomsAvailable();
+
+
+
+        }
         public object getRoomsOccupied()
         {
             DL.Rooms r = new DL.Rooms();

@@ -28,13 +28,21 @@ namespace dll.DL
 
         public static bool InsertComplaint(BL.Complaints com)
         {
-            string query = "Insert into complaints (StudentID , Description , Date , Status) values ('{0}','{1}','{2}','{3}')";
+            string query = "Insert into complaints (StudentID , Description , Date , Status) values ({0},'{1}','{2}','{3}')";
             query = String.Format(query, com.GetStudentID() , com.Getdescription() , com.Getdate() , com.Status());
             int rowsaffected = DatabaseHelper.executeDML(query);
             return rowsaffected > 0;
             
             
 
+
+        }
+
+        public static object GetComplaint(int studentID)
+        {
+            string query = "Select Status From complaints where StudentID = {0}";
+            query = string.Format(query, studentID);
+            return DatabaseHelper.ExecuteScalar(query);
 
         }
 

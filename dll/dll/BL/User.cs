@@ -30,7 +30,7 @@ namespace dll.BL
             this.roleID = roleID;
 
         }
-        public User(int userid ,string username, string password, string name, string email, string contact)
+        public User(int userid ,string username, string password, string name, string email, string contact,int roleID)
         {
             this.userid = userid;
             SetPassword(password);
@@ -38,6 +38,7 @@ namespace dll.BL
             SetName(name);
             SetEmail(email);
             SetUsername(username);
+            this.roleID =roleID;
             
 
             

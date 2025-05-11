@@ -86,8 +86,8 @@ namespace DbProject
             string StudentContact = textBox1.Text.ToString().Trim();
             string Studentemail = textBox6.Text.ToString().Trim();
             string StudentReg = textBox7.Text.ToString().Trim();
-            int Semester = int.Parse(numericUpDown1.Text.Trim());
-            int roomNumber = int.Parse(comboBox3.Text.ToString().Trim());
+            string Semester = numericUpDown1.Text.Trim();
+            int roomNumber = int.Parse(comboBox3.Text.Trim());
 
 
 
@@ -122,7 +122,7 @@ namespace DbProject
             string StudentContact = textBox1.Text.ToString().Trim();
             string Studentemail = textBox6.Text.ToString().Trim();
             string StudentReg = textBox7.Text.ToString().Trim();
-            int Semester = int.Parse(numericUpDown1.Text.Trim());
+            string Semester = numericUpDown1.Text.Trim();
             int roomNumber = int.Parse(comboBox3.Text.ToString().Trim());
 
             string StudentUsername = textBox3.Text.ToString().Trim();
@@ -132,7 +132,7 @@ namespace DbProject
             Student stu = new Student();
             int userID = stu.GetUserID(StudentUsername, StudentPassword);
 
-            int studentID = (int)stu.GetStudentID(userID);
+            int studentID = (int)stu.GettingstudentID(userID);
 
             Rooms room = new Rooms();
             int roomid = (int)room.getRoomID(roomNumber);
@@ -141,12 +141,12 @@ namespace DbProject
 
 
 
-            Student student = new Student(userID, studentID, Studentname, StudentContact, Studentemail, StudentReg, Semester, roomid, StudentUsername, StudentPassword);
+            Student student = new Student(userID, studentID, Studentname, StudentContact, Studentemail, StudentReg, Semester, roomid, StudentUsername, StudentPassword,2);
             bool flag = student.UpdateStudent(student);
 
             if (flag)
             {
-                MessageBox.Show("Building Updated SuccessFully");
+                MessageBox.Show("Student Data Updated SuccessFully");
             }
         }
 
@@ -183,6 +183,11 @@ namespace DbProject
 
                 bindRoomNumber();
             }
+        }
+
+        private void dataGridView1_CellContentClick(object sender, DataGridViewCellEventArgs e)
+        {
+
         }
     }
 }

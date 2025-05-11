@@ -25,14 +25,14 @@ namespace dll.BL
         }
 
 
-        public Hostelbuildings(int buildingID, string buildingName, int floors, int rooms, int wardenID, string status)//For update
+        public Hostelbuildings(int buildingID, string buildingName, int floors, int rooms, string status,int WardenID)//For update
         {
             this.buildingID = buildingID;
             this.buildingName = buildingName;
             this.floors = floors;
             this.rooms = rooms;
-            WardenID = wardenID;
             this.status = status;
+            this.WardenID = WardenID;   
         }
         public Hostelbuildings( string buildingName, int floors, int rooms, int wardenID,string status)//For Add
         {
@@ -108,6 +108,7 @@ namespace dll.BL
             return h.GetIDBuilding(buildingNameBefore);
         }
 
+        
 
         public bool AddHostelBuilding(Hostelbuildings h)
         {
@@ -133,7 +134,7 @@ namespace dll.BL
         public bool UpdateBuildings(Hostelbuildings h)
         {
             HostelBuildings hostelBuildings = new HostelBuildings();
-            return hostelBuildings.UpdateBuilding(h.getBuildingID(), h.getBuildingName(), h.getRooms(), h.getfloors(), h.Getstatus(), h.getWardenID());
+            return hostelBuildings.UpdateBuilding(h.getBuildingID(), h.getBuildingName(), h.getRooms(), h.getfloors(), h.Getstatus(),h.getWardenID());
         }
 
         public DataTable GetHostelbuildingData(int userID)

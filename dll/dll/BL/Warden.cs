@@ -1,8 +1,10 @@
 ﻿using System;
 using System.Collections.Generic;
+using System.Data;
 using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
+using dll.DL;
 
 namespace dll.BL
 {
@@ -12,12 +14,56 @@ namespace dll.BL
 
 
 
+
+
         private int wardenID;
         private int AssignedBuildingID;
         private int userID;
 
+        public Warden(string Name, string Phone, string Email, int roleID, int AssignedBuildingID, string Username, string password) : base(Username, password, Name, Email, Phone, roleID)//Add constructor
+        {
+
+            this.AssignedBuildingID = AssignedBuildingID;
+            
 
 
+        }
+
+        public int GetuserID()
+        {
+            return wardenID;
+        }
+
+        public int GetBuildingID()
+        {
+            return AssignedBuildingID;
+
+        }
+
+        public void setUserID(int userID)
+        {
+            this.userid = userID;
+        }
+
+        public bool AddWarden(Warden w)
+        {
+            BL.User bl = new BL.User();
+            bool flag1 = bl.AddUser(w.getpassword(), w.getUsername(), w.getEmail(), w.getcontact(), w.RoleID(), w.getName());
+            if (flag1)
+            {
+                DL.Warden dl = new DL.Warden();
+                int userID = GetUserID(w.getUsername(), w.getpassword());
+                w.setUserID(userID);
+                bool flag2 = dl.AddWardenToDB(w);
+                return flag2;
+            }
+            return false;
+        }
+        public DataTable GetWardenData()
+        {
+            DL.Warden warden = new DL.Warden();
+            return warden.gettingWardenDate();
+        }
 
         public object GetWardenID(string wardenName)
         {
@@ -25,10 +71,17 @@ namespace dll.BL
             return warden.GettingWardenID(wardenName);
         }
 
+
         public List <object> GetWardenUsername()
         {
             DL.Warden w = new DL.Warden();
             return w.GetWardenNamesFromDB();
+        }
+
+        public bool DeleteWarden(int Wardenid, int userid)
+        {
+            DL.Warden dl = new DL.Warden();
+            return dl.DeleteWardenFromDB(Wardenid, userid);
         }
     }
 }

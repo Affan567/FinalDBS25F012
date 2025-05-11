@@ -40,7 +40,7 @@ namespace dll.DL
         {
             string status = "Occupied";
             string query = "Select Count(RoomID) from rooms where Status = '{0}'";
-            query = String.Format(query , status);
+            query = String.Format(query, status);
             return DatabaseHelper.ExecuteScalar(query);
         }
 
@@ -64,7 +64,7 @@ namespace dll.DL
         {
             string insertQuery = "INSERT INTO student(RoomNumber, RoomTypeID, Status,BuildingID) " +
                                  "VALUES ('{0}', {1}, {2}, {3})";
-            insertQuery = string.Format(insertQuery, r.GetRoomNumber(), r.getRommtypeID(), r.GetStatus() , r.GetBuildingID());
+            insertQuery = string.Format(insertQuery, r.GetRoomNumber(), r.getRommtypeID(), r.GetStatus(), r.GetBuildingID());
 
             int rowsAffected = DatabaseHelper.executeDML(insertQuery);
             return rowsAffected > 0;
@@ -72,7 +72,7 @@ namespace dll.DL
 
         public DataTable GettingRoomData()
         {
-            string query = "Select r.RoomNumber , r.Status ,rt.TypeName , rt.Capacity from rooms r join roomtype as rt on r.RoomTypeID = rt.RoomTypeID ";
+            string query = "Select r.RoomNumber , r.Status ,r.RoomID , rt.RoomTypeID , rt.TypeName , rt.Capacity from rooms r join roomtype as rt on r.RoomTypeID = rt.RoomTypeID ";
             query = String.Format(query);
             return DatabaseHelper.getDataTable(query);
         }
@@ -85,6 +85,40 @@ namespace dll.DL
             List<object> WardenNames = DatabaseHelper.GetColumnValues(query, columnName);
             return WardenNames;
 
+        }
+
+
+        public bool DeleteroomFromDB(int roomid, int roomTypeid)
+        {
+            List<string> queries = new List<string>();
+
+            
+            string query2 = "Delete from students where RoomID = {0}";
+            query2 = String.Format(query2, roomid);
+            string query1 = "Delete from roomservants where roomID = {0}";
+            query1 = String.Format(query1, roomid);
+            string query3 = "Delete from rooms where RoomID = {0}";
+            query3 = String.Format(query3, roomid);
+            string query4 = "Delete from roomtype where RoomTypeID = {0}";
+            query4 = String.Format(query4, roomTypeid);
+
+
+            queries.Add(query1);
+            queries.Add(query2);
+            queries.Add(query3);
+            queries.Add(query4);
+
+
+
+            bool rowsAffected = DatabaseHelper.ExecuteTransaction(queries);
+            if (rowsAffected)
+            {
+                return true;
+            }
+            else
+            {
+                return false;
+            }
         }
     }
 }

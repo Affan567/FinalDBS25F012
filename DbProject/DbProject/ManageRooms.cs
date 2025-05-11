@@ -45,8 +45,8 @@ namespace DbProject
                 string status = comboBox1.Text.ToString().Trim();
 
 
-                Rooms r = new Rooms();
-                int getroomID = (int)r.getRoomID(RoomNumber);
+                //Rooms r = new Rooms();
+                //int getroomID = (int)r.getRoomID(RoomNumber);
 
                 RoomType rT = new RoomType();
                 int roomTypeID = (int)rT.getRoomTypeID(RoomTypeName, capacity);
@@ -92,37 +92,7 @@ namespace DbProject
             }
         }
 
-        private void dataGridView1_CellClick_1(object sender, DataGridViewCellEventArgs e)
-        {
-
-            if (e.RowIndex < 0 || e.ColumnIndex != dataGridView1.Columns["btnDelete"].Index)
-                return;
-
-
-            int id = Convert.ToInt32(dataGridView1.Rows[e.RowIndex].Cells["BuildingID"].Value);
-
-
-            var result = MessageBox.Show("Are you sure you want to delete this record?", "Confirm", MessageBoxButtons.YesNo);
-            if (result == DialogResult.Yes)
-            {
-                Hostelbuildings c = new Hostelbuildings();
-                if (c.DeleteBuildings(id))
-                {
-                    MessageBox.Show("Row Deleted SuccessFully");
-                }
-                else
-                {
-                    MessageBox.Show("Can't deleted ");
-                }
-
-                LoadData();
-
-
-            }
-
-
-        }
-
+       
         private void codedButton8_Click(object sender, EventArgs e)
         {
             LoadData();
@@ -156,6 +126,42 @@ namespace DbProject
 
             comboBox4.DataSource = roomList;
             comboBox4.SelectedIndex = -1;
+        }
+
+        private void dataGridView1_CellClick(object sender, DataGridViewCellEventArgs e)
+        {
+            if (e.RowIndex < 0 || e.ColumnIndex != dataGridView1.Columns["btnDelete"].Index)
+                return;
+
+
+            
+            int roomid = Convert.ToInt32(dataGridView1.Rows[e.RowIndex].Cells["RoomID"].Value);
+            int RoomTypeid = Convert.ToInt32(dataGridView1.Rows[e.RowIndex].Cells["RoomTypeID"].Value);
+
+
+            var result = MessageBox.Show("Are you sure you want to delete this record?", "Confirm", MessageBoxButtons.YesNo);
+            if (result == DialogResult.Yes)
+            {
+                Rooms r = new Rooms();
+                if (r.DeleteRoom(roomid , RoomTypeid))
+                {
+                    MessageBox.Show("Row Deleted SuccessFully");
+                }
+                else
+                {
+                    MessageBox.Show("Can't deleted ");
+                }
+
+                LoadData();
+
+
+            }
+
+        }
+
+        private void dataGridView1_CellContentClick(object sender, DataGridViewCellEventArgs e)
+        {
+
         }
     }
 }

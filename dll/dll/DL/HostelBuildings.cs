@@ -22,15 +22,17 @@ namespace dll.DL
 
         public static bool Deletebuildings(int buildingid)
         {
+
+
             string query = "Delete * from hostelbuildings where BuildingID = {buildingid} ";
             int rowsAffected = DatabaseHelper.executeDML(query);
             return rowsAffected > 0;
         }
 
-        public bool UpdateBuilding(int buildingid, string buildingName, int rooms, int floors, string status, int wardenID)
+        public bool UpdateBuilding(int buildingid, string buildingName, int rooms, int floors, string status,int wardenID)
         {
-            string query = "Update Hostelbuildings set BuildingName = '{0}', Floors = {1}, Rooms = {2},  WardenID = {3}, Status = '{4}'  where BuildingID = {5}";
-            query = String.Format(query, buildingName, floors, rooms, wardenID,status,buildingid);
+            string query = "Update Hostelbuildings set BuildingName = '{0}', Floors = {1}, Rooms = {2},  Status = '{3}',WardenID = {4}  where BuildingID = {5}";
+            query = String.Format(query, buildingName, floors, rooms, status,wardenID,buildingid);
             int rowsaffected = DatabaseHelper.executeDML(query);
             return rowsaffected > 0;
 
@@ -39,14 +41,14 @@ namespace dll.DL
 
         public object GetIDBuilding(string buildingNameBefore)
         {
-            string query = "Select BuildingID from hostelbuildings ";
+            string query = "Select BuildingID from hostelbuildings where BuildingName = '{0}'";
             query = string.Format(query, buildingNameBefore);
             return DatabaseHelper.ExecuteScalar(query);
         }
 
         public DataTable GetHosteBuildingTable(int userID)
         {
-            string query = "Select h.BuildingID , h.BuildingName , h.Floors , h.Rooms ,h.WardenID as WardenID ,h.Status  from hostelbuildings h join hostelwarden w join users u where u.userID = {0}";
+            string query = "Select h.BuildingID , h.BuildingName , h.Floors , h.Rooms ,w.WardenID as WardenID ,h.Status  from hostelbuildings h natural join hostelwarden w natural join users u where u.userID = {0}";
             query = String.Format (query, userID);
             return DatabaseHelper.getDataTable(query);
 
@@ -70,7 +72,7 @@ namespace dll.DL
         public List<object> GetBuildingNamesFromDB()
         {
             string columnName = "BuildingName";
-            string query = "Select BuildingName from hostelbuildings ";
+            string query = "Select BuildingName from buildingdataview";
             query = String.Format(query);
             List<object> BuildingNames = DatabaseHelper.GetColumnValues(query, columnName);
             return BuildingNames;

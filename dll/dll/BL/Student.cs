@@ -13,7 +13,7 @@ namespace dll.BL
 
         private string RegistrationNumber;
         private int StudentID;
-        private int semester;
+        private string semester;
         private int roomID;
         private int userID;
 
@@ -32,7 +32,7 @@ namespace dll.BL
 
         
 
-        public int GetSemester()
+        public string GetSemester()
         {
             return semester;
         }
@@ -47,49 +47,29 @@ namespace dll.BL
             return StudentID;
 
         }
+
         public int GetUserID()
         {
-            return userid;
+            return userID;
         }
 
-        public string GetUsername()
-        {
-            return username;
-        }
+ 
 
-        public string GetPassword()
-        {
-            return password;
-        }
         
-        public string GetEmail()
-        {
-            return email;
-        }
-        
-        public string GetName()
-        {
-            return name;
-        }
-
-        public string GetContact()
-        {
-            return contact;
-        }
 
         public void setUserID(int userID)
         {
             this.userid = userID;
         }
 
-        public Student(int userID ,int studentID,string Studentname ,string StudentContact,string Studentemail,string StudentReg,int Semester,int roomID,string StudentUsername,string StudentPassword) : base( userID, StudentUsername, StudentPassword, Studentname, Studentemail, StudentContact)//Edit student constructor
+        public Student(int userID ,int studentID,string Studentname ,string StudentContact,string Studentemail,string StudentReg,string Semester,int roomID,string StudentUsername,string StudentPassword,int roleID) : base( userID, StudentUsername, StudentPassword, Studentname, Studentemail, StudentContact, roleID)//Edit student constructor
         {
             this.StudentID =studentID;
             this.RegistrationNumber = StudentReg;
             this.roomID = roomID;
             this.semester = Semester;
         }
-        public Student(string Name ,string Phone,string Email,int roleID, string RegistrationNumber, int semester,int roomid , string Username, string password) : base(Username,password, Name, Email, Phone, roleID)//Add constructor
+        public Student(string Name ,string Phone,string Email,int roleID, string RegistrationNumber, string semester,int roomid , string Username, string password) : base(Username,password, Name, Email, Phone, roleID)//Add constructor
         {
             
             this.RegistrationNumber = RegistrationNumber;
@@ -124,10 +104,11 @@ namespace dll.BL
         public bool UpdateStudent(Student s)
         {
             BL.User bl = new BL.User();
-            bool flag1 = bl.UpdateUser(s.GetUserID(), s.GetPassword(), s.GetUsername(), s.GetEmail(), s.RoleID(), s.GetContact() , s.GetName());
+            bool flag1 = bl.UpdateUser(s.UserID(),  s.getpassword(),s.getUsername(), s.getEmail(), s.RoleID(), s.getcontact(), s.getName());
             if (flag1)
             {
                 DL.Student dl = new DL.Student();
+
                 bool flag2 = dl.UpdateStudentInDB(s);
                 return flag2;
             }
@@ -152,7 +133,7 @@ namespace dll.BL
             return s.GetRegisteredStudents();
         }
 
-        public object GetStudentID(int userID)
+        public object GettingstudentID(int userID)
         {
             DL.Student stu = new DL.Student();
             return stu.getStudentID(userID);

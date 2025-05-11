@@ -174,6 +174,54 @@
     <Compile Include="StudentVisitorForm.Designer.cs">
       <DependentUpon>StudentVisitorForm.cs</DependentUpon>
     </Compile>
+    <Compile Include="WardenAllocateRoomServant.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="WardenAllocateRoomServant.Designer.cs">
+      <DependentUpon>WardenAllocateRoomServant.cs</DependentUpon>
+    </Compile>
+    <Compile Include="WardenAllocateStudents.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="WardenAllocateStudents.Designer.cs">
+      <DependentUpon>WardenAllocateStudents.cs</DependentUpon>
+    </Compile>
+    <Compile Include="WardenComplaints.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="WardenComplaints.Designer.cs">
+      <DependentUpon>WardenComplaints.cs</DependentUpon>
+    </Compile>
+    <Compile Include="WardenManageFines.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="WardenManageFines.Designer.cs">
+      <DependentUpon>WardenManageFines.cs</DependentUpon>
+    </Compile>
+    <Compile Include="WardenPanel.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="WardenPanel.Designer.cs">
+      <DependentUpon>WardenPanel.cs</DependentUpon>
+    </Compile>
+    <Compile Include="WardenStudentFees.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="WardenStudentFees.Designer.cs">
+      <DependentUpon>WardenStudentFees.cs</DependentUpon>
+    </Compile>
+    <Compile Include="WardenViewProfile.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="WardenViewProfile.Designer.cs">
+      <DependentUpon>WardenViewProfile.cs</DependentUpon>
+    </Compile>
+    <Compile Include="WardenVisitorApproval.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="WardenVisitorApproval.Designer.cs">
+      <DependentUpon>WardenVisitorApproval.cs</DependentUpon>
+    </Compile>
     <EmbeddedResource Include="AdminDashboard.resx">
       <DependentUpon>AdminDashboard.cs</DependentUpon>
     </EmbeddedResource>
@@ -243,6 +291,30 @@
     </EmbeddedResource>
     <EmbeddedResource Include="StudentVisitorForm.resx">
       <DependentUpon>StudentVisitorForm.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="WardenAllocateRoomServant.resx">
+      <DependentUpon>WardenAllocateRoomServant.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="WardenAllocateStudents.resx">
+      <DependentUpon>WardenAllocateStudents.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="WardenComplaints.resx">
+      <DependentUpon>WardenComplaints.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="WardenManageFines.resx">
+      <DependentUpon>WardenManageFines.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="WardenPanel.resx">
+      <DependentUpon>WardenPanel.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="WardenStudentFees.resx">
+      <DependentUpon>WardenStudentFees.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="WardenViewProfile.resx">
+      <DependentUpon>WardenViewProfile.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="WardenVisitorApproval.resx">
+      <DependentUpon>WardenVisitorApproval.cs</DependentUpon>
     </EmbeddedResource>
     <None Include="Properties\DataSources\DbProject.Properties.Resources.datasource" />
     <None Include="Properties\DataSources\DbProject.Properties.Settings.datasource" />

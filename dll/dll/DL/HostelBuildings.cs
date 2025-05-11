@@ -46,10 +46,10 @@ namespace dll.DL
             return DatabaseHelper.ExecuteScalar(query);
         }
 
-        public DataTable GetHosteBuildingTable(int userID)
+        public DataTable GetHosteBuildingTable()
         {
-            string query = "Select h.BuildingID , h.BuildingName , h.Floors , h.Rooms ,w.WardenID as WardenID ,h.Status  from hostelbuildings h natural join hostelwarden w natural join users u where u.userID = {0}";
-            query = String.Format (query, userID);
+            string query = "Select h.BuildingID , h.BuildingName , h.Floors , h.Rooms ,w.WardenID as WardenID ,h.Status , u.name from hostelbuildings h join hostelwarden w on h.WardenID = w.WardenID join users u on w.userID = u.userID ";
+            query = String.Format (query);
             return DatabaseHelper.getDataTable(query);
 
         }

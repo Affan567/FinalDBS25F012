@@ -129,8 +129,8 @@ namespace DbProject
         private void LoadData()
         {
             Hostelbuildings h = new Hostelbuildings();
-            int userID = Login.GetUserID();
-            DataTable dt = h.GetHostelbuildingData(userID);
+            //int userID = Login.GetUserID();
+            DataTable dt = h.GetHostelbuildingData();
 
             dataGridView1.DataSource = dt;
 
@@ -208,7 +208,7 @@ namespace DbProject
 
                 bindWarden();
                 bindBuilding();
-            }
+            }   
 
 
         }

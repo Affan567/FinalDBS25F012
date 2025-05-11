@@ -48,11 +48,7 @@ namespace dll.BL
 
         }
 
-        public int GetUserID()
-        {
-            return userID;
-        }
-
+        
  
 
         
@@ -115,10 +111,10 @@ namespace dll.BL
             return false;
         }
 
-        public void GetRegNO()
-        {
-            DL.Student.getRegistrationNumber();
-        }
+        //public void GetRegNO()
+        //{
+        //    DL.Student.getRegistrationNumber();
+        //}
 
         public bool DeleteStudent(int Studentid, int userid)
         {

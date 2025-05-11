@@ -510,12 +510,12 @@
             // label18
             // 
             this.label18.BackColor = System.Drawing.Color.Transparent;
-            this.label18.Font = new System.Drawing.Font("Yu Gothic UI", 10F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.label18.Font = new System.Drawing.Font("Yu Gothic UI", 9F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.label18.ForeColor = System.Drawing.Color.White;
             this.label18.ImageAlign = System.Drawing.ContentAlignment.MiddleRight;
             this.label18.Location = new System.Drawing.Point(0, 16);
             this.label18.Name = "label18";
-            this.label18.Size = new System.Drawing.Size(277, 28);
+            this.label18.Size = new System.Drawing.Size(342, 28);
             this.label18.TabIndex = 41;
             this.label18.Text = "Select Building Name To Edit";
             this.label18.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;

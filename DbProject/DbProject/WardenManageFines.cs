@@ -16,5 +16,10 @@ namespace DbProject
         {
             InitializeComponent();
         }
+
+        private void buttonserach_Click(object sender, EventArgs e)
+        {
+
+        }
     }
 }

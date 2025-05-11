@@ -68,7 +68,7 @@ namespace dll.DL
         static public bool UpdateUsertoDB(int UserID, string Username, string Password, int roleID , string Email,string Phone, string Name)
         {
             string updateQuery = "UPDATE users SET password = '{0}',username = '{1}', role_id = {2} ,email = '{3}', contact = '{4}',name = '{5}' Where userID = {6}";
-            updateQuery = String.Format(updateQuery, Username, Password, roleID,Email, Phone,  Name,UserID);
+            updateQuery = String.Format(updateQuery,  Password, Username, roleID,Email, Phone,  Name,UserID);
             int rowsAffected = DatabaseHelper.executeDML(updateQuery);
             if (rowsAffected > 0)
             {

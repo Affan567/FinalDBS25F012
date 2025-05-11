@@ -17,8 +17,9 @@ namespace DbProject
         public ManageStudents()
         {
             InitializeComponent();
-            bindRoomNumber();
             LoadData();
+            bindRoomNumber();
+            
             loadTotalBuildings();
             loadRegisteredStudents();
 

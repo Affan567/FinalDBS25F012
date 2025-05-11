@@ -25,15 +25,15 @@ namespace dll.DL
 
         public DataTable GetAllStudents()
         {
-            string query = "Select u.name, u.contact ,u.username ,u.password ,s.RegistrationNumber , s.Semester , r.RoomNumber From users as u join students as s on u.userID = s.userID join rooms as r on s.RoomID = r.RoomID";
+            string query = "Select s.StudentID , u.userID , u.name, u.contact ,u.username ,u.password ,s.RegistrationNumber , s.Semester , r.RoomNumber From students as s join users as u on s.userID = u.userID join rooms as r on s.RoomID = r.RoomID";
             DataTable studentTable = DatabaseHelper.getDataTable(query);
             return studentTable;
         }
 
         public bool UpdateStudentInDB(BL.Student s)
         {
-            string updateQuery = "UPDATE students SET RegistrationNumber = '{0}', Semester = {1}, RoomID = {2} ,userID = {3} Where StudentID = {4}";
-            updateQuery = string.Format(updateQuery, s.GetRegistrationNumber(), s.GetSemester(), s.GetroomID(), s.GetUserID(),s.GetStudentID());
+            string updateQuery = "UPDATE students SET RegistrationNumber = '{0}', Semester = {1}, RoomID = {2} Where userID = {3}";
+            updateQuery = string.Format(updateQuery, s.GetRegistrationNumber(), s.GetSemester(), s.GetroomID(),s.UserID());
 
             int rowsAffected = DatabaseHelper.executeDML(updateQuery);
             return rowsAffected > 0;

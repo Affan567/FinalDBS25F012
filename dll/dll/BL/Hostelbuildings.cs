@@ -137,10 +137,10 @@ namespace dll.BL
             return hostelBuildings.UpdateBuilding(h.getBuildingID(), h.getBuildingName(), h.getRooms(), h.getfloors(), h.Getstatus(),h.getWardenID());
         }
 
-        public DataTable GetHostelbuildingData(int userID)
+        public DataTable GetHostelbuildingData()
         {
             HostelBuildings hostelBuildings = new HostelBuildings();
-            return hostelBuildings.GetHosteBuildingTable(userID);
+            return hostelBuildings.GetHosteBuildingTable();
         }
 
         public object getTotalBuildins()

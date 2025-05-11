@@ -29,13 +29,18 @@
         private void InitializeComponent()
         {
             System.ComponentModel.ComponentResourceManager resources = new System.ComponentModel.ComponentResourceManager(typeof(AddWarden));
-            System.Windows.Forms.DataGridViewCellStyle dataGridViewCellStyle1 = new System.Windows.Forms.DataGridViewCellStyle();
+            System.Windows.Forms.DataGridViewCellStyle dataGridViewCellStyle2 = new System.Windows.Forms.DataGridViewCellStyle();
             this.tableLayoutPanel3 = new System.Windows.Forms.TableLayoutPanel();
             this.codedButton1 = new DbProject.CodedButton();
             this.codedButton2 = new DbProject.CodedButton();
             this.codedButton3 = new DbProject.CodedButton();
-            this.codedButton4 = new DbProject.CodedButton();
             this.tableLayoutPanel4 = new System.Windows.Forms.TableLayoutPanel();
+            this.panel4 = new System.Windows.Forms.Panel();
+            this.textBox5 = new System.Windows.Forms.TextBox();
+            this.label7 = new System.Windows.Forms.Label();
+            this.panel3 = new System.Windows.Forms.Panel();
+            this.textBox3 = new System.Windows.Forms.TextBox();
+            this.label3 = new System.Windows.Forms.Label();
             this.panel7 = new System.Windows.Forms.Panel();
             this.textBox2 = new System.Windows.Forms.TextBox();
             this.label5 = new System.Windows.Forms.Label();
@@ -52,13 +57,10 @@
             this.label2 = new System.Windows.Forms.Label();
             this.pictureBox2 = new System.Windows.Forms.PictureBox();
             this.dataGridView1 = new System.Windows.Forms.DataGridView();
-            this.WardenID = new System.Windows.Forms.DataGridViewTextBoxColumn();
-            this.WardenName = new System.Windows.Forms.DataGridViewTextBoxColumn();
-            this.username = new System.Windows.Forms.DataGridViewTextBoxColumn();
-            this.password = new System.Windows.Forms.DataGridViewTextBoxColumn();
-            this.AssignedBuilding = new System.Windows.Forms.DataGridViewTextBoxColumn();
             this.tableLayoutPanel3.SuspendLayout();
             this.tableLayoutPanel4.SuspendLayout();
+            this.panel4.SuspendLayout();
+            this.panel3.SuspendLayout();
             this.panel7.SuspendLayout();
             this.panel6.SuspendLayout();
             this.panel5.SuspendLayout();
@@ -71,14 +73,13 @@
             // tableLayoutPanel3
             // 
             this.tableLayoutPanel3.ColumnCount = 4;
-            this.tableLayoutPanel3.ColumnStyles.Add(new System.Windows.Forms.ColumnStyle(System.Windows.Forms.SizeType.Percent, 25F));
-            this.tableLayoutPanel3.ColumnStyles.Add(new System.Windows.Forms.ColumnStyle(System.Windows.Forms.SizeType.Percent, 25F));
-            this.tableLayoutPanel3.ColumnStyles.Add(new System.Windows.Forms.ColumnStyle(System.Windows.Forms.SizeType.Percent, 25F));
-            this.tableLayoutPanel3.ColumnStyles.Add(new System.Windows.Forms.ColumnStyle(System.Windows.Forms.SizeType.Percent, 25F));
+            this.tableLayoutPanel3.ColumnStyles.Add(new System.Windows.Forms.ColumnStyle(System.Windows.Forms.SizeType.Percent, 33.67537F));
+            this.tableLayoutPanel3.ColumnStyles.Add(new System.Windows.Forms.ColumnStyle(System.Windows.Forms.SizeType.Percent, 34.14179F));
+            this.tableLayoutPanel3.ColumnStyles.Add(new System.Windows.Forms.ColumnStyle(System.Windows.Forms.SizeType.Percent, 31.34328F));
+            this.tableLayoutPanel3.ColumnStyles.Add(new System.Windows.Forms.ColumnStyle(System.Windows.Forms.SizeType.Percent, 0.7462686F));
             this.tableLayoutPanel3.Controls.Add(this.codedButton1, 0, 0);
             this.tableLayoutPanel3.Controls.Add(this.codedButton2, 1, 0);
             this.tableLayoutPanel3.Controls.Add(this.codedButton3, 2, 0);
-            this.tableLayoutPanel3.Controls.Add(this.codedButton4, 3, 0);
             this.tableLayoutPanel3.Dock = System.Windows.Forms.DockStyle.Bottom;
             this.tableLayoutPanel3.Location = new System.Drawing.Point(278, 603);
             this.tableLayoutPanel3.Name = "tableLayoutPanel3";
@@ -103,7 +104,7 @@
             this.codedButton1.ForeColor = System.Drawing.Color.White;
             this.codedButton1.Location = new System.Drawing.Point(3, 3);
             this.codedButton1.Name = "codedButton1";
-            this.codedButton1.Size = new System.Drawing.Size(262, 59);
+            this.codedButton1.Size = new System.Drawing.Size(355, 59);
             this.codedButton1.TabIndex = 0;
             this.codedButton1.Text = "Refresh";
             this.codedButton1.TextColor = System.Drawing.Color.White;
@@ -123,13 +124,14 @@
             this.codedButton2.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
             this.codedButton2.Font = new System.Drawing.Font("Yu Gothic UI", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.codedButton2.ForeColor = System.Drawing.Color.White;
-            this.codedButton2.Location = new System.Drawing.Point(271, 3);
+            this.codedButton2.Location = new System.Drawing.Point(364, 3);
             this.codedButton2.Name = "codedButton2";
-            this.codedButton2.Size = new System.Drawing.Size(262, 59);
+            this.codedButton2.Size = new System.Drawing.Size(360, 59);
             this.codedButton2.TabIndex = 0;
             this.codedButton2.Text = "Add";
             this.codedButton2.TextColor = System.Drawing.Color.White;
             this.codedButton2.UseVisualStyleBackColor = false;
+            this.codedButton2.Click += new System.EventHandler(this.codedButton2_Click);
             // 
             // codedButton3
             // 
@@ -145,53 +147,106 @@
             this.codedButton3.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
             this.codedButton3.Font = new System.Drawing.Font("Yu Gothic UI", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.codedButton3.ForeColor = System.Drawing.Color.White;
-            this.codedButton3.Location = new System.Drawing.Point(539, 3);
+            this.codedButton3.Location = new System.Drawing.Point(730, 3);
             this.codedButton3.Name = "codedButton3";
-            this.codedButton3.Size = new System.Drawing.Size(262, 59);
+            this.codedButton3.Size = new System.Drawing.Size(330, 59);
             this.codedButton3.TabIndex = 0;
             this.codedButton3.Text = "Update";
             this.codedButton3.TextColor = System.Drawing.Color.White;
             this.codedButton3.UseVisualStyleBackColor = false;
-            // 
-            // codedButton4
-            // 
-            this.codedButton4.Anchor = ((System.Windows.Forms.AnchorStyles)((((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Bottom) 
-            | System.Windows.Forms.AnchorStyles.Left) 
-            | System.Windows.Forms.AnchorStyles.Right)));
-            this.codedButton4.BackColor = System.Drawing.Color.Black;
-            this.codedButton4.BackgroundColor = System.Drawing.Color.Black;
-            this.codedButton4.BorderColor = System.Drawing.Color.PaleVioletRed;
-            this.codedButton4.BorderRadius = 20;
-            this.codedButton4.BorderSize = 0;
-            this.codedButton4.FlatAppearance.BorderSize = 0;
-            this.codedButton4.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
-            this.codedButton4.Font = new System.Drawing.Font("Yu Gothic UI", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.codedButton4.ForeColor = System.Drawing.Color.White;
-            this.codedButton4.Location = new System.Drawing.Point(807, 3);
-            this.codedButton4.Name = "codedButton4";
-            this.codedButton4.Size = new System.Drawing.Size(262, 59);
-            this.codedButton4.TabIndex = 0;
-            this.codedButton4.Text = "Delete";
-            this.codedButton4.TextColor = System.Drawing.Color.White;
-            this.codedButton4.UseVisualStyleBackColor = false;
             // 
             // tableLayoutPanel4
             // 
             this.tableLayoutPanel4.ColumnCount = 2;
             this.tableLayoutPanel4.ColumnStyles.Add(new System.Windows.Forms.ColumnStyle(System.Windows.Forms.SizeType.Percent, 50F));
             this.tableLayoutPanel4.ColumnStyles.Add(new System.Windows.Forms.ColumnStyle(System.Windows.Forms.SizeType.Percent, 50F));
+            this.tableLayoutPanel4.Controls.Add(this.panel4, 1, 2);
+            this.tableLayoutPanel4.Controls.Add(this.panel3, 0, 2);
             this.tableLayoutPanel4.Controls.Add(this.panel7, 1, 1);
             this.tableLayoutPanel4.Controls.Add(this.panel6, 0, 1);
             this.tableLayoutPanel4.Controls.Add(this.panel5, 1, 0);
             this.tableLayoutPanel4.Controls.Add(this.panel19, 0, 0);
             this.tableLayoutPanel4.Dock = System.Windows.Forms.DockStyle.Bottom;
-            this.tableLayoutPanel4.Location = new System.Drawing.Point(278, 469);
+            this.tableLayoutPanel4.Location = new System.Drawing.Point(278, 410);
             this.tableLayoutPanel4.Name = "tableLayoutPanel4";
-            this.tableLayoutPanel4.RowCount = 2;
-            this.tableLayoutPanel4.RowStyles.Add(new System.Windows.Forms.RowStyle(System.Windows.Forms.SizeType.Percent, 33.33333F));
-            this.tableLayoutPanel4.RowStyles.Add(new System.Windows.Forms.RowStyle(System.Windows.Forms.SizeType.Percent, 33.33333F));
-            this.tableLayoutPanel4.Size = new System.Drawing.Size(1072, 134);
+            this.tableLayoutPanel4.RowCount = 3;
+            this.tableLayoutPanel4.RowStyles.Add(new System.Windows.Forms.RowStyle(System.Windows.Forms.SizeType.Percent, 49.26471F));
+            this.tableLayoutPanel4.RowStyles.Add(new System.Windows.Forms.RowStyle(System.Windows.Forms.SizeType.Percent, 50.73529F));
+            this.tableLayoutPanel4.RowStyles.Add(new System.Windows.Forms.RowStyle(System.Windows.Forms.SizeType.Absolute, 56F));
+            this.tableLayoutPanel4.Size = new System.Drawing.Size(1072, 193);
             this.tableLayoutPanel4.TabIndex = 55;
+            // 
+            // panel4
+            // 
+            this.panel4.BackColor = System.Drawing.Color.SkyBlue;
+            this.panel4.Controls.Add(this.textBox5);
+            this.panel4.Controls.Add(this.label7);
+            this.panel4.Dock = System.Windows.Forms.DockStyle.Fill;
+            this.panel4.Font = new System.Drawing.Font("Yu Gothic UI", 10F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.panel4.ForeColor = System.Drawing.Color.White;
+            this.panel4.Location = new System.Drawing.Point(539, 139);
+            this.panel4.Name = "panel4";
+            this.panel4.Size = new System.Drawing.Size(530, 51);
+            this.panel4.TabIndex = 29;
+            // 
+            // textBox5
+            // 
+            this.textBox5.Anchor = System.Windows.Forms.AnchorStyles.Right;
+            this.textBox5.Font = new System.Drawing.Font("Yu Gothic UI Semibold", 10F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.textBox5.Location = new System.Drawing.Point(245, 10);
+            this.textBox5.Name = "textBox5";
+            this.textBox5.Size = new System.Drawing.Size(282, 34);
+            this.textBox5.TabIndex = 47;
+            // 
+            // label7
+            // 
+            this.label7.AutoSize = true;
+            this.label7.BackColor = System.Drawing.Color.Transparent;
+            this.label7.Font = new System.Drawing.Font("Yu Gothic UI", 10F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.label7.ForeColor = System.Drawing.Color.Black;
+            this.label7.ImageAlign = System.Drawing.ContentAlignment.MiddleRight;
+            this.label7.Location = new System.Drawing.Point(13, 14);
+            this.label7.Name = "label7";
+            this.label7.Size = new System.Drawing.Size(71, 28);
+            this.label7.TabIndex = 41;
+            this.label7.Text = "Email: ";
+            this.label7.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
+            // 
+            // panel3
+            // 
+            this.panel3.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(0)))), ((int)(((byte)(122)))), ((int)(((byte)(195)))));
+            this.panel3.Controls.Add(this.textBox3);
+            this.panel3.Controls.Add(this.label3);
+            this.panel3.Dock = System.Windows.Forms.DockStyle.Fill;
+            this.panel3.Font = new System.Drawing.Font("Yu Gothic UI", 10F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.panel3.ForeColor = System.Drawing.Color.White;
+            this.panel3.Location = new System.Drawing.Point(3, 139);
+            this.panel3.Name = "panel3";
+            this.panel3.Size = new System.Drawing.Size(530, 51);
+            this.panel3.TabIndex = 28;
+            // 
+            // textBox3
+            // 
+            this.textBox3.Anchor = System.Windows.Forms.AnchorStyles.Right;
+            this.textBox3.Font = new System.Drawing.Font("Yu Gothic UI Semibold", 10F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.textBox3.Location = new System.Drawing.Point(245, 5);
+            this.textBox3.Name = "textBox3";
+            this.textBox3.Size = new System.Drawing.Size(282, 34);
+            this.textBox3.TabIndex = 47;
+            // 
+            // label3
+            // 
+            this.label3.AutoSize = true;
+            this.label3.BackColor = System.Drawing.Color.Transparent;
+            this.label3.Font = new System.Drawing.Font("Yu Gothic UI", 10F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.label3.ForeColor = System.Drawing.Color.White;
+            this.label3.ImageAlign = System.Drawing.ContentAlignment.MiddleRight;
+            this.label3.Location = new System.Drawing.Point(13, 14);
+            this.label3.Name = "label3";
+            this.label3.Size = new System.Drawing.Size(162, 28);
+            this.label3.TabIndex = 41;
+            this.label3.Text = "Warden Contact:";
+            this.label3.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
             // 
             // panel7
             // 
@@ -203,14 +258,14 @@
             this.panel7.ForeColor = System.Drawing.Color.White;
             this.panel7.Location = new System.Drawing.Point(539, 70);
             this.panel7.Name = "panel7";
-            this.panel7.Size = new System.Drawing.Size(530, 61);
+            this.panel7.Size = new System.Drawing.Size(530, 63);
             this.panel7.TabIndex = 27;
             // 
             // textBox2
             // 
             this.textBox2.Anchor = System.Windows.Forms.AnchorStyles.Right;
             this.textBox2.Font = new System.Drawing.Font("Yu Gothic UI Semibold", 10F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.textBox2.Location = new System.Drawing.Point(245, 15);
+            this.textBox2.Location = new System.Drawing.Point(245, 16);
             this.textBox2.Name = "textBox2";
             this.textBox2.Size = new System.Drawing.Size(282, 34);
             this.textBox2.TabIndex = 47;
@@ -239,14 +294,14 @@
             this.panel6.ForeColor = System.Drawing.Color.White;
             this.panel6.Location = new System.Drawing.Point(3, 70);
             this.panel6.Name = "panel6";
-            this.panel6.Size = new System.Drawing.Size(530, 61);
+            this.panel6.Size = new System.Drawing.Size(530, 63);
             this.panel6.TabIndex = 26;
             // 
             // textBox1
             // 
             this.textBox1.Anchor = System.Windows.Forms.AnchorStyles.Right;
             this.textBox1.Font = new System.Drawing.Font("Yu Gothic UI Semibold", 10F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.textBox1.Location = new System.Drawing.Point(245, 15);
+            this.textBox1.Location = new System.Drawing.Point(245, 16);
             this.textBox1.Name = "textBox1";
             this.textBox1.Size = new System.Drawing.Size(282, 34);
             this.textBox1.TabIndex = 47;
@@ -320,10 +375,8 @@
             this.textBox4.Font = new System.Drawing.Font("Yu Gothic UI Semibold", 10F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.textBox4.Location = new System.Drawing.Point(245, 10);
             this.textBox4.Name = "textBox4";
-            this.textBox4.ReadOnly = true;
             this.textBox4.Size = new System.Drawing.Size(282, 34);
             this.textBox4.TabIndex = 47;
-            this.textBox4.TabStop = false;
             // 
             // label18
             // 
@@ -379,58 +432,24 @@
             this.dataGridView1.BorderStyle = System.Windows.Forms.BorderStyle.None;
             this.dataGridView1.CellBorderStyle = System.Windows.Forms.DataGridViewCellBorderStyle.SingleHorizontal;
             this.dataGridView1.ColumnHeadersHeightSizeMode = System.Windows.Forms.DataGridViewColumnHeadersHeightSizeMode.AutoSize;
-            this.dataGridView1.Columns.AddRange(new System.Windows.Forms.DataGridViewColumn[] {
-            this.WardenID,
-            this.WardenName,
-            this.username,
-            this.password,
-            this.AssignedBuilding});
-            dataGridViewCellStyle1.Alignment = System.Windows.Forms.DataGridViewContentAlignment.MiddleLeft;
-            dataGridViewCellStyle1.BackColor = System.Drawing.SystemColors.Window;
-            dataGridViewCellStyle1.Font = new System.Drawing.Font("Microsoft Sans Serif", 8F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            dataGridViewCellStyle1.ForeColor = System.Drawing.SystemColors.ControlText;
-            dataGridViewCellStyle1.SelectionBackColor = System.Drawing.Color.ForestGreen;
-            dataGridViewCellStyle1.SelectionForeColor = System.Drawing.SystemColors.HighlightText;
-            dataGridViewCellStyle1.WrapMode = System.Windows.Forms.DataGridViewTriState.False;
-            this.dataGridView1.DefaultCellStyle = dataGridViewCellStyle1;
+            dataGridViewCellStyle2.Alignment = System.Windows.Forms.DataGridViewContentAlignment.MiddleLeft;
+            dataGridViewCellStyle2.BackColor = System.Drawing.SystemColors.Window;
+            dataGridViewCellStyle2.Font = new System.Drawing.Font("Microsoft Sans Serif", 8F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            dataGridViewCellStyle2.ForeColor = System.Drawing.SystemColors.ControlText;
+            dataGridViewCellStyle2.SelectionBackColor = System.Drawing.Color.ForestGreen;
+            dataGridViewCellStyle2.SelectionForeColor = System.Drawing.SystemColors.HighlightText;
+            dataGridViewCellStyle2.WrapMode = System.Windows.Forms.DataGridViewTriState.False;
+            this.dataGridView1.DefaultCellStyle = dataGridViewCellStyle2;
             this.dataGridView1.Dock = System.Windows.Forms.DockStyle.Fill;
             this.dataGridView1.Location = new System.Drawing.Point(278, 132);
             this.dataGridView1.Name = "dataGridView1";
             this.dataGridView1.RowHeadersWidth = 62;
             this.dataGridView1.RowTemplate.Height = 28;
             this.dataGridView1.SelectionMode = System.Windows.Forms.DataGridViewSelectionMode.FullRowSelect;
-            this.dataGridView1.Size = new System.Drawing.Size(1072, 337);
+            this.dataGridView1.Size = new System.Drawing.Size(1072, 278);
             this.dataGridView1.TabIndex = 57;
-            // 
-            // WardenID
-            // 
-            this.WardenID.HeaderText = "WardenID";
-            this.WardenID.MinimumWidth = 8;
-            this.WardenID.Name = "WardenID";
-            // 
-            // WardenName
-            // 
-            this.WardenName.HeaderText = "WardenName";
-            this.WardenName.MinimumWidth = 8;
-            this.WardenName.Name = "WardenName";
-            // 
-            // username
-            // 
-            this.username.HeaderText = "username";
-            this.username.MinimumWidth = 8;
-            this.username.Name = "username";
-            // 
-            // password
-            // 
-            this.password.HeaderText = "password";
-            this.password.MinimumWidth = 8;
-            this.password.Name = "password";
-            // 
-            // AssignedBuilding
-            // 
-            this.AssignedBuilding.HeaderText = "Assigned Building";
-            this.AssignedBuilding.MinimumWidth = 8;
-            this.AssignedBuilding.Name = "AssignedBuilding";
+            this.dataGridView1.CellClick += new System.Windows.Forms.DataGridViewCellEventHandler(this.dataGridView1_CellClick);
+            this.dataGridView1.CellContentClick += new System.Windows.Forms.DataGridViewCellEventHandler(this.dataGridView1_CellContentClick);
             // 
             // AddWarden
             // 
@@ -449,6 +468,10 @@
             this.Controls.SetChildIndex(this.dataGridView1, 0);
             this.tableLayoutPanel3.ResumeLayout(false);
             this.tableLayoutPanel4.ResumeLayout(false);
+            this.panel4.ResumeLayout(false);
+            this.panel4.PerformLayout();
+            this.panel3.ResumeLayout(false);
+            this.panel3.PerformLayout();
             this.panel7.ResumeLayout(false);
             this.panel7.PerformLayout();
             this.panel6.ResumeLayout(false);
@@ -472,7 +495,6 @@
         private CodedButton codedButton1;
         private CodedButton codedButton2;
         private CodedButton codedButton3;
-        private CodedButton codedButton4;
         private System.Windows.Forms.TableLayoutPanel tableLayoutPanel4;
         private System.Windows.Forms.Panel panel7;
         private System.Windows.Forms.TextBox textBox2;
@@ -490,10 +512,11 @@
         private System.Windows.Forms.Label label2;
         private System.Windows.Forms.PictureBox pictureBox2;
         private System.Windows.Forms.DataGridView dataGridView1;
-        private System.Windows.Forms.DataGridViewTextBoxColumn WardenID;
-        private System.Windows.Forms.DataGridViewTextBoxColumn WardenName;
-        private System.Windows.Forms.DataGridViewTextBoxColumn username;
-        private System.Windows.Forms.DataGridViewTextBoxColumn password;
-        private System.Windows.Forms.DataGridViewTextBoxColumn AssignedBuilding;
+        private System.Windows.Forms.Panel panel4;
+        private System.Windows.Forms.TextBox textBox5;
+        private System.Windows.Forms.Label label7;
+        private System.Windows.Forms.Panel panel3;
+        private System.Windows.Forms.TextBox textBox3;
+        private System.Windows.Forms.Label label3;
     }
 }

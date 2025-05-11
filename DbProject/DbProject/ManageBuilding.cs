@@ -115,7 +115,7 @@ namespace DbProject
                 int wardenID = (int)h.GetWardenID(Buildingwarden);
                 
                 
-                Hostelbuildings building = new Hostelbuildings(buildingID,buildingnameAfter, floors, rooms, wardenID, status);
+                Hostelbuildings building = new Hostelbuildings(buildingID,buildingnameAfter, floors, rooms, status, wardenID);
                 bool flag = building.UpdateBuildings(building);
 
                 if (flag)

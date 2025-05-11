@@ -131,7 +131,14 @@ namespace dll.BL
             DL.Rooms r = new DL.Rooms();
             return r.GettingRoomData();
         }
+        public bool DeleteRoom(int roomid , int RoomTypeid)
+        {
+            DL.Rooms dl = new DL.Rooms();
+            return dl.DeleteroomFromDB(roomid, RoomTypeid);
 
+
+
+        }
 
 
     }

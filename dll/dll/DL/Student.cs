@@ -15,7 +15,7 @@ namespace dll.DL
 
         public bool AddStudentToDB(BL.Student s)
         {
-            string insertQuery = "INSERT INTO student(RegistrationNo, Semester, RoomID ,userID) " +
+            string insertQuery = "INSERT INTO students(RegistrationNumber, Semester, RoomID ,userID) " +
                                  "VALUES ('{0}', {1}, {2}, {3})";
             insertQuery = string.Format(insertQuery, s.GetRegistrationNumber(), s.GetSemester(), s.GetroomID(), s.UserID());
 
@@ -25,16 +25,15 @@ namespace dll.DL
 
         public DataTable GetAllStudents()
         {
-            string query = "Select * From students";
+            string query = "Select u.name, u.contact ,u.username ,u.password ,s.RegistrationNumber , s.Semester , r.RoomNumber From users as u join students as s on u.userID = s.userID join rooms as r on s.RoomID = r.RoomID";
             DataTable studentTable = DatabaseHelper.getDataTable(query);
             return studentTable;
         }
 
         public bool UpdateStudentInDB(BL.Student s)
         {
-            string updateQuery = "UPDATE student SET RegistrationNo = '{0}', Hostellite = {1}, CGPA = {2}, SessionYear = {3}, " +
-                                 "Nationality = '{4}',SessionTerm = '{5}' Where UserID = {6}";
-            updateQuery = string.Format(updateQuery, s.GetRegistrationNumber(), s.RoleID(),s.GetSemester(), s.GetUserID());
+            string updateQuery = "UPDATE students SET RegistrationNumber = '{0}', Semester = {1}, RoomID = {2} ,userID = {3} Where StudentID = {4}";
+            updateQuery = string.Format(updateQuery, s.GetRegistrationNumber(), s.GetSemester(), s.GetroomID(), s.GetUserID(),s.GetStudentID());
 
             int rowsAffected = DatabaseHelper.executeDML(updateQuery);
             return rowsAffected > 0;
@@ -59,14 +58,34 @@ namespace dll.DL
         {
             List<string> queries = new List<string>();
 
-            string query = "Delete From students Where StudentID = {0}";
-            query = String.Format(query, studentid);
-            string query2 = "Delete From users Where userID = {0}";
-            query2 = String.Format(query2, userid);
+
+            string query1 = "Delete from complaints where StudentID = {0}";
+            query1 = String.Format(query1, studentid);
+            string query2 = "Delete from fees where StudentID = {0}";
+            query2 = String.Format(query2, studentid);
+            string query3 = "Delete from request where StudentID = {0}";
+            query3 = String.Format(query3, studentid);
+            string query4 = "Delete from damagerecords where StudentID = {0}";
+            query4 = String.Format(query4, studentid);
+            string query5 = "Delete from visitors where StudentID = {0}";
+            query5 = String.Format(query5, studentid);
+
+            string query6 = "Delete From students Where StudentID = {0}";
+            query6 = String.Format(query6, studentid);
+
+            string query7 = "Delete From users Where userID = {0}";
+            query7 = String.Format(query7, userid);
 
 
-            queries.Add(query);
+            queries.Add(query1);
             queries.Add(query2);
+            queries.Add(query3);
+            queries.Add(query4);
+            queries.Add(query5);
+            queries.Add(query6);
+            queries.Add(query7);
+
+
             bool rowsAffected = DatabaseHelper.ExecuteTransaction(queries);
 
             if (rowsAffected)

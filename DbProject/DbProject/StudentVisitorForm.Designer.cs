@@ -52,6 +52,7 @@
             this.label9.TabIndex = 70;
             this.label9.Text = "Enter";
             this.label9.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
+            this.label9.Click += new System.EventHandler(this.label9_Click);
             // 
             // label8
             // 

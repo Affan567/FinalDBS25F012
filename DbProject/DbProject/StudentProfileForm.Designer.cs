@@ -77,96 +77,104 @@
             this.tableLayoutPanel1.RowStyles.Add(new System.Windows.Forms.RowStyle(System.Windows.Forms.SizeType.Percent, 33.33333F));
             this.tableLayoutPanel1.RowStyles.Add(new System.Windows.Forms.RowStyle(System.Windows.Forms.SizeType.Percent, 33.33333F));
             this.tableLayoutPanel1.RowStyles.Add(new System.Windows.Forms.RowStyle(System.Windows.Forms.SizeType.Percent, 33.33333F));
-            this.tableLayoutPanel1.Size = new System.Drawing.Size(848, 509);
+            this.tableLayoutPanel1.Size = new System.Drawing.Size(844, 509);
             this.tableLayoutPanel1.TabIndex = 55;
             // 
             // panel9
             // 
+            this.panel9.Anchor = System.Windows.Forms.AnchorStyles.None;
             this.panel9.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(255)))), ((int)(((byte)(128)))), ((int)(((byte)(128)))));
             this.panel9.Controls.Add(this.textBox6);
             this.panel9.Controls.Add(this.label12);
-            this.panel9.Dock = System.Windows.Forms.DockStyle.Fill;
-            this.panel9.Location = new System.Drawing.Point(427, 341);
+            this.panel9.Location = new System.Drawing.Point(425, 341);
             this.panel9.Name = "panel9";
-            this.panel9.Size = new System.Drawing.Size(418, 165);
+            this.panel9.Size = new System.Drawing.Size(416, 165);
             this.panel9.TabIndex = 61;
             // 
             // textBox6
             // 
-            this.textBox6.Location = new System.Drawing.Point(201, 30);
+            this.textBox6.Anchor = System.Windows.Forms.AnchorStyles.None;
+            this.textBox6.Location = new System.Drawing.Point(216, 57);
             this.textBox6.Name = "textBox6";
             this.textBox6.Size = new System.Drawing.Size(100, 26);
             this.textBox6.TabIndex = 63;
             // 
             // label12
             // 
+            this.label12.Anchor = System.Windows.Forms.AnchorStyles.None;
             this.label12.AutoSize = true;
-            this.label12.Font = new System.Drawing.Font("Microsoft Sans Serif", 8F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.label12.Font = new System.Drawing.Font("Yu Gothic UI", 10F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.label12.ForeColor = System.Drawing.Color.White;
-            this.label12.Location = new System.Drawing.Point(34, 33);
+            this.label12.Location = new System.Drawing.Point(47, 57);
             this.label12.Name = "label12";
-            this.label12.Size = new System.Drawing.Size(128, 20);
+            this.label12.Size = new System.Drawing.Size(147, 28);
             this.label12.TabIndex = 63;
             this.label12.Text = "Hostel Warden";
             // 
             // panel8
             // 
+            this.panel8.Anchor = System.Windows.Forms.AnchorStyles.None;
             this.panel8.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(255)))), ((int)(((byte)(128)))), ((int)(((byte)(255)))));
             this.panel8.Controls.Add(this.textBox5);
             this.panel8.Controls.Add(this.label10);
-            this.panel8.Dock = System.Windows.Forms.DockStyle.Fill;
             this.panel8.Location = new System.Drawing.Point(3, 341);
             this.panel8.Name = "panel8";
-            this.panel8.Size = new System.Drawing.Size(418, 165);
+            this.panel8.Size = new System.Drawing.Size(416, 165);
             this.panel8.TabIndex = 61;
             // 
             // textBox5
             // 
-            this.textBox5.Location = new System.Drawing.Point(209, 30);
+            this.textBox5.Anchor = System.Windows.Forms.AnchorStyles.None;
+            this.textBox5.Location = new System.Drawing.Point(233, 61);
             this.textBox5.Name = "textBox5";
             this.textBox5.Size = new System.Drawing.Size(100, 26);
             this.textBox5.TabIndex = 62;
+            this.textBox5.TextChanged += new System.EventHandler(this.textBox5_TextChanged);
             // 
             // label10
             // 
+            this.label10.Anchor = System.Windows.Forms.AnchorStyles.None;
             this.label10.AutoSize = true;
-            this.label10.Font = new System.Drawing.Font("Microsoft Sans Serif", 8F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.label10.Font = new System.Drawing.Font("Yu Gothic UI", 10F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.label10.ForeColor = System.Drawing.Color.White;
-            this.label10.Location = new System.Drawing.Point(55, 33);
+            this.label10.Location = new System.Drawing.Point(66, 57);
             this.label10.Name = "label10";
-            this.label10.Size = new System.Drawing.Size(123, 20);
+            this.label10.Size = new System.Drawing.Size(140, 28);
             this.label10.TabIndex = 62;
             this.label10.Text = "Room Servant";
             // 
             // panel7
             // 
+            this.panel7.Anchor = System.Windows.Forms.AnchorStyles.None;
             this.panel7.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(128)))), ((int)(((byte)(128)))), ((int)(((byte)(255)))));
             this.panel7.Controls.Add(this.Fines);
             this.panel7.Controls.Add(this.textBox3);
-            this.panel7.Dock = System.Windows.Forms.DockStyle.Fill;
-            this.panel7.Location = new System.Drawing.Point(427, 172);
+            this.panel7.Location = new System.Drawing.Point(425, 172);
             this.panel7.Name = "panel7";
-            this.panel7.Size = new System.Drawing.Size(418, 163);
+            this.panel7.Size = new System.Drawing.Size(416, 163);
             this.panel7.TabIndex = 55;
             // 
             // Fines
             // 
+            this.Fines.Anchor = System.Windows.Forms.AnchorStyles.None;
             this.Fines.AutoSize = true;
             this.Fines.BackColor = System.Drawing.Color.Transparent;
-            this.Fines.Font = new System.Drawing.Font("Microsoft Sans Serif", 8F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.Fines.Font = new System.Drawing.Font("Yu Gothic UI", 10F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.Fines.ForeColor = System.Drawing.Color.White;
-            this.Fines.Location = new System.Drawing.Point(55, 25);
+            this.Fines.Location = new System.Drawing.Point(80, 73);
             this.Fines.Name = "Fines";
-            this.Fines.Size = new System.Drawing.Size(107, 20);
+            this.Fines.Size = new System.Drawing.Size(114, 28);
             this.Fines.TabIndex = 62;
             this.Fines.Text = "Fees Status";
             // 
             // textBox3
             // 
-            this.textBox3.Location = new System.Drawing.Point(201, 19);
+            this.textBox3.Anchor = System.Windows.Forms.AnchorStyles.None;
+            this.textBox3.Location = new System.Drawing.Point(230, 73);
             this.textBox3.Name = "textBox3";
             this.textBox3.Size = new System.Drawing.Size(100, 26);
             this.textBox3.TabIndex = 57;
+            this.textBox3.TextChanged += new System.EventHandler(this.textBox3_TextChanged);
             // 
             // panel6
             // 
@@ -176,76 +184,82 @@
             this.panel6.Dock = System.Windows.Forms.DockStyle.Fill;
             this.panel6.Location = new System.Drawing.Point(3, 172);
             this.panel6.Name = "panel6";
-            this.panel6.Size = new System.Drawing.Size(418, 163);
+            this.panel6.Size = new System.Drawing.Size(416, 163);
             this.panel6.TabIndex = 55;
             // 
             // label8
             // 
+            this.label8.Anchor = System.Windows.Forms.AnchorStyles.None;
             this.label8.AutoSize = true;
-            this.label8.Font = new System.Drawing.Font("Microsoft Sans Serif", 8F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.label8.Font = new System.Drawing.Font("Yu Gothic UI", 10F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.label8.ForeColor = System.Drawing.Color.White;
-            this.label8.Location = new System.Drawing.Point(31, 19);
+            this.label8.Location = new System.Drawing.Point(66, 69);
             this.label8.Name = "label8";
-            this.label8.Size = new System.Drawing.Size(147, 20);
+            this.label8.Size = new System.Drawing.Size(167, 28);
             this.label8.TabIndex = 61;
             this.label8.Text = "Complaint Status";
             // 
             // textBox2
             // 
-            this.textBox2.Location = new System.Drawing.Point(212, 19);
+            this.textBox2.Anchor = System.Windows.Forms.AnchorStyles.None;
+            this.textBox2.Location = new System.Drawing.Point(239, 69);
             this.textBox2.Name = "textBox2";
             this.textBox2.Size = new System.Drawing.Size(100, 26);
             this.textBox2.TabIndex = 56;
+            this.textBox2.TextChanged += new System.EventHandler(this.textBox2_TextChanged);
             // 
             // panel5
             // 
+            this.panel5.Anchor = System.Windows.Forms.AnchorStyles.None;
             this.panel5.BackColor = System.Drawing.Color.Goldenrod;
             this.panel5.Controls.Add(this.label9);
             this.panel5.Controls.Add(this.textBox4);
-            this.panel5.Dock = System.Windows.Forms.DockStyle.Fill;
             this.panel5.ForeColor = System.Drawing.Color.White;
-            this.panel5.Location = new System.Drawing.Point(427, 3);
+            this.panel5.Location = new System.Drawing.Point(425, 3);
             this.panel5.Name = "panel5";
-            this.panel5.Size = new System.Drawing.Size(418, 163);
+            this.panel5.Size = new System.Drawing.Size(416, 163);
             this.panel5.TabIndex = 55;
             // 
             // label9
             // 
+            this.label9.Anchor = System.Windows.Forms.AnchorStyles.None;
             this.label9.AutoSize = true;
-            this.label9.Font = new System.Drawing.Font("Microsoft Sans Serif", 8F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.label9.Location = new System.Drawing.Point(21, 20);
+            this.label9.Font = new System.Drawing.Font("Yu Gothic UI", 10F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.label9.Location = new System.Drawing.Point(32, 68);
             this.label9.Name = "label9";
-            this.label9.Size = new System.Drawing.Size(174, 20);
+            this.label9.Size = new System.Drawing.Size(202, 28);
             this.label9.TabIndex = 56;
             this.label9.Text = "Registration Number";
             // 
             // textBox4
             // 
-            this.textBox4.Location = new System.Drawing.Point(201, 17);
+            this.textBox4.Anchor = System.Windows.Forms.AnchorStyles.None;
+            this.textBox4.Location = new System.Drawing.Point(262, 72);
             this.textBox4.Name = "textBox4";
             this.textBox4.Size = new System.Drawing.Size(100, 26);
             this.textBox4.TabIndex = 58;
             // 
             // panel4
             // 
+            this.panel4.Anchor = System.Windows.Forms.AnchorStyles.None;
             this.panel4.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(255)))), ((int)(((byte)(128)))), ((int)(((byte)(128)))));
             this.panel4.Controls.Add(this.label11);
             this.panel4.Controls.Add(this.label7);
             this.panel4.Controls.Add(this.textBox1);
-            this.panel4.Dock = System.Windows.Forms.DockStyle.Fill;
             this.panel4.ForeColor = System.Drawing.Color.White;
             this.panel4.Location = new System.Drawing.Point(3, 3);
             this.panel4.Name = "panel4";
-            this.panel4.Size = new System.Drawing.Size(418, 163);
+            this.panel4.Size = new System.Drawing.Size(416, 163);
             this.panel4.TabIndex = 55;
             // 
             // label11
             // 
+            this.label11.Anchor = System.Windows.Forms.AnchorStyles.None;
             this.label11.AutoSize = true;
-            this.label11.Font = new System.Drawing.Font("Microsoft Sans Serif", 8F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.label11.Location = new System.Drawing.Point(68, 17);
+            this.label11.Font = new System.Drawing.Font("Yu Gothic UI", 10F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.label11.Location = new System.Drawing.Point(111, 68);
             this.label11.Name = "label11";
-            this.label11.Size = new System.Drawing.Size(55, 20);
+            this.label11.Size = new System.Drawing.Size(66, 28);
             this.label11.TabIndex = 57;
             this.label11.Text = "Name";
             // 
@@ -259,7 +273,8 @@
             // 
             // textBox1
             // 
-            this.textBox1.Location = new System.Drawing.Point(212, 17);
+            this.textBox1.Anchor = System.Windows.Forms.AnchorStyles.None;
+            this.textBox1.Location = new System.Drawing.Point(199, 72);
             this.textBox1.Name = "textBox1";
             this.textBox1.Size = new System.Drawing.Size(100, 26);
             this.textBox1.TabIndex = 55;
@@ -269,7 +284,7 @@
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(9F, 20F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
-            this.ClientSize = new System.Drawing.Size(1143, 595);
+            this.ClientSize = new System.Drawing.Size(1139, 595);
             this.Controls.Add(this.tableLayoutPanel1);
             this.Name = "StudentProfileForm";
             this.Text = "StudentProfileForm";

@@ -22,7 +22,7 @@ namespace dll.DL
 
         public DataTable gettingWardenDate()
         {
-            string query = "Select u.name, u.contact ,u.username ,u.password ,h.BuildingName From users as u join hostelwarden as w on u.userID = w.userID join hostelbuildings as h on w.AssignedBuildingID = h.BuildingID";
+            string query = "Select u.name, u.contact ,u.username ,u.password ,h.BuildingName,w.WardenID,u.userID From users as u join hostelwarden as w on u.userID = w.userID join hostelbuildings as h on w.AssignedBuildingID = h.BuildingID";
             DataTable wardenTable = DatabaseHelper.getDataTable(query);
             return wardenTable;
         }
@@ -76,10 +76,27 @@ namespace dll.DL
         {
             string insertQuery = "INSERT INTO hostelwarden(AssignedBuildingID , userID) " +
                                  "VALUES ({0}, {1})";
-            insertQuery = string.Format(insertQuery, w.GetBuildingID(), w.GetuserID());
+            insertQuery = string.Format(insertQuery, w.GetBuildingID(), w.UserID());
 
             int rowsAffected = DatabaseHelper.executeDML(insertQuery);
             return rowsAffected > 0;
+        }
+        public object getWardenID(int userID)
+        {
+            string query = "Select WardenID from hostelwarden where userID = {0}";
+            query = String.Format(query, userID);
+            return DatabaseHelper.ExecuteScalar(query);
+        }
+
+
+        public bool UpdateWardenInDB(BL.Warden w)
+        {
+            string updateQuery = "UPDATE hostelwarden SET AssignedBuildingID = {0} Where userID = {1}";
+            updateQuery = string.Format(updateQuery, w.GetBuildingID(),w.UserID());
+
+            int rowsAffected = DatabaseHelper.executeDML(updateQuery);
+            return rowsAffected > 0;
+
         }
     }
 

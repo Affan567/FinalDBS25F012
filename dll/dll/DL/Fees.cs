@@ -17,5 +17,14 @@ namespace dll.DL
             query = String.Format(query, userID);
             return DatabaseHelper.getDataTable(query);
         }
+
+
+        public static object GetStatusFee(int studentID)
+        {
+            string query = "Select Status From fees where StudentID = {0}";
+            query = string.Format(query, studentID);
+            return DatabaseHelper.ExecuteScalar(query);
+
+        }
     }
 }

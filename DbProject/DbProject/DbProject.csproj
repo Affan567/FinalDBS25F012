@@ -102,6 +102,7 @@
     </Compile>
     <Compile Include="Program.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
+    <Compile Include="Properties\DataSources\DatabaseHelper.cs" />
     <Compile Include="RegisterEmployees.cs">
       <SubType>Form</SubType>
     </Compile>
@@ -149,12 +150,6 @@
     </Compile>
     <Compile Include="StudentHeader.Designer.cs">
       <DependentUpon>StudentHeader.cs</DependentUpon>
-    </Compile>
-    <Compile Include="StudentOtherRequests.cs">
-      <SubType>Form</SubType>
-    </Compile>
-    <Compile Include="StudentOtherRequests.Designer.cs">
-      <DependentUpon>StudentOtherRequests.cs</DependentUpon>
     </Compile>
     <Compile Include="StudentProfileForm.cs">
       <SubType>Form</SubType>
@@ -279,9 +274,6 @@
     </EmbeddedResource>
     <EmbeddedResource Include="StudentHeader.resx">
       <DependentUpon>StudentHeader.cs</DependentUpon>
-    </EmbeddedResource>
-    <EmbeddedResource Include="StudentOtherRequests.resx">
-      <DependentUpon>StudentOtherRequests.cs</DependentUpon>
     </EmbeddedResource>
     <EmbeddedResource Include="StudentProfileForm.resx">
       <DependentUpon>StudentProfileForm.cs</DependentUpon>

@@ -191,6 +191,7 @@
             this.textBox1.Size = new System.Drawing.Size(119, 41);
             this.textBox1.TabIndex = 1;
             this.textBox1.TabStop = false;
+            this.textBox1.TextChanged += new System.EventHandler(this.textBox1_TextChanged);
             // 
             // panel6
             // 
@@ -211,6 +212,7 @@
             this.textBox2.Size = new System.Drawing.Size(119, 41);
             this.textBox2.TabIndex = 1;
             this.textBox2.TabStop = false;
+            this.textBox2.TextChanged += new System.EventHandler(this.textBox2_TextChanged);
             // 
             // dataGridView1
             // 
@@ -315,14 +317,14 @@
             this.label3.Anchor = System.Windows.Forms.AnchorStyles.None;
             this.label3.AutoSize = true;
             this.label3.BackColor = System.Drawing.Color.Transparent;
-            this.label3.Font = new System.Drawing.Font("Yu Gothic UI", 11F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.label3.Font = new System.Drawing.Font("Yu Gothic UI", 10F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.label3.ForeColor = System.Drawing.Color.Black;
             this.label3.ImageAlign = System.Drawing.ContentAlignment.MiddleRight;
             this.label3.Location = new System.Drawing.Point(0, 11);
             this.label3.Name = "label3";
-            this.label3.Size = new System.Drawing.Size(236, 30);
+            this.label3.Size = new System.Drawing.Size(259, 28);
             this.label3.TabIndex = 42;
-            this.label3.Text = "Enter Room ID To Edit:";
+            this.label3.Text = "Enter RoomType ID To Edit:";
             this.label3.TextAlign = System.Drawing.ContentAlignment.MiddleLeft;
             // 
             // panel10
@@ -388,6 +390,7 @@
             this.codedButton6.Text = "Update";
             this.codedButton6.TextColor = System.Drawing.Color.White;
             this.codedButton6.UseVisualStyleBackColor = false;
+            this.codedButton6.Click += new System.EventHandler(this.codedButton6_Click);
             // 
             // panel19
             // 
@@ -472,6 +475,7 @@
             this.comboBox3.Name = "comboBox3";
             this.comboBox3.Size = new System.Drawing.Size(233, 28);
             this.comboBox3.TabIndex = 0;
+            this.comboBox3.SelectedIndexChanged += new System.EventHandler(this.comboBox3_SelectedIndexChanged);
             // 
             // panel16
             // 
@@ -512,10 +516,16 @@
             // 
             this.comboBox2.Anchor = System.Windows.Forms.AnchorStyles.Right;
             this.comboBox2.FormattingEnabled = true;
+            this.comboBox2.Items.AddRange(new object[] {
+            "single",
+            "double",
+            "triple",
+            "Dormitory"});
             this.comboBox2.Location = new System.Drawing.Point(50, 11);
             this.comboBox2.Name = "comboBox2";
             this.comboBox2.Size = new System.Drawing.Size(232, 28);
             this.comboBox2.TabIndex = 0;
+            this.comboBox2.SelectedIndexChanged += new System.EventHandler(this.comboBox2_SelectedIndexChanged);
             // 
             // panel12
             // 

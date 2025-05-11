@@ -59,5 +59,12 @@ namespace DbProject
         {
             
         }
+
+        private void labelResults_Click(object sender, EventArgs e)
+        {
+            AdminDashboard admin = new AdminDashboard();
+            admin.Show();
+            this.Hide();
+        }
     }
 }

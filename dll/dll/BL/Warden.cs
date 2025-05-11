@@ -10,6 +10,8 @@ namespace dll.BL
 {
     public class Warden : User
     {
+
+ 
             public Warden() { }
 
 
@@ -27,6 +29,12 @@ namespace dll.BL
             
 
 
+        }
+
+        public Warden(int userID, int wardenID, string name, string Contact, string email,  int AssignedBuildingID, string StudentUsername, string StudentPassword, int roleID) : base(userID, StudentUsername, StudentPassword, name, email, Contact, roleID)//Edit student constructor
+        {
+            this.wardenID = wardenID;
+            this.AssignedBuildingID = AssignedBuildingID;
         }
 
         public int GetuserID()
@@ -82,6 +90,26 @@ namespace dll.BL
         {
             DL.Warden dl = new DL.Warden();
             return dl.DeleteWardenFromDB(Wardenid, userid);
+        }
+
+        public object GettingWardenID(int userID)
+        {
+            DL.Warden stu = new DL.Warden();
+            return stu.getWardenID(userID);
+        }
+
+        public bool UpdateWarden(Warden s)
+        {
+            BL.User bl = new BL.User();
+            bool flag1 = bl.UpdateUser(s.UserID(), s.getpassword(), s.getUsername(), s.getEmail(), s.RoleID(), s.getcontact(), s.getName());
+            if (flag1)
+            {
+                DL.Warden dl = new DL.Warden();
+
+                bool flag2 = dl.UpdateWardenInDB(s);
+                return flag2;
+            }
+            return false;
         }
     }
 }

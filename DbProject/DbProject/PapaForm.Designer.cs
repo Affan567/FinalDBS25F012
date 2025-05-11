@@ -279,6 +279,7 @@
             this.labelResults.TabIndex = 46;
             this.labelResults.Text = "Dashboard";
             this.labelResults.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
+            this.labelResults.Click += new System.EventHandler(this.labelResults_Click);
             // 
             // pictureBox9
             // 

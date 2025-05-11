@@ -91,7 +91,8 @@ namespace DbProject
                     if(Complaints.InsertingComplaint(c))
                     {
                         MessageBox.Show("Complaint Submitted Successfully");
-                    }
+                    LoadData();
+                }
                     else
                     {
                         MessageBox.Show("Can't Submit complaint");

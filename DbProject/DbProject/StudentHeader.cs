@@ -19,7 +19,7 @@ namespace DbProject
 
         private void labelResults_Click(object sender, EventArgs e)
         {
-            StudentDashBoard studentDashBoard = new StudentDashBoard();
+            StudentProfileForm studentDashBoard = new StudentProfileForm();
             studentDashBoard.Show();
             this.Hide();
         }
@@ -49,13 +49,7 @@ namespace DbProject
             this.Hide();
         }
 
-        private void label6_Click(object sender, EventArgs e)
-        {
-            StudentOtherRequests stu = new StudentOtherRequests();
-            stu.Show();
-            this.Hide();
-        }
-
+        
         private void label5_Click(object sender, EventArgs e)
         {
             StudentVisitorForm stu = new StudentVisitorForm();  
@@ -74,6 +68,13 @@ namespace DbProject
         {
             StudentRoom room = new StudentRoom();
             room.Show();
+            this.Hide();
+        }
+
+        private void button1_Click(object sender, EventArgs e)
+        {
+            SignIN form = new SignIN();
+            form.Show();
             this.Hide();
         }
     }

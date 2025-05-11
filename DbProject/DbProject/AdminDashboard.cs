@@ -102,6 +102,29 @@ namespace DbProject
         private void btnManageRooms_Click(object sender, EventArgs e)
         {
             ManageRooms rooms = new ManageRooms();
+            rooms.Show();
+            this.Hide();
+        }
+
+        private void btnManageEmployee_Click(object sender, EventArgs e)
+        {
+            RegisterEmployees form = new RegisterEmployees();
+            form.Show();
+            this.Hide();
+        }
+
+        private void btnPayments_Click(object sender, EventArgs e)
+        {
+            ManagePayment payments = new ManagePayment();
+            payments.Show();
+            this.Hide();
+        }
+
+        private void btnAddEmployees_Click(object sender, EventArgs e)
+        {
+            AddWarden warden = new AddWarden();
+            warden.Show();
+            this.Hide();
         }
     }
 }
